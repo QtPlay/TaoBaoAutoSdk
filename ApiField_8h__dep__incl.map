@@ -1,0 +1,11 @@
+<map id="include/taobaosdk/domain/ApiField.h" name="include/taobaosdk/domain/ApiField.h">
+<area shape="rect" id="node3" href="$BaseObject_8h.html" title="include/taobaosdk/domain\l/BaseObject.h" alt="" coords="301,102,475,149"/>
+<area shape="rect" id="node21" href="$ApiField_8cpp.html" title="src/domain/ApiField.cpp" alt="" coords="499,111,661,140"/>
+<area shape="rect" id="node5" href="$ApiDomain_8h.html" title="include/taobaosdk/domain\l/ApiDomain.h" alt="" coords="5,198,179,245"/>
+<area shape="rect" id="node13" href="$ApiRequest_8h.html" title="include/taobaosdk/domain\l/ApiRequest.h" alt="" coords="203,198,376,245"/>
+<area shape="rect" id="node16" href="$ApiResponse_8h.html" title="include/taobaosdk/domain\l/ApiResponse.h" alt="" coords="400,198,573,245"/>
+<area shape="rect" id="node19" href="$BaseObject_8cpp.html" title="src/domain/BaseObject.cpp" alt="" coords="597,207,779,236"/>
+<area shape="rect" id="node7" href="$SdkParser_8h.html" title="include/taobaosdk/parser\l/SdkParser.h" alt="" coords="207,294,372,341"/>
+<area shape="rect" id="node9" href="$MetaSdkParser_8h.html" title="include/taobaosdk/parser\l/MetaSdkParser.h" alt="" coords="207,390,372,437"/>
+<area shape="rect" id="node11" href="$MetaSdkParser_8cpp.html" title="src/parser/MetaSdkParser.cpp" alt="" coords="191,485,388,515"/>
+</map>

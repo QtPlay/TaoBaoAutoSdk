@@ -1,0 +1,9 @@
+<map id="BaseObject::getFields" name="BaseObject::getFields">
+<area shape="rect" id="node3" href="$classApiRequest.html#ab3990199fb7ad6346c494df63c87165f" title="ApiRequest::isUploadRequest" alt="" coords="207,5,404,35"/>
+<area shape="rect" id="node5" href="$classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f" title="BaseObject::addField" alt="" coords="232,59,379,88"/>
+<area shape="rect" id="node13" href="$classBaseObject.html#af9010f0d20b936fdf2221891a4208bff" title="BaseObject::isContainField" alt="" coords="215,112,396,141"/>
+<area shape="rect" id="node15" href="$classBaseObject.html#adf8fd214620f1ce29d9277a1be36e9ac" title="BaseObject::isContainDate\lField" alt="" coords="215,165,396,211"/>
+<area shape="rect" id="node7" href="$classMetaSdkParser.html#a5ffa7a936f28b65b3a53cba58a5ba047" title="MetaSdkParser::getApiDomains" alt="" coords="461,5,669,35"/>
+<area shape="rect" id="node9" href="$classMetaSdkParser.html#a4856857b4784e93bb33a1316569dbbce" title="获取Request Api类 与getApiResponse不同的是" alt="" coords="459,59,672,88"/>
+<area shape="rect" id="node11" href="$classMetaSdkParser.html#ae920e712ad0f3579e350fb6f4bd7062c" title="MetaSdkParser::getApiResponses" alt="" coords="455,112,676,141"/>
+</map>

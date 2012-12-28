@@ -1,0 +1,4 @@
+<map id="ApiDomain" name="ApiDomain">
+<area shape="rect" id="node2" href="$classBaseObject.html" title="{BaseObject\n||+ getLastModified()\l+ setLastModified()\l+ setFields()\l+ getFields()\l+ addField()\l+ isContainField()\l+ isContainListField()\l+ isContainDateField()\l}" alt="" coords="5,209,157,415"/>
+<area shape="rect" id="node4" href="$classNameObject.html" title="{NameObject\n||+ getName()\l+ setName()\l+ getDesc()\l+ setDesc()\l+ equals()\l}" alt="" coords="35,5,128,160"/>
+</map>

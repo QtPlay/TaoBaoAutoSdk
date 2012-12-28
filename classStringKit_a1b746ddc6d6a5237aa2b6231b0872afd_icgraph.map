@@ -1,0 +1,12 @@
+<map id="StringKit::toCamelCase" name="StringKit::toCamelCase">
+<area shape="rect" id="node3" href="$classApiDomain.html#a9e5cc793f50305fe253cc4d7366d47f3" title="ApiDomain::getClassName" alt="" coords="245,5,427,35"/>
+<area shape="rect" id="node5" href="$classApiField.html#a913191824861c5a6139c54a9b6c3992a" title="获得驼峰风格名称" alt="" coords="237,59,435,88"/>
+<area shape="rect" id="node13" href="$classApiRequest.html#aa022948359fecacea9e5b2cb91705ab0" title="获得请求类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="219,112,453,141"/>
+<area shape="rect" id="node15" href="$classApiRequest.html#ae0a0f7fb10716a60698e80c025490c44" title="获得响应类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="215,165,457,195"/>
+<area shape="rect" id="node17" href="$classApiResponse.html#a39bee83dbc5ffe2e3a174fe8b6ede3ee" title="ApiResponse::getClassName" alt="" coords="239,219,433,248"/>
+<area shape="rect" id="node19" href="$classStringKit.html#ad5fa2686250c03f71d1cdb1785fe37bc" title="将字符串转化为帕斯卡风格" alt="" coords="255,272,417,301"/>
+<area shape="rect" id="node7" href="$classApiField.html#a574b9b58102833cfa471c4a008c2ed33" title="ApiField::getMethodName" alt="" coords="521,59,695,88"/>
+<area shape="rect" id="node9" href="$classApiField.html#ac6adc4e86a1f1e79a10db2f7dd706907" title="获得属性的get方法名称" alt="" coords="757,32,952,61"/>
+<area shape="rect" id="node11" href="$classApiField.html#afb86b0453cc4a9bef17849f28228a361" title="获得属性的set方法名称" alt="" coords="759,85,951,115"/>
+<area shape="rect" id="node21" href="$classApiField.html#a19b61fa2f966255c60368f1693c74959" title="获得帕斯卡风格名称" alt="" coords="508,272,708,301"/>
+</map>

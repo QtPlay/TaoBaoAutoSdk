@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classSdkParser.html" title="SdkParser" alt="" coords="5,5,88,35"/>
+<area shape="rect" id="node3" href="$classMetaSdkParser.html" title="metadata.xml的处理类，要求完善的metadata.xml：struct、api、param等节点都为同级兄弟， 只适用于淘宝metadata" alt="" coords="136,5,248,35"/>
+</map>
