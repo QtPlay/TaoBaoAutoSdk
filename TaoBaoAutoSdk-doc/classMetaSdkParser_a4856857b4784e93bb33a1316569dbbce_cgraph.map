@@ -1,0 +1,9 @@
+<map id="MetaSdkParser::getApiRequests" name="MetaSdkParser::getApiRequests">
+<area shape="rect" id="node3" href="$classNameObject.html#a83d2ad2a1657e2e22ccb20ef603818fe" title="NameObject::setName" alt="" coords="303,5,457,35"/>
+<area shape="rect" id="node5" href="$classNameObject.html#ad655d07d3fe17b433e929c81be6bdf36" title="NameObject::setDesc" alt="" coords="304,59,456,88"/>
+<area shape="rect" id="node7" href="$classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457" title="ApiField::setApiType" alt="" coords="309,112,451,141"/>
+<area shape="rect" id="node9" href="$classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c" title="ApiField::setLangType" alt="" coords="304,165,456,195"/>
+<area shape="rect" id="node11" href="$classTypeMapper.html#a36586609bdb276f9b4b63dd60a5eee31" title="TypeMapper::getRequestLangType" alt="" coords="267,219,493,248"/>
+<area shape="rect" id="node13" href="$classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f" title="BaseObject::addField" alt="" coords="307,272,453,301"/>
+<area shape="rect" id="node15" href="$classBaseObject.html#aca207fde57b536a1d318462e26402c16" title="BaseObject::getFields" alt="" coords="543,272,692,301"/>
+</map>
