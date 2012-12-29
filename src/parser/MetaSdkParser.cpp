@@ -93,7 +93,8 @@ const QList< ApiDomain > MetaSdkParser::getApiDomains()
 
 /**
  * @brief 获取Request Api类
- * 与getApiResponse不同的是
+ * 与getApiResponse不同的是, Requests只是借助level确定langType
+ * 而Response直接存储meta数据中的level。
  *
  * @return const QList< ApiDomain >
  **/
