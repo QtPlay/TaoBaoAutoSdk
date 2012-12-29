@@ -1,3 +1,12 @@
 <map id="src/generator/SdkGenerator.cpp" name="src/generator/SdkGenerator.cpp">
-<area shape="rect" id="node3" href="$SdkGenerator_8h.html" title="generator/SdkGenerator.h" alt="" coords="23,83,193,112"/>
+<area shape="rect" id="node3" href="$SdkGenerator_8h.html" title="generator/SdkGenerator.h" alt="" coords="484,83,655,112"/>
+<area shape="rect" id="node5" href="$SdkParser_8h.html" title="parser/SdkParser.h" alt="" coords="265,160,399,189"/>
+<area shape="rect" id="node7" href="$ApiDomain_8h.html" title="domain/ApiDomain.h" alt="" coords="5,237,147,267"/>
+<area shape="rect" id="node26" href="$ApiRequest_8h.html" title="domain/ApiRequest.h" alt="" coords="171,237,317,267"/>
+<area shape="rect" id="node29" href="$ApiResponse_8h.html" title="domain/ApiResponse.h" alt="" coords="341,237,499,267"/>
+<area shape="rect" id="node9" href="$BaseObject_8h.html" title="domain/BaseObject.h" alt="" coords="173,315,320,344"/>
+<area shape="rect" id="node11" href="$NameObject_8h.html" title="domain/NameObject.h" alt="" coords="75,469,227,499"/>
+<area shape="rect" id="node15" href="$ApiField_8h.html" title="domain/ApiField.h" alt="" coords="188,392,313,421"/>
+<area shape="rect" id="node18" href="$StringKit_8h.html" title="util/StringKit.h" alt="" coords="251,469,355,499"/>
+<area shape="rect" id="node21" href="$SdkConstants_8h.html" title="SdkConstants.h" alt="" coords="379,469,493,499"/>
 </map>

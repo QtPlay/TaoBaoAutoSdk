@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,14 +97,14 @@ Inheritance diagram for MetaSdkParser:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMetaSdkParser__inherit__graph.png" border="0" usemap="#MetaSdkParser_inherit__map" alt="Inheritance graph"/></div>
 <map name="MetaSdkParser_inherit__map" id="MetaSdkParser_inherit__map">
-<area shape="rect" id="node2" href="classSdkParser.html" title="{SdkParser\n||+ getApiDomains()\l+ getApiRequests()\l+ getApiResponse()\l}" alt="" coords="8,5,147,125"/></map>
+<area shape="rect" id="node2" href="classSdkParser.html" title="{SdkParser\n||+ getApiDomains()\l+ getApiRequests()\l+ getApiResponses()\l}" alt="" coords="5,5,149,125"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for MetaSdkParser:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMetaSdkParser__coll__graph.png" border="0" usemap="#MetaSdkParser_coll__map" alt="Collaboration graph"/></div>
 <map name="MetaSdkParser_coll__map" id="MetaSdkParser_coll__map">
-<area shape="rect" id="node2" href="classSdkParser.html" title="{SdkParser\n||+ getApiDomains()\l+ getApiRequests()\l+ getApiResponse()\l}" alt="" coords="8,5,147,125"/></map>
+<area shape="rect" id="node2" href="classSdkParser.html" title="{SdkParser\n||+ getApiDomains()\l+ getApiRequests()\l+ getApiResponses()\l}" alt="" coords="5,5,149,125"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
@@ -114,8 +114,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4856857b4784e93bb33a1316569dbbce"><td class="memItemLeft" align="right" valign="top">virtual const QList&lt; <a class="el" href="classApiRequest.html">ApiRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#a4856857b4784e93bb33a1316569dbbce">getApiRequests</a> ()</td></tr>
 <tr class="memdesc:a4856857b4784e93bb33a1316569dbbce"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取Request Api类 与getApiResponse不同的是  <a href="#a4856857b4784e93bb33a1316569dbbce"></a><br/></td></tr>
 <tr class="memitem:ae920e712ad0f3579e350fb6f4bd7062c"><td class="memItemLeft" align="right" valign="top">virtual const QList&lt; <a class="el" href="classApiResponse.html">ApiResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#ae920e712ad0f3579e350fb6f4bd7062c">getApiResponses</a> ()</td></tr>
-<tr class="inherit_header pub_methods_classSdkParser"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSdkParser')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classSdkParser.html">SdkParser</a></td></tr>
-<tr class="memitem:ac6464d197f891a3da761e1072fd59bb4 inherit pub_methods_classSdkParser"><td class="memItemLeft" align="right" valign="top">virtual const QList&lt; <a class="el" href="classApiResponse.html">ApiResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSdkParser.html#ac6464d197f891a3da761e1072fd59bb4">getApiResponse</a> ()=0</td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>metadata.xml的处理类，要求完善的metadata.xml：struct、api、param等节点都为同级兄弟， 只适用于淘宝metadata </p>
@@ -240,6 +238,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Implements <a class="el" href="classSdkParser.html#a872a6ba003f299c2bb13369f50ab4e8a">SdkParser</a>.</p>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -258,7 +258,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 28 2012 18:08:29 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 29 2012 11:03:40 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

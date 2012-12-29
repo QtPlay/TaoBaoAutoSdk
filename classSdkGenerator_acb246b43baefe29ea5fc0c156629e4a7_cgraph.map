@@ -1,0 +1,13 @@
+<map id="SdkGenerator::process" name="SdkGenerator::process">
+<area shape="rect" id="node3" href="$classSdkGenerator.html#aa2af3967e4c79826fafef8f461e13a6d" title="SdkGenerator::generateDomains" alt="" coords="219,67,429,96"/>
+<area shape="rect" id="node9" href="$classSdkGenerator.html#a1a906584f9c567e3de4fe1ca15455a8d" title="SdkGenerator::generateRequests" alt="" coords="216,205,432,235"/>
+<area shape="rect" id="node15" href="$classSdkGenerator.html#a9059b3e9233760424995a784be5bf252" title="SdkGenerator::generateResponses" alt="" coords="211,275,437,304"/>
+<area shape="rect" id="node21" href="$classSdkGenerator.html#a5e5cc42a04f0804a9965f2a84694fb88" title="SdkGenerator::generateSdk\lVersion" alt="" coords="233,366,415,413"/>
+<area shape="rect" id="node5" href="$classSdkGenerator.html#aaf449b45155ddf96806b88dbba15e879" title="生成数据结构源码。" alt="" coords="485,5,731,35"/>
+<area shape="rect" id="node7" href="$classSdkGenerator.html#a35dcdea57d0c940a94b7f1d90f3e10bd" title="获取domain相关的文件路径，相对于sourcesDir来说" alt="" coords="501,58,715,105"/>
+<area shape="rect" id="node11" href="$classSdkGenerator.html#acd76329f085f476eaaaa05c0d4ed0104" title="生成API请求源码。" alt="" coords="520,127,696,174"/>
+<area shape="rect" id="node13" href="$classSdkGenerator.html#af9eebec4e14b3ec2c1b174ba362e0b48" title="获取API请求文件路径，相对于sourcesDir来说" alt="" coords="520,197,696,243"/>
+<area shape="rect" id="node17" href="$classSdkGenerator.html#a96e4a1533bbc99edf3966f884b5bd0ce" title="生成API响应源码。" alt="" coords="515,266,701,313"/>
+<area shape="rect" id="node19" href="$classSdkGenerator.html#a34776ebda07eb49e41bb83cac47cba5b" title="生成API响应文件路径，，相对于sourcesDir来说" alt="" coords="515,335,701,382"/>
+<area shape="rect" id="node23" href="$classSdkGenerator.html#a1c7c1d6c1a2ea8461cbd8c63bab95619" title="获取SDK版本文件路径，用于替换版本号。版本文件中版本号用dynamicVersionNo表示。用户的继承类必须实现此函数" alt="" coords="511,405,705,451"/>
+</map>
