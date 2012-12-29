@@ -1,5 +1,7 @@
 <map id="include/taobaosdk/domain/ApiResponse.h" name="include/taobaosdk/domain/ApiResponse.h">
-<area shape="rect" id="node3" href="$SdkParser_8h.html" title="include/taobaosdk/parser\l/SdkParser.h" alt="" coords="21,102,187,149"/>
-<area shape="rect" id="node5" href="$MetaSdkParser_8h.html" title="include/taobaosdk/parser\l/MetaSdkParser.h" alt="" coords="21,198,187,245"/>
-<area shape="rect" id="node7" href="$MetaSdkParser_8cpp.html" title="src/parser/MetaSdkParser.cpp" alt="" coords="5,293,203,323"/>
+<area shape="rect" id="node3" href="$SdkParser_8h.html" title="include/taobaosdk/parser\l/SdkParser.h" alt="" coords="137,102,303,149"/>
+<area shape="rect" id="node5" href="$SdkGenerator_8h.html" title="include/taobaosdk/generator\l/SdkGenerator.h" alt="" coords="23,198,207,245"/>
+<area shape="rect" id="node9" href="$MetaSdkParser_8h.html" title="include/taobaosdk/parser\l/MetaSdkParser.h" alt="" coords="244,198,409,245"/>
+<area shape="rect" id="node7" href="$SdkGenerator_8cpp.html" title="src/generator/SdkGenerator.cpp" alt="" coords="5,293,211,323"/>
+<area shape="rect" id="node11" href="$MetaSdkParser_8cpp.html" title="src/parser/MetaSdkParser.cpp" alt="" coords="235,293,432,323"/>
 </map>

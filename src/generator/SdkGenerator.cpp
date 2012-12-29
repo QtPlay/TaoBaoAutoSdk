@@ -19,4 +19,76 @@
 
 
 #include <generator/SdkGenerator.h>
+#include <QDebug>
 
+void SdkGenerator::writeFile(const QString &codeStr,const  QString & absoluteFilePath)
+{
+  QFile file(absoluteFilePath);
+  if (!file.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Truncate))
+    qDebug() << QString("file: %1, write error.\n%2")
+    .arg(absoluteFilePath).arg(file.errorString());
+  QTextStream out(&file);
+  out.setCodec("UTF-8");
+  out << codeStr;
+}
+
+
+void SdkGenerator::generateSdkVersion()
+{
+  QFile outFile(getSdkVersionFilePath());
+  if (!outFile.open(QIODevice::ReadOnly | QIODevice::Text))
+    return;
+  QByteArray fileContents = outFile.readAll();
+  outFile.close();
+  fileContents.replace("dynamicVersionNo",
+                  QDate::currentDate().toString("yyyyMMdd").toLocal8Bit());
+
+  if (!outFile.open(QIODevice::WriteOnly | QIODevice::Truncate |
+QIODevice::Text))
+    return;
+  outFile.write(fileContents);
+  outFile.close();
+}
+
+void SdkGenerator::init() {
+  // parse meta data
+  domains = parser->getApiDomains();
+  requests = parser->getApiRequests();
+  responses = parser->getApiResponses();
+
+  sourcesDir = getSdkBasicSourceDir();
+}
+
+
+void SdkGenerator::process()
+{
+  generateDomains();
+  generateRequests();
+  generateResponses();
+  generateSdkVersion();
+}
+
+void SdkGenerator::generateDomains()
+{
+  foreach (ApiDomain domain, domains) {
+    QString sourceCode = getDomainSourceCode(domain);
+    QString domainFileName = getDomainSourceFileName(domain);
+    writeFile(sourceCode, domainFileName);
+  }
+}
+
+void SdkGenerator::generateRequests() {
+  foreach (ApiRequest request ,requests) {
+    QString sourceCode = getRequestSourceCode(request);
+    QString requestFileName = getRequestSourceFileName(request);
+    writeFile(sourceCode, requestFileName);
+  }
+}
+
+void SdkGenerator::generateResponses() {
+  foreach (ApiResponse response ,responses) {
+    QString sourceCode = getResponseSourceCode(response);
+    QString responseFileName = getResponseSourceFileName(response);
+    writeFile(sourceCode, responseFileName);
+  }
+}

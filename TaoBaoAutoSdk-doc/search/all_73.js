@@ -4,7 +4,7 @@ var searchData=
   ['sdkconstants',['SdkConstants',['../classSdkConstants.html',1,'']]],
   ['sdkconstants_2ecpp',['SdkConstants.cpp',['../SdkConstants_8cpp.html',1,'']]],
   ['sdkconstants_2eh',['SdkConstants.h',['../SdkConstants_8h.html',1,'']]],
-  ['sdkgenerator',['SdkGenerator',['../classSdkGenerator.html',1,'']]],
+  ['sdkgenerator',['SdkGenerator',['../classSdkGenerator.html',1,'SdkGenerator'],['../classSdkGenerator.html#ab4af141a96284c669ed939dfa7b13d72',1,'SdkGenerator::SdkGenerator()']]],
   ['sdkgenerator_2ecpp',['SdkGenerator.cpp',['../SdkGenerator_8cpp.html',1,'']]],
   ['sdkgenerator_2eh',['SdkGenerator.h',['../SdkGenerator_8h.html',1,'']]],
   ['sdkparser',['SdkParser',['../classSdkParser.html',1,'']]],
@@ -18,6 +18,7 @@ var searchData=
   ['setlastmodified',['setLastModified',['../classBaseObject.html#a67bbed10fcf16a68a6d5d4bb2506643d',1,'BaseObject']]],
   ['setname',['setName',['../classNameObject.html#a83d2ad2a1657e2e22ccb20ef603818fe',1,'NameObject']]],
   ['sources_5fdir',['SOURCES_DIR',['../classSdkConstants.html#a1d3a80321cb8ecac48c12ebba26e2bda',1,'SdkConstants']]],
+  ['sourcesdir',['sourcesDir',['../classSdkGenerator.html#a5ba8dfe3c67cced1562c6aa6ff75f7ce',1,'SdkGenerator']]],
   ['stringkit',['StringKit',['../classStringKit.html',1,'']]],
   ['stringkit_2ecpp',['StringKit.cpp',['../StringKit_8cpp.html',1,'']]],
   ['stringkit_2eh',['StringKit.h',['../StringKit_8h.html',1,'']]]

@@ -21,8 +21,89 @@
 #ifndef SDKGENERATOR_H
 #define SDKGENERATOR_H
 
+#include <parser/SdkParser.h>
+#include <QString>
+#include <QDate>
+#include <QDir>
+
+
 class SdkGenerator
 {
+public:
+  SdkGenerator(SdkParser *parser) {
+    this->parser = parser;
+    init();
+  }
+
+  void generate(QDir outDir)
+  {
+    process();
+  }
+
+protected:
+  QString sourcesDir;
+  /**
+  * @brief 生成数据结构源码。
+  */
+  virtual const QString getDomainSourceCode(const ApiDomain &domain) = 0;
+
+  /**
+  * @brief 获取domain相关的文件路径，相对于sourcesDir来说
+  *
+  * @param domain ...
+  * @return QString domain文件名
+  **/
+  virtual const QString getDomainSourceFileName(const ApiDomain &domain) = 0;
+
+  /**
+  * @brief 生成API请求源码。
+  */
+  virtual const QString getRequestSourceCode(const ApiRequest &request) = 0;
+
+  /**
+  * @brief 获取API请求文件路径，相对于sourcesDir来说
+  **/
+  virtual const QString getRequestSourceFileName(ApiRequest request) = 0;
+
+  /**
+  * @brief 生成API响应源码。
+  */
+  virtual const QString getResponseSourceCode(ApiResponse response) = 0;
+  /**
+  * @brief 生成API响应文件路径，，相对于sourcesDir来说
+  */
+  virtual const QString getResponseSourceFileName(ApiResponse response) = 0;
+  /**
+   * @brief 获取SDK版本文件路径，用于替换版本号。版本文件中版本号用dynamicVersionNo表示。用户的继承类必须实现此函数
+   */
+  virtual const QString getSdkVersionFilePath() = 0;
+
+  /**
+   * @brief
+   * @return void
+   **/
+  void generateSdkVersion();
+
+  /**
+   * @brief SDK基础框架源文件所在路径。用户的继承类必须实现此函数
+   */
+  virtual const QString getSdkBasicSourceDir() = 0;
+
+  void process();
+
+  void generateDomains();
+  void generateRequests();
+  void generateResponses();
+
+private:
+  void init();
+  void writeFile(const QString &codeStr, const QString &absoluteFilePath);
+
+  SdkParser *parser;
+
+  QList<ApiDomain> domains;
+  QList<ApiRequest> requests;
+  QList<ApiResponse> responses;
 };
 
 #endif // SDKGENERATOR_H

@@ -10,7 +10,7 @@ class SdkParser
 public:
   virtual const QList<ApiDomain> getApiDomains() = 0;
   virtual const QList<ApiRequest> getApiRequests() = 0;
-  virtual const QList<ApiResponse> getApiResponse() = 0;
+  virtual const QList<ApiResponse> getApiResponses() = 0;
 };
 
 #endif // SDKPARSER_H

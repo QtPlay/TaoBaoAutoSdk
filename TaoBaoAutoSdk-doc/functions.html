@@ -80,6 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
     </ul>
@@ -90,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -143,6 +144,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>generate()
+: <a class="el" href="classSdkGenerator.html#a85024a1feec99b7969b821b495205dc2">SdkGenerator</a>
+</li>
+<li>generateDomains()
+: <a class="el" href="classSdkGenerator.html#aa2af3967e4c79826fafef8f461e13a6d">SdkGenerator</a>
+</li>
+<li>generateRequests()
+: <a class="el" href="classSdkGenerator.html#a1a906584f9c567e3de4fe1ca15455a8d">SdkGenerator</a>
+</li>
+<li>generateResponses()
+: <a class="el" href="classSdkGenerator.html#a9059b3e9233760424995a784be5bf252">SdkGenerator</a>
+</li>
+<li>generateSdkVersion()
+: <a class="el" href="classSdkGenerator.html#a5e5cc42a04f0804a9965f2a84694fb88">SdkGenerator</a>
+</li>
 <li>getApiDomains()
 : <a class="el" href="classMetaSdkParser.html#a5ffa7a936f28b65b3a53cba58a5ba047">MetaSdkParser</a>
 , <a class="el" href="classSdkParser.html#ae7ddf6d7523a42405235735a17faf394">SdkParser</a>
@@ -154,11 +170,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classMetaSdkParser.html#a4856857b4784e93bb33a1316569dbbce">MetaSdkParser</a>
 , <a class="el" href="classSdkParser.html#a936010027c0218416efa9846b72c2e75">SdkParser</a>
 </li>
-<li>getApiResponse()
-: <a class="el" href="classSdkParser.html#ac6464d197f891a3da761e1072fd59bb4">SdkParser</a>
-</li>
 <li>getApiResponses()
 : <a class="el" href="classMetaSdkParser.html#ae920e712ad0f3579e350fb6f4bd7062c">MetaSdkParser</a>
+, <a class="el" href="classSdkParser.html#a872a6ba003f299c2bb13369f50ab4e8a">SdkParser</a>
 </li>
 <li>getApiType()
 : <a class="el" href="classApiField.html#afcb58f9fb50e1a5f5d9cb19977a4f93d">ApiField</a>
@@ -167,8 +181,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classApiField.html#a913191824861c5a6139c54a9b6c3992a">ApiField</a>
 </li>
 <li>getClassName()
-: <a class="el" href="classApiDomain.html#a9e5cc793f50305fe253cc4d7366d47f3">ApiDomain</a>
-, <a class="el" href="classApiResponse.html#a39bee83dbc5ffe2e3a174fe8b6ede3ee">ApiResponse</a>
+: <a class="el" href="classApiResponse.html#a39bee83dbc5ffe2e3a174fe8b6ede3ee">ApiResponse</a>
+, <a class="el" href="classApiDomain.html#a9e5cc793f50305fe253cc4d7366d47f3">ApiDomain</a>
 </li>
 <li>getDefineLangType()
 : <a class="el" href="classApiField.html#a9968c530b20954e07742978825d6abd3">ApiField</a>
@@ -179,6 +193,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getDomainLangType()
 : <a class="el" href="classCppQtTypeMapper.html#a3b554393f99bb724f8395a1cd3ccb89d">CppQtTypeMapper</a>
 , <a class="el" href="classTypeMapper.html#a214ec0fc350b972a3e8ed4368cb3c053">TypeMapper</a>
+</li>
+<li>getDomainSourceCode()
+: <a class="el" href="classSdkGenerator.html#aaf449b45155ddf96806b88dbba15e879">SdkGenerator</a>
+</li>
+<li>getDomainSourceFileName()
+: <a class="el" href="classSdkGenerator.html#a35dcdea57d0c940a94b7f1d90f3e10bd">SdkGenerator</a>
 </li>
 <li>getFields()
 : <a class="el" href="classBaseObject.html#aca207fde57b536a1d318462e26402c16">BaseObject</a>
@@ -208,12 +228,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classTypeMapper.html#a36586609bdb276f9b4b63dd60a5eee31">TypeMapper</a>
 , <a class="el" href="classCppQtTypeMapper.html#a3677be9bdc260ba3b10ec867f9fed751">CppQtTypeMapper</a>
 </li>
+<li>getRequestSourceCode()
+: <a class="el" href="classSdkGenerator.html#acd76329f085f476eaaaa05c0d4ed0104">SdkGenerator</a>
+</li>
+<li>getRequestSourceFileName()
+: <a class="el" href="classSdkGenerator.html#af9eebec4e14b3ec2c1b174ba362e0b48">SdkGenerator</a>
+</li>
 <li>getResponseClassName()
 : <a class="el" href="classApiRequest.html#ae0a0f7fb10716a60698e80c025490c44">ApiRequest</a>
 </li>
 <li>getResponseLangType()
-: <a class="el" href="classTypeMapper.html#a3d8ba32c32dbc5f7965f925dc74b0b96">TypeMapper</a>
-, <a class="el" href="classCppQtTypeMapper.html#a4b27480e949d07b3e804aed293f9e48c">CppQtTypeMapper</a>
+: <a class="el" href="classCppQtTypeMapper.html#a4b27480e949d07b3e804aed293f9e48c">CppQtTypeMapper</a>
+, <a class="el" href="classTypeMapper.html#a3d8ba32c32dbc5f7965f925dc74b0b96">TypeMapper</a>
+</li>
+<li>getResponseSourceCode()
+: <a class="el" href="classSdkGenerator.html#a96e4a1533bbc99edf3966f884b5bd0ce">SdkGenerator</a>
+</li>
+<li>getResponseSourceFileName()
+: <a class="el" href="classSdkGenerator.html#a34776ebda07eb49e41bb83cac47cba5b">SdkGenerator</a>
+</li>
+<li>getSdkBasicSourceDir()
+: <a class="el" href="classSdkGenerator.html#a18de210070a687d15e16462220860fb0">SdkGenerator</a>
+</li>
+<li>getSdkVersionFilePath()
+: <a class="el" href="classSdkGenerator.html#a1c7c1d6c1a2ea8461cbd8c63bab95619">SdkGenerator</a>
 </li>
 <li>getSetMethod()
 : <a class="el" href="classStringKit.html#aa3edf53c0a0542cb6a58157d7ffce362">StringKit</a>
@@ -256,9 +294,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 
 
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>process()
+: <a class="el" href="classSdkGenerator.html#acb246b43baefe29ea5fc0c156629e4a7">SdkGenerator</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>SDK_TEMPLATE_DIR
 : <a class="el" href="classSdkConstants.html#a4ddca5d25363751c0eb896995f83b613">SdkConstants</a>
+</li>
+<li>SdkGenerator()
+: <a class="el" href="classSdkGenerator.html#ab4af141a96284c669ed939dfa7b13d72">SdkGenerator</a>
 </li>
 <li>setApiLevel()
 : <a class="el" href="classApiField.html#ade535859f3dca5756145abce5c2f11f8">ApiField</a>
@@ -286,6 +334,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SOURCES_DIR
 : <a class="el" href="classSdkConstants.html#a1d3a80321cb8ecac48c12ebba26e2bda">SdkConstants</a>
+</li>
+<li>sourcesDir
+: <a class="el" href="classSdkGenerator.html#a5ba8dfe3c67cced1562c6aa6ff75f7ce">SdkGenerator</a>
 </li>
 </ul>
 
@@ -316,7 +367,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 28 2012 18:08:29 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 29 2012 11:03:41 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
