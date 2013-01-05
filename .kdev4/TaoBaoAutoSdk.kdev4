@@ -9,11 +9,40 @@ ProjectRootRelative=./
 
 [CMake][CMake Build Directory 0]
 Build Directory Path=file:///home/sd44/projects/TaoBaoAutoSdk/build
-Build Type=Debug
+Build Type=
 CMake Binary=file:///usr/bin/cmake
 Environment Profile=
 Extra Arguments=
-Install Directory=file:///usr/local
+Install Directory=file:///home/sd44/projects/TaoBaoAutoSdk/build
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=新建 原生应用程序 配置
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Debugger Shell=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+Display Demangle Names=true
+Display Static Members=false
+EnvironmentGroup=default
+Executable=file:///home/sd44/projects/TaoBaoAutoSdk/build/src/testQtDomain
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+GDB Path=
+Project Target=TaoBaoAutoSdk,src,testQtDomain
+Remote GDB Config Script=
+Remote GDB Run Script=
+Remote GDB Shell Script=
+Start With=ApplicationOutput
+Use External Terminal=false
+Working Directory=
+isExecutable=true
 
 [Project]
 VersionControlSupport=kdevgit

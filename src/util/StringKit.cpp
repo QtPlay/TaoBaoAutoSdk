@@ -20,7 +20,7 @@
 
 #include <util/StringKit.h>
 
-const QString StringKit::getSetMethod(const QString &str)
+QString StringKit::getSetMethod(const QString &str)
 {
   if (str.isEmpty())
     return "";
@@ -34,7 +34,7 @@ const QString StringKit::getSetMethod(const QString &str)
   return tmpStr;
 }
 
-const QString StringKit::capitalize(const QString& str)
+QString StringKit::capitalize(const QString& str)
 {
   if (str.isEmpty())
     return "";
@@ -45,7 +45,7 @@ const QString StringKit::capitalize(const QString& str)
   return tmpStr;
 }
 
-const QString StringKit::toLowerWithUnderscore(const QString& str)
+QString StringKit::toLowerWithUnderscore(const QString& str)
 {
   if (str.isEmpty())
     return "";
@@ -67,7 +67,7 @@ const QString StringKit::toLowerWithUnderscore(const QString& str)
   return tmpStr;
 }
 
-const QString StringKit::toCamelCase(const QString& str)
+QString StringKit::toCamelCase(const QString& str)
 {
   if (str.isEmpty())
     return "";
@@ -76,14 +76,14 @@ const QString StringKit::toCamelCase(const QString& str)
   for (int i = 0; i < str.size(); i++) {
     if (str.at(i) == '.' || str.at(i) == '_') {
       if (++i < str.size())
-        tmpStr += str.at(i).toLower();
+        tmpStr += str.at(i).toUpper();
     } else
       tmpStr += str.at(i);
   }
   return tmpStr;
 }
 
-const QString StringKit::toPascalCase(const QString& str)
+QString StringKit::toPascalCase(const QString& str)
 {
   if (str.isEmpty())
     return "";
@@ -93,7 +93,7 @@ const QString StringKit::toPascalCase(const QString& str)
   return tmpStr;
 }
 
-const QString StringKit::escapeInvalidXml(const QString& str)
+QString StringKit::escapeInvalidXml(const QString& str)
 {
   return str;
 }

@@ -32,7 +32,7 @@ public:
    * @param str 传入的字符串
    * @return const QString&
    **/
-  static const QString getSetMethod(const QString &str);
+  static QString getSetMethod(const QString &str);
 
   /**
    * @brief 生成首字母大写的字符串
@@ -40,7 +40,7 @@ public:
    * @param str ...
    * @return const QString&
    **/
-  static const QString capitalize(const QString &str);
+  static QString capitalize(const QString &str);
 
   /**
    * @brief 将字符串由驼峰转换为下划线形式
@@ -48,7 +48,7 @@ public:
    * @param str ...
    * @return const QString&
    **/
-  static const QString toLowerWithUnderscore(const QString &str);
+  static QString toLowerWithUnderscore(const QString &str);
 
   /**
    * @brief 将字符串转换为驼峰风格
@@ -56,7 +56,7 @@ public:
    * @param str ...
    * @return const QString&
    **/
-  static const QString toCamelCase(const QString &str);
+  static QString toCamelCase(const QString &str);
 
   /**
    * @brief 将字符串转化为帕斯卡风格
@@ -64,7 +64,7 @@ public:
    * @param str ...
    * @return const QString&
    **/
-  static const QString toPascalCase(const QString &str);
+  static QString toPascalCase(const QString &str);
 
   /**
    * @brief 过滤不可见字符，不知在Qt中是否需要实现
@@ -72,7 +72,7 @@ public:
    * @param str ...
    * @return const QString&
    **/
-  static const QString escapeInvalidXml(const QString &str);
+  static QString escapeInvalidXml(const QString &str);
 };
 
 #endif // STRINGKIT_H

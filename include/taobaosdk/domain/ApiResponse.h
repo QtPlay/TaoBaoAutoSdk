@@ -26,7 +26,7 @@
 class ApiResponse : public BaseObject
 {
 public:
-  const QString getClassName() {
+  QString getClassName() const {
     return StringKit::capitalize(StringKit::toCamelCase(getName().mid(7)))+
 "Response";
   }

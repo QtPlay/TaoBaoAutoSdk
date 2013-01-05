@@ -32,7 +32,7 @@ public:
    * @return const QString
    **/
 
-  const QString getRequestClassName() {
+  QString getRequestClassName() const {
     return StringKit::capitalize(StringKit::toCamelCase(getName().mid(7))) +
 "Request";
   }
@@ -42,13 +42,13 @@ public:
    *
    * @return const QString
    **/
-  const QString getResponseClassName() {
+  QString getResponseClassName() const {
     return StringKit::capitalize(StringKit::toCamelCase(getName().mid(7))) +
 "Response";
   }
 
   bool isUploadRequest() {
-    foreach(const ApiField field, getFields()) {
+    foreach(ApiField field, getFields()) {
       if (field.getApiType() == "byte[]")
         return true;
     }

@@ -1,6 +1,0 @@
-<map id="BaseObject" name="BaseObject">
-<area shape="rect" id="node5" href="$classApiDomain.html" title="{ApiDomain\n||+ isInUsed()\l+ setInUsed()\l+ getClassName()\l}" alt="" coords="5,464,133,584"/>
-<area shape="rect" id="node7" href="$classApiRequest.html" title="{ApiRequest\n||+ getRequestClassName()\l+ getResponseClassName()\l+ isUploadRequest()\l}" alt="" coords="157,464,344,584"/>
-<area shape="rect" id="node9" href="$classApiResponse.html" title="{ApiResponse\n||+ getClassName()\l}" alt="" coords="368,481,496,567"/>
-<area shape="rect" id="node2" href="$classNameObject.html" title="{NameObject\n||+ getName()\l+ setName()\l+ getDesc()\l+ setDesc()\l+ equals()\l}" alt="" coords="204,5,297,160"/>
-</map>

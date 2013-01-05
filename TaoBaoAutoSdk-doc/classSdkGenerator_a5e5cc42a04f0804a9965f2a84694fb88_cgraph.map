@@ -1,3 +1,0 @@
-<map id="SdkGenerator::generateSdkVersion" name="SdkGenerator::generateSdkVersion">
-<area shape="rect" id="node3" href="$classSdkGenerator.html#a1c7c1d6c1a2ea8461cbd8c63bab95619" title="获取SDK版本文件路径，用于替换版本号。版本文件中版本号用dynamicVersionNo表示。用户的继承类必须实现此函数" alt="" coords="237,5,432,51"/>
-</map>

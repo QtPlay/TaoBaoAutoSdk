@@ -53,16 +53,13 @@ file%1:\n%2.\n App will exit").arg(filePath).arg(file.errorString());
     qDebug() << "The file is not an taobao metadata file.";
     exit(1);
   }
-  /**
-   * @todo 尚未设置Sdk VersionNo
-   **/
   if (root.hasAttribute("versionNo")) {
-    ; //TODO: set the sdk version
+    ;
   }
   return true;
 }
 
-const QList< ApiDomain > MetaSdkParser::getApiDomains()
+QList< ApiDomain > MetaSdkParser::getApiDomains()
 {
   QList<ApiDomain> apiDomains;
   QDomNodeList structNodes;
@@ -75,7 +72,7 @@ const QList< ApiDomain > MetaSdkParser::getApiDomains()
     tmp.setDesc(structNode.firstChildElement("desc").text());
     QDomNodeList propNodes = structNode.toElement().elementsByTagName("prop");
     for (int j = 0; j < propNodes.size(); j++) {
-      QDomNode propNode;
+      QDomNode propNode = propNodes.at(j);
       ApiField field;
       field.setName(propNode.firstChildElement("name").text());
       field.setDesc(propNode.firstChildElement("desc").text());
@@ -96,9 +93,9 @@ const QList< ApiDomain > MetaSdkParser::getApiDomains()
  * 与getApiResponse不同的是, Requests只是借助level确定langType
  * 而Response直接存储meta数据中的level。
  *
- * @return const QList< ApiDomain >
+ * @return QList< ApiDomain >
  **/
-const QList< ApiRequest > MetaSdkParser::getApiRequests()
+QList< ApiRequest > MetaSdkParser::getApiRequests()
 {
   QList<ApiRequest> apiRequests;
   QDomNodeList apiNodes = root.elementsByTagName("api");
@@ -111,7 +108,7 @@ const QList< ApiRequest > MetaSdkParser::getApiRequests()
     QDomElement requestNode = apiNode.firstChildElement("request");
     QDomNodeList paramNodes = requestNode.elementsByTagName("param");
     for (int j = 0; j < paramNodes.size(); j++) {
-      QDomNode paramNode = paramNodes.at(i);
+      QDomNode paramNode = paramNodes.at(j);
       ApiField field;
       field.setName(paramNode.firstChildElement("name").text());
       field.setDesc(paramNode.firstChildElement("desc").text());
@@ -134,7 +131,7 @@ const QList< ApiRequest > MetaSdkParser::getApiRequests()
   return apiRequests;
 }
 
-const QList< ApiResponse > MetaSdkParser::getApiResponses()
+QList< ApiResponse > MetaSdkParser::getApiResponses()
 {
   QList<ApiResponse> apiResponses;
   QDomNodeList apiNodes = root.elementsByTagName("api");
@@ -144,10 +141,10 @@ const QList< ApiResponse > MetaSdkParser::getApiResponses()
     ApiResponse tmp;
     tmp.setName(apiNode.firstChildElement("name").text());
     tmp.setDesc(apiNode.firstChildElement("desc").text());
-    QDomElement responseNode = apiNode.firstChildElement("request");
+    QDomElement responseNode = apiNode.firstChildElement("response");
     QDomNodeList paramNodes = responseNode.elementsByTagName("param");
     for (int j = 0; j < paramNodes.size(); j++) {
-      QDomNode paramNode = paramNodes.at(i);
+      QDomNode paramNode = paramNodes.at(j);
       ApiField field;
       field.setName(paramNode.firstChildElement("name").text());
       field.setDesc(paramNode.firstChildElement("desc").text());

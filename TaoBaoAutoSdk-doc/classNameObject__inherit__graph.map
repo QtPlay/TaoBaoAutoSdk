@@ -1,7 +1,0 @@
-<map id="NameObject" name="NameObject">
-<area shape="rect" id="node3" href="$classApiField.html" title="Api属性，针对metadata.xml中的prop下字段" alt="" coords="5,209,171,519"/>
-<area shape="rect" id="node5" href="$classBaseObject.html" title="{BaseObject\n||+ getLastModified()\l+ setLastModified()\l+ setFields()\l+ getFields()\l+ addField()\l+ isContainField()\l+ isContainListField()\l+ isContainDateField()\l}" alt="" coords="195,261,347,467"/>
-<area shape="rect" id="node7" href="$classApiDomain.html" title="{ApiDomain\n||+ isInUsed()\l+ setInUsed()\l+ getClassName()\l}" alt="" coords="25,568,153,688"/>
-<area shape="rect" id="node9" href="$classApiRequest.html" title="{ApiRequest\n||+ getRequestClassName()\l+ getResponseClassName()\l+ isUploadRequest()\l}" alt="" coords="177,568,364,688"/>
-<area shape="rect" id="node11" href="$classApiResponse.html" title="{ApiResponse\n||+ getClassName()\l}" alt="" coords="388,585,516,671"/>
-</map>

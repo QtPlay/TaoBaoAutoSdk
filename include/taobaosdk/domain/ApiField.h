@@ -46,7 +46,7 @@ public:
     this->apiType = apiType;
   }
 
-  const QString &getApiLevel() const {
+  QString getApiLevel() const {
     return apiLevel;
   }
 
@@ -59,7 +59,7 @@ public:
    *
    * @return const QString
    **/
-  const QString getCamelCaseName() const {
+  QString getCamelCaseName() const {
     return StringKit::toCamelCase(getName());
   }
 
@@ -68,7 +68,7 @@ public:
    *
    * @return const QString
    **/
-  const QString getPascalCaseName() const {
+  QString getPascalCaseName() const {
     return StringKit::toPascalCase(getName());
   }
 
@@ -77,7 +77,7 @@ public:
    *
    * @return const QString
    **/
-  const QString getGetMethodName() const {
+  QString getGetMethodName() const {
     return "get" + getMethodName();
   }
 
@@ -86,11 +86,11 @@ public:
    *
    * @return const QString
    **/
-  const QString getSetMethodName() const {
+  QString getSetMethodName() const {
     return "set" + getMethodName();
   }
 
-  const QString getMethodName() const {
+  QString getMethodName() const {
     return StringKit::getSetMethod(getCamelCaseName());
   }
   /**
@@ -111,8 +111,8 @@ public:
   /**
    * @brief 获取定义类型：属性定义，方法定义，返回值。
    *
-   * @param prefix 列表类型的前缀
-   * @param suffix 列表类型的后缀
+   * @param prefix 列表类型的前缀，如"QList <"
+   * @param suffix 列表类型的后缀，如">"
    */
   QString getDefineLangType(QString prefix, QString suffix) {
     QString str;

@@ -20,6 +20,7 @@
 
 #include <generator/SdkGenerator.h>
 #include <QDebug>
+#include <QDate>
 
 void SdkGenerator::writeFile(const QString &codeStr,const  QString & absoluteFilePath)
 {
@@ -41,7 +42,7 @@ void SdkGenerator::generateSdkVersion()
   QByteArray fileContents = outFile.readAll();
   outFile.close();
   fileContents.replace("dynamicVersionNo",
-                  QDate::currentDate().toString("yyyyMMdd").toLocal8Bit());
+                  QDate::currentDate().toString("yyyyMMdd").toUtf8());
 
   if (!outFile.open(QIODevice::WriteOnly | QIODevice::Truncate |
 QIODevice::Text))
@@ -56,7 +57,6 @@ void SdkGenerator::init() {
   requests = parser->getApiRequests();
   responses = parser->getApiResponses();
 
-  sourcesDir = getSdkBasicSourceDir();
 }
 
 

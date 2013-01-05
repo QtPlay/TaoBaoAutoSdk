@@ -8,7 +8,7 @@
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    but WITHOUT ANY WARRANTY; wiqtextstream QString str = QString::fromUtf16(L"盒");  utf-8thout even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
@@ -32,11 +32,15 @@ class SdkGenerator
 public:
   SdkGenerator(SdkParser *parser) {
     this->parser = parser;
+    domains = parser->getApiDomains();
+    requests = parser->getApiRequests();
+    responses = parser->getApiResponses();
     init();
   }
 
-  void generate(QDir outDir)
+  void generate()
   {
+    sourcesDir = getSdkBasicSourceDir();
     process();
   }
 
@@ -45,7 +49,7 @@ protected:
   /**
   * @brief 生成数据结构源码。
   */
-  virtual const QString getDomainSourceCode(const ApiDomain &domain) = 0;
+  virtual QString getDomainSourceCode(const ApiDomain &domain) = 0;
 
   /**
   * @brief 获取domain相关的文件路径，相对于sourcesDir来说
@@ -53,30 +57,30 @@ protected:
   * @param domain ...
   * @return QString domain文件名
   **/
-  virtual const QString getDomainSourceFileName(const ApiDomain &domain) = 0;
+  virtual QString getDomainSourceFileName(const ApiDomain &domain) = 0;
 
   /**
   * @brief 生成API请求源码。
   */
-  virtual const QString getRequestSourceCode(const ApiRequest &request) = 0;
+  virtual QString getRequestSourceCode(const ApiRequest &request) = 0;
 
   /**
   * @brief 获取API请求文件路径，相对于sourcesDir来说
   **/
-  virtual const QString getRequestSourceFileName(ApiRequest request) = 0;
+  virtual QString getRequestSourceFileName(const ApiRequest &request) = 0;
 
   /**
   * @brief 生成API响应源码。
   */
-  virtual const QString getResponseSourceCode(ApiResponse response) = 0;
+  virtual QString getResponseSourceCode(const ApiResponse &response) = 0;
   /**
   * @brief 生成API响应文件路径，，相对于sourcesDir来说
   */
-  virtual const QString getResponseSourceFileName(ApiResponse response) = 0;
+  virtual QString getResponseSourceFileName(const ApiResponse &response) = 0;
   /**
    * @brief 获取SDK版本文件路径，用于替换版本号。版本文件中版本号用dynamicVersionNo表示。用户的继承类必须实现此函数
    */
-  virtual const QString getSdkVersionFilePath() = 0;
+  virtual QString getSdkVersionFilePath() = 0;
 
   /**
    * @brief
@@ -87,7 +91,7 @@ protected:
   /**
    * @brief SDK基础框架源文件所在路径。用户的继承类必须实现此函数
    */
-  virtual const QString getSdkBasicSourceDir() = 0;
+  virtual QString getSdkBasicSourceDir() = 0;
 
   void process();
 

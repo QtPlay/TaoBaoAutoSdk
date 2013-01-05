@@ -29,7 +29,7 @@
 class BaseObject : public NameObject
 {
 public:
-  const QString &getLastModified() const {
+  QString getLastModified() const {
     return lastModified;
   }
 
@@ -41,28 +41,28 @@ public:
     this->fields = fields;
   }
 
-  const QList<ApiField> &getFields() {
-    qSort(fields);
+  QList<ApiField> getFields() const {
     return fields;
   }
 
   void addField(const ApiField &field) {
     if (!getFields().contains(field)) {
-      fields.append(field);
+      fields += field;
+      qSort(fields);
     }
   }
 
   /**
    * 验证对象是否包含属性。
    */
-  bool isContainField() {
+  bool isContainField() const {
     return !getFields().isEmpty();
   }
 
   /**
    * 验证对象是否包含列表属性。
    */
-  bool isContainListField() {
+  bool isContainListField() const {
     ApiField field;
     foreach (field , fields) {
       if (field.isListField()) {
@@ -75,7 +75,7 @@ public:
   /**
    * 验证是否包含日期属性。
    */
-  bool isContainDateField() {
+  bool isContainDateField() const{
     ApiField field;
     foreach (field, getFields()) {
       if ("Date" == field.getApiType()) {

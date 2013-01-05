@@ -5,9 +5,9 @@
 class CppQtTypeMapper : public TypeMapper
 {
 public:
-  const QString getDomainLangType(const QString &apiType) const;
-  const QString getRequestLangType(const QString &apiType) const;
-  const QString getResponseLangType(const QString &apiType) const;
+  virtual QString getDomainLangType(const QString &apiType) const;
+  virtual QString getRequestLangType(const QString &apiType) const;
+  virtual QString getResponseLangType(const QString &apiType) const;
 };
 
 #endif // CPPQTTYPEMAPPER_H

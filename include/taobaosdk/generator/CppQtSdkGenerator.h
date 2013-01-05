@@ -1,6 +1,6 @@
 /*
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) 2012  sea <email>
+    Copyright (C) 2013  sea <email>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -17,26 +17,25 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
+#ifndef CPPQTSDKGENERATOR_H
+#define CPPQTSDKGENERATOR_H
 
-#ifndef APIDOMAIN_H
-#define APIDOMAIN_H
-#include <domain/BaseObject.h>
+#include <generator/SdkGenerator.h>
 
-class ApiDomain : public BaseObject
+class CppQtSdkGenerator : public SdkGenerator
 {
 public:
-  bool isInUsed() const {
-    return inUsed;
-  }
-  void setInUsed(bool use) {
-    inUsed = use;
-  }
-  QString getClassName() const {
-    return StringKit::capitalize(StringKit::toCamelCase(getName()));
-  }
+  CppQtSdkGenerator(SdkParser* parser);
 
-private:
-  bool inUsed;
+protected:
+  virtual QString getSdkBasicSourceDir();
+  virtual QString getSdkVersionFilePath();
+  virtual QString getResponseSourceFileName(const ApiResponse &response);
+  virtual QString getResponseSourceCode(const ApiResponse &response);
+  virtual QString getRequestSourceFileName(const ApiRequest &request);
+  virtual QString getRequestSourceCode(const ApiRequest& request);
+  virtual QString getDomainSourceFileName(const ApiDomain& domain);
+  virtual QString getDomainSourceCode(const ApiDomain& domain);
 };
 
-#endif // APIDOMAIN_H
+#endif // CPPQTSDKGENERATOR_H

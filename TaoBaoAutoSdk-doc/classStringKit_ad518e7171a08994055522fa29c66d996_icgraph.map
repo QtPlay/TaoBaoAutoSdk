@@ -1,6 +1,0 @@
-<map id="StringKit::capitalize" name="StringKit::capitalize">
-<area shape="rect" id="node3" href="$classApiDomain.html#a9e5cc793f50305fe253cc4d7366d47f3" title="ApiDomain::getClassName" alt="" coords="221,5,403,35"/>
-<area shape="rect" id="node5" href="$classApiRequest.html#aa022948359fecacea9e5b2cb91705ab0" title="获得请求类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="195,59,429,88"/>
-<area shape="rect" id="node7" href="$classApiRequest.html#ae0a0f7fb10716a60698e80c025490c44" title="获得响应类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="191,112,433,141"/>
-<area shape="rect" id="node9" href="$classApiResponse.html#a39bee83dbc5ffe2e3a174fe8b6ede3ee" title="ApiResponse::getClassName" alt="" coords="215,165,409,195"/>
-</map>

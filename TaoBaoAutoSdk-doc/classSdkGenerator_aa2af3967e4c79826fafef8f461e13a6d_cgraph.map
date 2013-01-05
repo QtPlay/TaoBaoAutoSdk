@@ -1,4 +1,0 @@
-<map id="SdkGenerator::generateDomains" name="SdkGenerator::generateDomains">
-<area shape="rect" id="node3" href="$classSdkGenerator.html#aaf449b45155ddf96806b88dbba15e879" title="生成数据结构源码。" alt="" coords="267,5,512,35"/>
-<area shape="rect" id="node5" href="$classSdkGenerator.html#a35dcdea57d0c940a94b7f1d90f3e10bd" title="获取domain相关的文件路径，相对于sourcesDir来说" alt="" coords="283,58,496,105"/>
-</map>

@@ -35,9 +35,10 @@ class MetaSdkParser : public SdkParser
 {
 public:
   MetaSdkParser(TypeMapper *typeMapper, const QString &metadataXmlPath);
-  virtual const QList< ApiDomain > getApiDomains();
-  virtual const QList< ApiRequest > getApiRequests();
-  virtual const QList< ApiResponse > getApiResponses();
+  virtual QList< ApiDomain > getApiDomains();
+  virtual QList< ApiRequest > getApiRequests();
+  virtual QList< ApiResponse > getApiResponses();
+
 private:
   bool readFile(const QString &filePath);
   /**
