@@ -1,0 +1,4 @@
+<map id="CppQtSdkGenerator" name="CppQtSdkGenerator">
+<area shape="rect" id="node2" href="$classSdkGenerator.html" title="{SdkGenerator\n|# sourcesDir\l&#45; domains\l&#45; requests\l&#45; responses\l|+ SdkGenerator()\l+ generate()\l# getDomainSourceCode()\l# getDomainSourceFileName()\l# getRequestSourceCode()\l# getRequestSourceFileName()\l# getResponseSourceCode()\l# getResponseSourceFileName()\l# getSdkVersionFilePath()\l# generateSdkVersion()\l# getSdkBasicSourceDir()\l# process()\l# generateDomains()\l# generateRequests()\l# generateResponses()\l&#45; init()\l&#45; writeFile()\l}" alt="" coords="5,193,219,607"/>
+<area shape="rect" id="node4" href="$classSdkParser.html" title="{SdkParser\n||+ getApiDomains()\l+ getApiRequests()\l+ getApiResponses()\l}" alt="" coords="40,5,184,125"/>
+</map>

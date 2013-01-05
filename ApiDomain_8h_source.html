@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -67,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,24 +115,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="classApiDomain.html#a9cc38e9e00baf218fc3cd71dc2785137">   28</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classApiDomain.html#a9cc38e9e00baf218fc3cd71dc2785137">isInUsed</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> inUsed;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classApiDomain.html#a72241a3a5dd51d51adfe21ca46baaaa1">inUsed</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  }</div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="classApiDomain.html#a707c8df5d889f9e423cb0aaa658ee039">   31</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classApiDomain.html#a707c8df5d889f9e423cb0aaa658ee039">setInUsed</a>(<span class="keywordtype">bool</span> use) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    inUsed = use;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classApiDomain.html#a72241a3a5dd51d51adfe21ca46baaaa1">inUsed</a> = use;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="classApiDomain.html#a9e5cc793f50305fe253cc4d7366d47f3">   34</a></span>&#160;  <span class="keyword">const</span> QString <a class="code" href="classApiDomain.html#a9e5cc793f50305fe253cc4d7366d47f3">getClassName</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classStringKit.html#ad518e7171a08994055522fa29c66d996" title="生成首字母大写的字符串">StringKit::capitalize</a>(<a class="code" href="classStringKit.html#a1b746ddc6d6a5237aa2b6231b0872afd" title="将字符串转换为驼峰风格">StringKit::toCamelCase</a>(<a class="code" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5">getName</a>()));</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="classApiDomain.html#a53ce16af6f98eb3510c7f4bfe02bb64a">   34</a></span>&#160;  QString <a class="code" href="classApiDomain.html#a53ce16af6f98eb3510c7f4bfe02bb64a">getClassName</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classStringKit.html#abc6e51c86e7cc4f4e526240dfc79c0f6" title="生成首字母大写的字符串">StringKit::capitalize</a>(<a class="code" href="classStringKit.html#a01a7131f3c5df9cd79a32fdb3c96fa18" title="将字符串转换为驼峰风格">StringKit::toCamelCase</a>(<a class="code" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5">getName</a>()));</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">bool</span> inUsed;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="classApiDomain.html#a72241a3a5dd51d51adfe21ca46baaaa1">   39</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classApiDomain.html#a72241a3a5dd51d51adfe21ca46baaaa1">inUsed</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif // APIDOMAIN_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2012 11:03:39 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 6 2013 01:02:27 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

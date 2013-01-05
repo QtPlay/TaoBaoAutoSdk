@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,21 +98,21 @@ Collaboration diagram for StringKit:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa3edf53c0a0542cb6a58157d7ffce362"><td class="memItemLeft" align="right" valign="top">static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStringKit.html#aa3edf53c0a0542cb6a58157d7ffce362">getSetMethod</a> (const QString &amp;str)</td></tr>
-<tr class="memdesc:aa3edf53c0a0542cb6a58157d7ffce362"><td class="mdescLeft">&#160;</td><td class="mdescRight">生成JAVA/Qt风格的get/set方法名  <a href="#aa3edf53c0a0542cb6a58157d7ffce362"></a><br/></td></tr>
-<tr class="memitem:ad518e7171a08994055522fa29c66d996"><td class="memItemLeft" align="right" valign="top">static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStringKit.html#ad518e7171a08994055522fa29c66d996">capitalize</a> (const QString &amp;str)</td></tr>
-<tr class="memdesc:ad518e7171a08994055522fa29c66d996"><td class="mdescLeft">&#160;</td><td class="mdescRight">生成首字母大写的字符串  <a href="#ad518e7171a08994055522fa29c66d996"></a><br/></td></tr>
-<tr class="memitem:a70b90be0cd8d2dc9c1dcef477dd546a8"><td class="memItemLeft" align="right" valign="top">static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStringKit.html#a70b90be0cd8d2dc9c1dcef477dd546a8">toLowerWithUnderscore</a> (const QString &amp;str)</td></tr>
-<tr class="memdesc:a70b90be0cd8d2dc9c1dcef477dd546a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字符串由驼峰转换为下划线形式  <a href="#a70b90be0cd8d2dc9c1dcef477dd546a8"></a><br/></td></tr>
-<tr class="memitem:a1b746ddc6d6a5237aa2b6231b0872afd"><td class="memItemLeft" align="right" valign="top">static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStringKit.html#a1b746ddc6d6a5237aa2b6231b0872afd">toCamelCase</a> (const QString &amp;str)</td></tr>
-<tr class="memdesc:a1b746ddc6d6a5237aa2b6231b0872afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字符串转换为驼峰风格  <a href="#a1b746ddc6d6a5237aa2b6231b0872afd"></a><br/></td></tr>
-<tr class="memitem:ad5fa2686250c03f71d1cdb1785fe37bc"><td class="memItemLeft" align="right" valign="top">static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStringKit.html#ad5fa2686250c03f71d1cdb1785fe37bc">toPascalCase</a> (const QString &amp;str)</td></tr>
-<tr class="memdesc:ad5fa2686250c03f71d1cdb1785fe37bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字符串转化为帕斯卡风格  <a href="#ad5fa2686250c03f71d1cdb1785fe37bc"></a><br/></td></tr>
-<tr class="memitem:a1e45b7245b6604a8bde1893d1f660cc4"><td class="memItemLeft" align="right" valign="top">static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStringKit.html#a1e45b7245b6604a8bde1893d1f660cc4">escapeInvalidXml</a> (const QString &amp;str)</td></tr>
-<tr class="memdesc:a1e45b7245b6604a8bde1893d1f660cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">过滤不可见字符，不知在Qt中是否需要实现  <a href="#a1e45b7245b6604a8bde1893d1f660cc4"></a><br/></td></tr>
+<tr class="memitem:aad5c1889468027fbc8f81472ad22ac66"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStringKit.html#aad5c1889468027fbc8f81472ad22ac66">getSetMethod</a> (const QString &amp;str)</td></tr>
+<tr class="memdesc:aad5c1889468027fbc8f81472ad22ac66"><td class="mdescLeft">&#160;</td><td class="mdescRight">生成JAVA/Qt风格的get/set方法名  <a href="#aad5c1889468027fbc8f81472ad22ac66"></a><br/></td></tr>
+<tr class="memitem:abc6e51c86e7cc4f4e526240dfc79c0f6"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStringKit.html#abc6e51c86e7cc4f4e526240dfc79c0f6">capitalize</a> (const QString &amp;str)</td></tr>
+<tr class="memdesc:abc6e51c86e7cc4f4e526240dfc79c0f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">生成首字母大写的字符串  <a href="#abc6e51c86e7cc4f4e526240dfc79c0f6"></a><br/></td></tr>
+<tr class="memitem:aab379578b65022f976fcf67130ff1b48"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStringKit.html#aab379578b65022f976fcf67130ff1b48">toLowerWithUnderscore</a> (const QString &amp;str)</td></tr>
+<tr class="memdesc:aab379578b65022f976fcf67130ff1b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字符串由驼峰转换为下划线形式  <a href="#aab379578b65022f976fcf67130ff1b48"></a><br/></td></tr>
+<tr class="memitem:a01a7131f3c5df9cd79a32fdb3c96fa18"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStringKit.html#a01a7131f3c5df9cd79a32fdb3c96fa18">toCamelCase</a> (const QString &amp;str)</td></tr>
+<tr class="memdesc:a01a7131f3c5df9cd79a32fdb3c96fa18"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字符串转换为驼峰风格  <a href="#a01a7131f3c5df9cd79a32fdb3c96fa18"></a><br/></td></tr>
+<tr class="memitem:a43a58099218cd9dd700387619b5c2a83"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStringKit.html#a43a58099218cd9dd700387619b5c2a83">toPascalCase</a> (const QString &amp;str)</td></tr>
+<tr class="memdesc:a43a58099218cd9dd700387619b5c2a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字符串转化为帕斯卡风格  <a href="#a43a58099218cd9dd700387619b5c2a83"></a><br/></td></tr>
+<tr class="memitem:a46cebabdcb0fde38d9a874e3bf4a06cb"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStringKit.html#a46cebabdcb0fde38d9a874e3bf4a06cb">escapeInvalidXml</a> (const QString &amp;str)</td></tr>
+<tr class="memdesc:a46cebabdcb0fde38d9a874e3bf4a06cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">过滤不可见字符，不知在Qt中是否需要实现  <a href="#a46cebabdcb0fde38d9a874e3bf4a06cb"></a><br/></td></tr>
 </table>
 <h2>Member Function Documentation</h2>
-<a class="anchor" id="ad518e7171a08994055522fa29c66d996"></a>
+<a class="anchor" id="abc6e51c86e7cc4f4e526240dfc79c0f6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -119,7 +120,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString StringKit::capitalize </td>
+          <td class="memname">QString StringKit::capitalize </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
@@ -145,15 +146,15 @@ Static Public Member Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStringKit_ad518e7171a08994055522fa29c66d996_icgraph.png" border="0" usemap="#classStringKit_ad518e7171a08994055522fa29c66d996_icgraph" alt=""/></div>
-<map name="classStringKit_ad518e7171a08994055522fa29c66d996_icgraph" id="classStringKit_ad518e7171a08994055522fa29c66d996_icgraph">
-<area shape="rect" id="node3" href="classApiDomain.html#a9e5cc793f50305fe253cc4d7366d47f3" title="ApiDomain::getClassName" alt="" coords="221,5,403,35"/><area shape="rect" id="node5" href="classApiRequest.html#aa022948359fecacea9e5b2cb91705ab0" title="获得请求类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="195,59,429,88"/><area shape="rect" id="node7" href="classApiRequest.html#ae0a0f7fb10716a60698e80c025490c44" title="获得响应类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="191,112,433,141"/><area shape="rect" id="node9" href="classApiResponse.html#a39bee83dbc5ffe2e3a174fe8b6ede3ee" title="ApiResponse::getClassName" alt="" coords="215,165,409,195"/></map>
+<div class="center"><img src="classStringKit_abc6e51c86e7cc4f4e526240dfc79c0f6_icgraph.png" border="0" usemap="#classStringKit_abc6e51c86e7cc4f4e526240dfc79c0f6_icgraph" alt=""/></div>
+<map name="classStringKit_abc6e51c86e7cc4f4e526240dfc79c0f6_icgraph" id="classStringKit_abc6e51c86e7cc4f4e526240dfc79c0f6_icgraph">
+<area shape="rect" id="node3" href="classApiDomain.html#a53ce16af6f98eb3510c7f4bfe02bb64a" title="ApiDomain::getClassName" alt="" coords="221,83,403,112"/><area shape="rect" id="node9" href="classApiRequest.html#ae67636c46722727f60e68f7a30d01a56" title="获得请求类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="195,168,429,197"/><area shape="rect" id="node15" href="classApiRequest.html#af5f268b28da31aa5d170a3b5dc6df1b8" title="获得响应类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="191,221,433,251"/><area shape="rect" id="node18" href="classApiResponse.html#a6e1414080de6489d0a342d434878da2f" title="ApiResponse::getClassName" alt="" coords="215,291,409,320"/><area shape="rect" id="node5" href="classCppQtSdkGenerator.html#ab13477238315c86b515136d4a38ff897" title="获取domain相关的文件路径，相对于sourcesDir来说" alt="" coords="489,5,676,51"/><area shape="rect" id="node7" href="classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="503,74,663,121"/><area shape="rect" id="node11" href="classCppQtSdkGenerator.html#a0a007abe7630d6661d2f871f82131877" title="获取API请求文件路径，相对于sourcesDir来说" alt="" coords="488,143,677,190"/><area shape="rect" id="node13" href="classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="500,213,665,259"/><area shape="rect" id="node20" href="classCppQtSdkGenerator.html#a804a1f281028f4859b175e6fc39d6e7f" title="生成API响应文件路径，，相对于sourcesDir来说" alt="" coords="483,282,683,329"/><area shape="rect" id="node22" href="classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="496,351,669,398"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a1e45b7245b6604a8bde1893d1f660cc4"></a>
+<a class="anchor" id="a46cebabdcb0fde38d9a874e3bf4a06cb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -161,7 +162,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString StringKit::escapeInvalidXml </td>
+          <td class="memname">QString StringKit::escapeInvalidXml </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
@@ -186,7 +187,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aa3edf53c0a0542cb6a58157d7ffce362"></a>
+<a class="anchor" id="aad5c1889468027fbc8f81472ad22ac66"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -194,7 +195,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString StringKit::getSetMethod </td>
+          <td class="memname">QString StringKit::getSetMethod </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
@@ -220,15 +221,15 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStringKit_aa3edf53c0a0542cb6a58157d7ffce362_icgraph.png" border="0" usemap="#classStringKit_aa3edf53c0a0542cb6a58157d7ffce362_icgraph" alt=""/></div>
-<map name="classStringKit_aa3edf53c0a0542cb6a58157d7ffce362_icgraph" id="classStringKit_aa3edf53c0a0542cb6a58157d7ffce362_icgraph">
-<area shape="rect" id="node3" href="classApiField.html#a574b9b58102833cfa471c4a008c2ed33" title="ApiField::getMethodName" alt="" coords="216,32,389,61"/><area shape="rect" id="node5" href="classApiField.html#ac6adc4e86a1f1e79a10db2f7dd706907" title="获得属性的get方法名称" alt="" coords="437,5,632,35"/><area shape="rect" id="node7" href="classApiField.html#afb86b0453cc4a9bef17849f28228a361" title="获得属性的set方法名称" alt="" coords="439,59,631,88"/></map>
+<div class="center"><img src="classStringKit_aad5c1889468027fbc8f81472ad22ac66_icgraph.png" border="0" usemap="#classStringKit_aad5c1889468027fbc8f81472ad22ac66_icgraph" alt=""/></div>
+<map name="classStringKit_aad5c1889468027fbc8f81472ad22ac66_icgraph" id="classStringKit_aad5c1889468027fbc8f81472ad22ac66_icgraph">
+<area shape="rect" id="node3" href="classApiField.html#a685ff98ab3d96b988224e3ea983f5324" title="ApiField::getMethodName" alt="" coords="216,83,389,112"/><area shape="rect" id="node5" href="classApiField.html#af62681e7453ceeed0cf646b8a0f44d09" title="获得属性的get方法名称" alt="" coords="437,56,632,85"/><area shape="rect" id="node13" href="classApiField.html#a15ab6f17c1b84bc64a3a80b2f7b42e67" title="获得属性的set方法名称" alt="" coords="439,109,631,139"/><area shape="rect" id="node7" href="classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="681,5,855,51"/><area shape="rect" id="node9" href="classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="685,74,851,121"/><area shape="rect" id="node11" href="classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="688,143,848,190"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a1b746ddc6d6a5237aa2b6231b0872afd"></a>
+<a class="anchor" id="a01a7131f3c5df9cd79a32fdb3c96fa18"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -236,7 +237,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString StringKit::toCamelCase </td>
+          <td class="memname">QString StringKit::toCamelCase </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
@@ -262,15 +263,15 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStringKit_a1b746ddc6d6a5237aa2b6231b0872afd_icgraph.png" border="0" usemap="#classStringKit_a1b746ddc6d6a5237aa2b6231b0872afd_icgraph" alt=""/></div>
-<map name="classStringKit_a1b746ddc6d6a5237aa2b6231b0872afd_icgraph" id="classStringKit_a1b746ddc6d6a5237aa2b6231b0872afd_icgraph">
-<area shape="rect" id="node3" href="classApiDomain.html#a9e5cc793f50305fe253cc4d7366d47f3" title="ApiDomain::getClassName" alt="" coords="245,5,427,35"/><area shape="rect" id="node5" href="classApiField.html#a913191824861c5a6139c54a9b6c3992a" title="获得驼峰风格名称" alt="" coords="237,59,435,88"/><area shape="rect" id="node13" href="classApiRequest.html#aa022948359fecacea9e5b2cb91705ab0" title="获得请求类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="219,112,453,141"/><area shape="rect" id="node15" href="classApiRequest.html#ae0a0f7fb10716a60698e80c025490c44" title="获得响应类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="215,165,457,195"/><area shape="rect" id="node17" href="classApiResponse.html#a39bee83dbc5ffe2e3a174fe8b6ede3ee" title="ApiResponse::getClassName" alt="" coords="239,219,433,248"/><area shape="rect" id="node19" href="classStringKit.html#ad5fa2686250c03f71d1cdb1785fe37bc" title="将字符串转化为帕斯卡风格" alt="" coords="255,272,417,301"/><area shape="rect" id="node7" href="classApiField.html#a574b9b58102833cfa471c4a008c2ed33" title="ApiField::getMethodName" alt="" coords="521,59,695,88"/><area shape="rect" id="node9" href="classApiField.html#ac6adc4e86a1f1e79a10db2f7dd706907" title="获得属性的get方法名称" alt="" coords="757,32,952,61"/><area shape="rect" id="node11" href="classApiField.html#afb86b0453cc4a9bef17849f28228a361" title="获得属性的set方法名称" alt="" coords="759,85,951,115"/><area shape="rect" id="node21" href="classApiField.html#a19b61fa2f966255c60368f1693c74959" title="获得帕斯卡风格名称" alt="" coords="508,272,708,301"/></map>
+<div class="center"><img src="classStringKit_a01a7131f3c5df9cd79a32fdb3c96fa18_icgraph.png" border="0" usemap="#classStringKit_a01a7131f3c5df9cd79a32fdb3c96fa18_icgraph" alt=""/></div>
+<map name="classStringKit_a01a7131f3c5df9cd79a32fdb3c96fa18_icgraph" id="classStringKit_a01a7131f3c5df9cd79a32fdb3c96fa18_icgraph">
+<area shape="rect" id="node3" href="classApiDomain.html#a53ce16af6f98eb3510c7f4bfe02bb64a" title="ApiDomain::getClassName" alt="" coords="240,73,421,103"/><area shape="rect" id="node9" href="classApiField.html#a299dad67060e96288c7f73848cd0c487" title="获得驼峰风格名称" alt="" coords="232,281,429,311"/><area shape="rect" id="node28" href="classApiRequest.html#ae67636c46722727f60e68f7a30d01a56" title="获得请求类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="213,555,448,584"/><area shape="rect" id="node33" href="classApiRequest.html#af5f268b28da31aa5d170a3b5dc6df1b8" title="获得响应类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="748,468,991,497"/><area shape="rect" id="node36" href="classApiResponse.html#a6e1414080de6489d0a342d434878da2f" title="ApiResponse::getClassName" alt="" coords="233,443,428,472"/><area shape="rect" id="node41" href="classStringKit.html#a43a58099218cd9dd700387619b5c2a83" title="将字符串转化为帕斯卡风格" alt="" coords="249,641,412,671"/><area shape="rect" id="node5" href="classCppQtSdkGenerator.html#ab13477238315c86b515136d4a38ff897" title="获取domain相关的文件路径，相对于sourcesDir来说" alt="" coords="504,5,691,51"/><area shape="rect" id="node7" href="classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="1048,155,1208,202"/><area shape="rect" id="node11" href="classApiField.html#a685ff98ab3d96b988224e3ea983f5324" title="ApiField::getMethodName" alt="" coords="511,229,684,259"/><area shape="rect" id="node15" href="classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="1041,233,1215,279"/><area shape="rect" id="node17" href="classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="1045,323,1211,370"/><area shape="rect" id="node13" href="classApiField.html#af62681e7453ceeed0cf646b8a0f44d09" title="获得属性的get方法名称" alt="" coords="772,229,967,259"/><area shape="rect" id="node20" href="classApiField.html#a15ab6f17c1b84bc64a3a80b2f7b42e67" title="获得属性的set方法名称" alt="" coords="773,176,965,205"/><area shape="rect" id="node30" href="classCppQtSdkGenerator.html#a0a007abe7630d6661d2f871f82131877" title="获取API请求文件路径，相对于sourcesDir来说" alt="" coords="503,605,692,651"/><area shape="rect" id="node38" href="classCppQtSdkGenerator.html#a804a1f281028f4859b175e6fc39d6e7f" title="生成API响应文件路径，，相对于sourcesDir来说" alt="" coords="497,434,697,481"/><area shape="rect" id="node43" href="classApiField.html#a4c66576ac30dfc1a9ade23552f86d79b" title="获得帕斯卡风格名称" alt="" coords="497,675,697,704"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a70b90be0cd8d2dc9c1dcef477dd546a8"></a>
+<a class="anchor" id="aab379578b65022f976fcf67130ff1b48"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -278,7 +279,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString StringKit::toLowerWithUnderscore </td>
+          <td class="memname">QString StringKit::toLowerWithUnderscore </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
@@ -301,9 +302,18 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const QString&amp; </dd></dl>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classStringKit_aab379578b65022f976fcf67130ff1b48_icgraph.png" border="0" usemap="#classStringKit_aab379578b65022f976fcf67130ff1b48_icgraph" alt=""/></div>
+<map name="classStringKit_aab379578b65022f976fcf67130ff1b48_icgraph" id="classStringKit_aab379578b65022f976fcf67130ff1b48_icgraph">
+<area shape="rect" id="node3" href="classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="276,5,436,51"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="ad5fa2686250c03f71d1cdb1785fe37bc"></a>
+<a class="anchor" id="a43a58099218cd9dd700387619b5c2a83"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -311,7 +321,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString StringKit::toPascalCase </td>
+          <td class="memname">QString StringKit::toPascalCase </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
@@ -337,18 +347,18 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStringKit_ad5fa2686250c03f71d1cdb1785fe37bc_cgraph.png" border="0" usemap="#classStringKit_ad5fa2686250c03f71d1cdb1785fe37bc_cgraph" alt=""/></div>
-<map name="classStringKit_ad5fa2686250c03f71d1cdb1785fe37bc_cgraph" id="classStringKit_ad5fa2686250c03f71d1cdb1785fe37bc_cgraph">
-<area shape="rect" id="node3" href="classStringKit.html#a1b746ddc6d6a5237aa2b6231b0872afd" title="将字符串转换为驼峰风格" alt="" coords="216,5,376,35"/></map>
+<div class="center"><img src="classStringKit_a43a58099218cd9dd700387619b5c2a83_cgraph.png" border="0" usemap="#classStringKit_a43a58099218cd9dd700387619b5c2a83_cgraph" alt=""/></div>
+<map name="classStringKit_a43a58099218cd9dd700387619b5c2a83_cgraph" id="classStringKit_a43a58099218cd9dd700387619b5c2a83_cgraph">
+<area shape="rect" id="node3" href="classStringKit.html#a01a7131f3c5df9cd79a32fdb3c96fa18" title="将字符串转换为驼峰风格" alt="" coords="216,5,376,35"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStringKit_ad5fa2686250c03f71d1cdb1785fe37bc_icgraph.png" border="0" usemap="#classStringKit_ad5fa2686250c03f71d1cdb1785fe37bc_icgraph" alt=""/></div>
-<map name="classStringKit_ad5fa2686250c03f71d1cdb1785fe37bc_icgraph" id="classStringKit_ad5fa2686250c03f71d1cdb1785fe37bc_icgraph">
-<area shape="rect" id="node3" href="classApiField.html#a19b61fa2f966255c60368f1693c74959" title="获得帕斯卡风格名称" alt="" coords="217,5,417,35"/></map>
+<div class="center"><img src="classStringKit_a43a58099218cd9dd700387619b5c2a83_icgraph.png" border="0" usemap="#classStringKit_a43a58099218cd9dd700387619b5c2a83_icgraph" alt=""/></div>
+<map name="classStringKit_a43a58099218cd9dd700387619b5c2a83_icgraph" id="classStringKit_a43a58099218cd9dd700387619b5c2a83_icgraph">
+<area shape="rect" id="node3" href="classApiField.html#a4c66576ac30dfc1a9ade23552f86d79b" title="获得帕斯卡风格名称" alt="" coords="217,5,417,35"/></map>
 </div>
 </p>
 
@@ -361,7 +371,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2012 11:03:40 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 6 2013 01:02:28 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -67,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">    (at your option) any later version.</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    This program is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">    but WITHOUT ANY WARRANTY; wiqtextstream QString str = QString::fromUtf16(L&quot;盒&quot;);  utf-8thout even the implied warranty of</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    GNU General Public License for more details.</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"></span></div>
@@ -118,56 +119,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="classSdkGenerator.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSdkGenerator.html">SdkGenerator</a></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="classSdkGenerator.html#ab4af141a96284c669ed939dfa7b13d72">   33</a></span>&#160;  <a class="code" href="classSdkGenerator.html#ab4af141a96284c669ed939dfa7b13d72">SdkGenerator</a>(<a class="code" href="classSdkParser.html">SdkParser</a> *parser) {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    this-&gt;parser = parser;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    init();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="classSdkGenerator.html#a85024a1feec99b7969b821b495205dc2">   38</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#a85024a1feec99b7969b821b495205dc2">generate</a>(QDir outDir)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classSdkGenerator.html#acb246b43baefe29ea5fc0c156629e4a7">process</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="classSdkGenerator.html#a5ba8dfe3c67cced1562c6aa6ff75f7ce">   44</a></span>&#160;  QString <a class="code" href="classSdkGenerator.html#a5ba8dfe3c67cced1562c6aa6ff75f7ce">sourcesDir</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> QString <a class="code" href="classSdkGenerator.html#aaf449b45155ddf96806b88dbba15e879" title="生成数据结构源码。">getDomainSourceCode</a>(<span class="keyword">const</span> <a class="code" href="classApiDomain.html">ApiDomain</a> &amp;domain) = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> QString <a class="code" href="classSdkGenerator.html#a35dcdea57d0c940a94b7f1d90f3e10bd" title="获取domain相关的文件路径，相对于sourcesDir来说">getDomainSourceFileName</a>(<span class="keyword">const</span> <a class="code" href="classApiDomain.html">ApiDomain</a> &amp;domain) = 0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> QString <a class="code" href="classSdkGenerator.html#acd76329f085f476eaaaa05c0d4ed0104" title="生成API请求源码。">getRequestSourceCode</a>(<span class="keyword">const</span> <a class="code" href="classApiRequest.html">ApiRequest</a> &amp;request) = 0;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> QString <a class="code" href="classSdkGenerator.html#af9eebec4e14b3ec2c1b174ba362e0b48" title="获取API请求文件路径，相对于sourcesDir来说">getRequestSourceFileName</a>(<a class="code" href="classApiRequest.html">ApiRequest</a> request) = 0;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> QString <a class="code" href="classSdkGenerator.html#a96e4a1533bbc99edf3966f884b5bd0ce" title="生成API响应源码。">getResponseSourceCode</a>(<a class="code" href="classApiResponse.html">ApiResponse</a> response) = 0;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> QString <a class="code" href="classSdkGenerator.html#a34776ebda07eb49e41bb83cac47cba5b" title="生成API响应文件路径，，相对于sourcesDir来说">getResponseSourceFileName</a>(<a class="code" href="classApiResponse.html">ApiResponse</a> response) = 0;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> QString <a class="code" href="classSdkGenerator.html#a1c7c1d6c1a2ea8461cbd8c63bab95619" title="获取SDK版本文件路径，用于替换版本号。版本文件中版本号用dynamicVersionNo表示。用户的继承类必须实现此函数">getSdkVersionFilePath</a>() = 0;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#a5e5cc42a04f0804a9965f2a84694fb88">generateSdkVersion</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> QString <a class="code" href="classSdkGenerator.html#a18de210070a687d15e16462220860fb0" title="SDK基础框架源文件所在路径。用户的继承类必须实现此函数">getSdkBasicSourceDir</a>() = 0;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#acb246b43baefe29ea5fc0c156629e4a7">process</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#aa2af3967e4c79826fafef8f461e13a6d">generateDomains</a>();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#a1a906584f9c567e3de4fe1ca15455a8d">generateRequests</a>();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#a9059b3e9233760424995a784be5bf252">generateResponses</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="classSdkGenerator.html#ab4af141a96284c669ed939dfa7b13d72">   33</a></span>&#160;  <a class="code" href="classSdkGenerator.html#ab4af141a96284c669ed939dfa7b13d72">SdkGenerator</a>(<a class="code" href="classSdkParser.html">SdkParser</a> *<a class="code" href="classSdkGenerator.html#ac203555deb12024f3a49208dae56efd1">parser</a>) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    this-&gt;parser = <a class="code" href="classSdkGenerator.html#ac203555deb12024f3a49208dae56efd1">parser</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classSdkGenerator.html#ac0968e82e836631ef4a6b6502977ded5">domains</a> = parser-&gt;<a class="code" href="classSdkParser.html#afe549c2cffb644cee85debbc23364b31">getApiDomains</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classSdkGenerator.html#af1cdf718adf44a1e24cc6417c520dad6">requests</a> = parser-&gt;<a class="code" href="classSdkParser.html#a67cabc51034169e81a9d97d99c8eac7d">getApiRequests</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classSdkGenerator.html#a99de3bb634fae999039522b16607ff4f">responses</a> = parser-&gt;<a class="code" href="classSdkParser.html#a4524ffa5afbff94430a10d28f5b5a415">getApiResponses</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classSdkGenerator.html#af4f9c935b8ff1612775a8050635e0d36">init</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classSdkGenerator.html#a71de401bfb22090b4ecf93d916e27d5f">   41</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#a71de401bfb22090b4ecf93d916e27d5f">generate</a>()</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classSdkGenerator.html#a5ba8dfe3c67cced1562c6aa6ff75f7ce">sourcesDir</a> = <a class="code" href="classSdkGenerator.html#ab92bd4a8d52d648d49ed19c531f83af8" title="SDK基础框架源文件所在路径。用户的继承类必须实现此函数">getSdkBasicSourceDir</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classSdkGenerator.html#acb246b43baefe29ea5fc0c156629e4a7">process</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="classSdkGenerator.html#a5ba8dfe3c67cced1562c6aa6ff75f7ce">   48</a></span>&#160;  QString <a class="code" href="classSdkGenerator.html#a5ba8dfe3c67cced1562c6aa6ff75f7ce">sourcesDir</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">virtual</span> QString <a class="code" href="classSdkGenerator.html#aa8bf57f9172044de82b925dcb0ba9ae7" title="生成数据结构源码。">getDomainSourceCode</a>(<span class="keyword">const</span> <a class="code" href="classApiDomain.html">ApiDomain</a> &amp;domain) = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">virtual</span> QString <a class="code" href="classSdkGenerator.html#afc548ba50e4ae5c75c98d8f3d77c71d7" title="获取domain相关的文件路径，相对于sourcesDir来说">getDomainSourceFileName</a>(<span class="keyword">const</span> <a class="code" href="classApiDomain.html">ApiDomain</a> &amp;domain) = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">virtual</span> QString <a class="code" href="classSdkGenerator.html#a53d5d4f6589e5d34e85fc52ab550bd2c" title="生成API请求源码。">getRequestSourceCode</a>(<span class="keyword">const</span> <a class="code" href="classApiRequest.html">ApiRequest</a> &amp;request) = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> QString <a class="code" href="classSdkGenerator.html#a4391c905ce7e9d43248a4493a4f7a582" title="获取API请求文件路径，相对于sourcesDir来说">getRequestSourceFileName</a>(<span class="keyword">const</span> <a class="code" href="classApiRequest.html">ApiRequest</a> &amp;request) = 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">virtual</span> QString <a class="code" href="classSdkGenerator.html#a4c416373aded058cd6aa57791299ffdb" title="生成API响应源码。">getResponseSourceCode</a>(<span class="keyword">const</span> <a class="code" href="classApiResponse.html">ApiResponse</a> &amp;response) = 0;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">virtual</span> QString <a class="code" href="classSdkGenerator.html#a81428fc312a8052df132569e1acf8b11" title="生成API响应文件路径，，相对于sourcesDir来说">getResponseSourceFileName</a>(<span class="keyword">const</span> <a class="code" href="classApiResponse.html">ApiResponse</a> &amp;response) = 0;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">virtual</span> QString <a class="code" href="classSdkGenerator.html#a61be72d006fd51d6453ab98948a103c3" title="获取SDK版本文件路径，用于替换版本号。版本文件中版本号用dynamicVersionNo表示。用户的继承类必须实现此函数">getSdkVersionFilePath</a>() = 0;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#a5e5cc42a04f0804a9965f2a84694fb88">generateSdkVersion</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">virtual</span> QString <a class="code" href="classSdkGenerator.html#ab92bd4a8d52d648d49ed19c531f83af8" title="SDK基础框架源文件所在路径。用户的继承类必须实现此函数">getSdkBasicSourceDir</a>() = 0;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#acb246b43baefe29ea5fc0c156629e4a7">process</a>();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> writeFile(<span class="keyword">const</span> QString &amp;codeStr, <span class="keyword">const</span> QString &amp;absoluteFilePath);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#aa2af3967e4c79826fafef8f461e13a6d">generateDomains</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#a1a906584f9c567e3de4fe1ca15455a8d">generateRequests</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#a9059b3e9233760424995a784be5bf252">generateResponses</a>();</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="classSdkParser.html">SdkParser</a> *parser;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  QList&lt;ApiDomain&gt; domains;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  QList&lt;ApiRequest&gt; requests;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  QList&lt;ApiResponse&gt; responses;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif // SDKGENERATOR_H</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#af4f9c935b8ff1612775a8050635e0d36">init</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSdkGenerator.html#a819b49c758675176cc6018008834cdf4">writeFile</a>(<span class="keyword">const</span> QString &amp;codeStr, <span class="keyword">const</span> QString &amp;absoluteFilePath);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="code" href="classSdkGenerator.html#ac203555deb12024f3a49208dae56efd1">  106</a></span>&#160;  <a class="code" href="classSdkParser.html">SdkParser</a> *<a class="code" href="classSdkGenerator.html#ac203555deb12024f3a49208dae56efd1">parser</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="classSdkGenerator.html#ac0968e82e836631ef4a6b6502977ded5">  108</a></span>&#160;  QList&lt;ApiDomain&gt; <a class="code" href="classSdkGenerator.html#ac0968e82e836631ef4a6b6502977ded5">domains</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="classSdkGenerator.html#af1cdf718adf44a1e24cc6417c520dad6">  109</a></span>&#160;  QList&lt;ApiRequest&gt; <a class="code" href="classSdkGenerator.html#af1cdf718adf44a1e24cc6417c520dad6">requests</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="code" href="classSdkGenerator.html#a99de3bb634fae999039522b16607ff4f">  110</a></span>&#160;  QList&lt;ApiResponse&gt; <a class="code" href="classSdkGenerator.html#a99de3bb634fae999039522b16607ff4f">responses</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif // SDKGENERATOR_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2012 11:03:39 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 6 2013 01:02:27 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

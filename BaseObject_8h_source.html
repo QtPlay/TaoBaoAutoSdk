@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -67,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,36 +118,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="classBaseObject.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBaseObject.html">BaseObject</a> : <span class="keyword">public</span> <a class="code" href="classNameObject.html">NameObject</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="classBaseObject.html#ad9f91e414704b322ed750bee009c5d92">   32</a></span>&#160;  <span class="keyword">const</span> QString &amp;<a class="code" href="classBaseObject.html#ad9f91e414704b322ed750bee009c5d92">getLastModified</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> lastModified;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="classBaseObject.html#af779205acf6f536451d6464340a23c08">   32</a></span>&#160;  QString <a class="code" href="classBaseObject.html#af779205acf6f536451d6464340a23c08">getLastModified</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classBaseObject.html#a362a9be4d9e380adb7f14d405e22f121">lastModified</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="classBaseObject.html#a67bbed10fcf16a68a6d5d4bb2506643d">   36</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classBaseObject.html#a67bbed10fcf16a68a6d5d4bb2506643d">setLastModified</a>(<span class="keyword">const</span> QString &amp;lastModified) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    this-&gt;lastModified = lastModified;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="classBaseObject.html#a67bbed10fcf16a68a6d5d4bb2506643d">   36</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classBaseObject.html#a67bbed10fcf16a68a6d5d4bb2506643d">setLastModified</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="classBaseObject.html#a362a9be4d9e380adb7f14d405e22f121">lastModified</a>) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    this-&gt;lastModified = <a class="code" href="classBaseObject.html#a362a9be4d9e380adb7f14d405e22f121">lastModified</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="classBaseObject.html#ac5961e48911ffed3edb96ba6b6fa3c37">   40</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classBaseObject.html#ac5961e48911ffed3edb96ba6b6fa3c37">setFields</a>(<span class="keyword">const</span> QList&lt;ApiField&gt; &amp;fields) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    this-&gt;fields = fields;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="classBaseObject.html#ac5961e48911ffed3edb96ba6b6fa3c37">   40</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classBaseObject.html#ac5961e48911ffed3edb96ba6b6fa3c37">setFields</a>(<span class="keyword">const</span> QList&lt;ApiField&gt; &amp;<a class="code" href="classBaseObject.html#af9ee26c813560e71aecc0c63672f4f44">fields</a>) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    this-&gt;fields = <a class="code" href="classBaseObject.html#af9ee26c813560e71aecc0c63672f4f44">fields</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="classBaseObject.html#aca207fde57b536a1d318462e26402c16">   44</a></span>&#160;  <span class="keyword">const</span> QList&lt;ApiField&gt; &amp;<a class="code" href="classBaseObject.html#aca207fde57b536a1d318462e26402c16">getFields</a>() {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    qSort(fields);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> fields;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f">   49</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f">addField</a>(<span class="keyword">const</span> <a class="code" href="classApiField.html" title="Api属性，针对metadata.xml中的prop下字段">ApiField</a> &amp;field) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classBaseObject.html#aca207fde57b536a1d318462e26402c16">getFields</a>().contains(field)) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      fields.append(field);</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="classBaseObject.html#a9b10822e40b97a6f2a5e96569eabedf6">   44</a></span>&#160;  QList&lt;ApiField&gt; <a class="code" href="classBaseObject.html#a9b10822e40b97a6f2a5e96569eabedf6">getFields</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classBaseObject.html#af9ee26c813560e71aecc0c63672f4f44">fields</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f">   48</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f">addField</a>(<span class="keyword">const</span> <a class="code" href="classApiField.html" title="Api属性，针对metadata.xml中的prop下字段">ApiField</a> &amp;field) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classBaseObject.html#a9b10822e40b97a6f2a5e96569eabedf6">getFields</a>().contains(field)) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="classBaseObject.html#af9ee26c813560e71aecc0c63672f4f44">fields</a> += field;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      qSort(<a class="code" href="classBaseObject.html#af9ee26c813560e71aecc0c63672f4f44">fields</a>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="classBaseObject.html#af9010f0d20b936fdf2221891a4208bff">   58</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classBaseObject.html#af9010f0d20b936fdf2221891a4208bff">isContainField</a>() {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> !<a class="code" href="classBaseObject.html#aca207fde57b536a1d318462e26402c16">getFields</a>().isEmpty();</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="classBaseObject.html#a20762c627b963b8904dfe0a69d56686f">   58</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classBaseObject.html#a20762c627b963b8904dfe0a69d56686f">isContainField</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> !<a class="code" href="classBaseObject.html#a9b10822e40b97a6f2a5e96569eabedf6">getFields</a>().isEmpty();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="classBaseObject.html#a8f46b1bd69cd2c4eb42a9e4a756b97a3">   65</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classBaseObject.html#a8f46b1bd69cd2c4eb42a9e4a756b97a3">isContainListField</a>() {</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="classBaseObject.html#a27bc55d972d8c27c7043f01f88007072">   65</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classBaseObject.html#a27bc55d972d8c27c7043f01f88007072">isContainListField</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classApiField.html" title="Api属性，针对metadata.xml中的prop下字段">ApiField</a> field;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">foreach</span> (field , fields) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">foreach</span> (field , <a class="code" href="classBaseObject.html#af9ee26c813560e71aecc0c63672f4f44">fields</a>) {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">if</span> (field.<a class="code" href="classApiField.html#a186b9e5f00b1bb76494de9b62d2eb206" title="判断属性是否是列表类型">isListField</a>()) {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
@@ -154,9 +155,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="classBaseObject.html#adf8fd214620f1ce29d9277a1be36e9ac">   78</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classBaseObject.html#adf8fd214620f1ce29d9277a1be36e9ac">isContainDateField</a>() {</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="classBaseObject.html#af1077693f2d092b86fe35437d00ebd82">   78</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classBaseObject.html#af1077693f2d092b86fe35437d00ebd82">isContainDateField</a>()<span class="keyword"> const</span>{</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classApiField.html" title="Api属性，针对metadata.xml中的prop下字段">ApiField</a> field;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">foreach</span> (field, <a class="code" href="classBaseObject.html#aca207fde57b536a1d318462e26402c16">getFields</a>()) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">foreach</span> (field, <a class="code" href="classBaseObject.html#a9b10822e40b97a6f2a5e96569eabedf6">getFields</a>()) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">if</span> (<span class="stringliteral">&quot;Date&quot;</span> == field.<a class="code" href="classApiField.html#afcb58f9fb50e1a5f5d9cb19977a4f93d">getApiType</a>()) {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      }</div>
@@ -165,8 +166,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  QString lastModified;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  QList&lt;ApiField&gt; fields;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="classBaseObject.html#a362a9be4d9e380adb7f14d405e22f121">   89</a></span>&#160;  QString <a class="code" href="classBaseObject.html#a362a9be4d9e380adb7f14d405e22f121">lastModified</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="classBaseObject.html#af9ee26c813560e71aecc0c63672f4f44">   90</a></span>&#160;  QList&lt;ApiField&gt; <a class="code" href="classBaseObject.html#af9ee26c813560e71aecc0c63672f4f44">fields</a>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
@@ -174,7 +175,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2012 11:03:39 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 6 2013 01:02:27 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

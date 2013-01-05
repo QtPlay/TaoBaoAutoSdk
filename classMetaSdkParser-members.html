@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,14 +88,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classMetaSdkParser.html">MetaSdkParser</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classMetaSdkParser.html#a5ffa7a936f28b65b3a53cba58a5ba047">getApiDomains</a>()</td><td class="entry"><a class="el" href="classMetaSdkParser.html">MetaSdkParser</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classMetaSdkParser.html#a4856857b4784e93bb33a1316569dbbce">getApiRequests</a>()</td><td class="entry"><a class="el" href="classMetaSdkParser.html">MetaSdkParser</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classMetaSdkParser.html#ae920e712ad0f3579e350fb6f4bd7062c">getApiResponses</a>()</td><td class="entry"><a class="el" href="classMetaSdkParser.html">MetaSdkParser</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMetaSdkParser.html#ae325639537ca9105d2c89c3ac6d62098">domDocument</a></td><td class="entry"><a class="el" href="classMetaSdkParser.html">MetaSdkParser</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classMetaSdkParser.html#af44f06b19b2aa35617c065b445bf05e0">getApiDomains</a>()</td><td class="entry"><a class="el" href="classMetaSdkParser.html">MetaSdkParser</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMetaSdkParser.html#a2d25a4b1340781353c3db5d753afc1d0">getApiRequests</a>()</td><td class="entry"><a class="el" href="classMetaSdkParser.html">MetaSdkParser</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classMetaSdkParser.html#a4ee69ddf1725d2fcacc096e1adf24685">getApiResponses</a>()</td><td class="entry"><a class="el" href="classMetaSdkParser.html">MetaSdkParser</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMetaSdkParser.html#aba3c4fc93530f6cfcc3b3395c0ab96b3">mapper</a></td><td class="entry"><a class="el" href="classMetaSdkParser.html">MetaSdkParser</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classMetaSdkParser.html#a4aeb9228fbcb97bf1a0df408eae43b7c">MetaSdkParser</a>(TypeMapper *typeMapper, const QString &amp;metadataXmlPath)</td><td class="entry"><a class="el" href="classMetaSdkParser.html">MetaSdkParser</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMetaSdkParser.html#a8500137f5fcc23de1b19ea42398fde9e">readFile</a>(const QString &amp;filePath)</td><td class="entry"><a class="el" href="classMetaSdkParser.html">MetaSdkParser</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classMetaSdkParser.html#a9ccf16ca0c8aec954b893b4bc8bbabb3">root</a></td><td class="entry"><a class="el" href="classMetaSdkParser.html">MetaSdkParser</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2012 11:03:40 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 6 2013 01:02:28 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

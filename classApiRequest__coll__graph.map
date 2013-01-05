@@ -1,4 +1,4 @@
 <map id="ApiRequest" name="ApiRequest">
-<area shape="rect" id="node2" href="$classBaseObject.html" title="{BaseObject\n||+ getLastModified()\l+ setLastModified()\l+ setFields()\l+ getFields()\l+ addField()\l+ isContainField()\l+ isContainListField()\l+ isContainDateField()\l}" alt="" coords="23,209,175,415"/>
-<area shape="rect" id="node4" href="$classNameObject.html" title="{NameObject\n||+ getName()\l+ setName()\l+ getDesc()\l+ setDesc()\l+ equals()\l}" alt="" coords="52,5,145,160"/>
+<area shape="rect" id="node2" href="$classBaseObject.html" title="{BaseObject\n|&#45; lastModified\l&#45; fields\l|+ getLastModified()\l+ setLastModified()\l+ setFields()\l+ getFields()\l+ addField()\l+ isContainField()\l+ isContainListField()\l+ isContainDateField()\l}" alt="" coords="23,227,175,451"/>
+<area shape="rect" id="node4" href="$classNameObject.html" title="{NameObject\n|&#45; name\l&#45; desc\l|+ getName()\l+ setName()\l+ getDesc()\l+ setDesc()\l+ equals()\l}" alt="" coords="52,6,145,178"/>
 </map>

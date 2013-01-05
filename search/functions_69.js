@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['iscontaindatefield',['isContainDateField',['../classBaseObject.html#adf8fd214620f1ce29d9277a1be36e9ac',1,'BaseObject']]],
-  ['iscontainfield',['isContainField',['../classBaseObject.html#af9010f0d20b936fdf2221891a4208bff',1,'BaseObject']]],
-  ['iscontainlistfield',['isContainListField',['../classBaseObject.html#a8f46b1bd69cd2c4eb42a9e4a756b97a3',1,'BaseObject']]],
+  ['init',['init',['../classSdkGenerator.html#af4f9c935b8ff1612775a8050635e0d36',1,'SdkGenerator']]],
+  ['iscontaindatefield',['isContainDateField',['../classBaseObject.html#af1077693f2d092b86fe35437d00ebd82',1,'BaseObject']]],
+  ['iscontainfield',['isContainField',['../classBaseObject.html#a20762c627b963b8904dfe0a69d56686f',1,'BaseObject']]],
+  ['iscontainlistfield',['isContainListField',['../classBaseObject.html#a27bc55d972d8c27c7043f01f88007072',1,'BaseObject']]],
   ['isinused',['isInUsed',['../classApiDomain.html#a9cc38e9e00baf218fc3cd71dc2785137',1,'ApiDomain']]],
   ['islistfield',['isListField',['../classApiField.html#a186b9e5f00b1bb76494de9b62d2eb206',1,'ApiField']]],
   ['isobjectfield',['isObjectField',['../classApiField.html#a0d4f558c460f6f796783c2a94ce9b4e2',1,'ApiField']]],

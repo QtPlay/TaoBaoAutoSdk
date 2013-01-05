@@ -1,0 +1,12 @@
+<map id="BaseObject::getFields" name="BaseObject::getFields">
+<area shape="rect" id="node3" href="$classApiRequest.html#ab3990199fb7ad6346c494df63c87165f" title="ApiRequest::isUploadRequest" alt="" coords="207,5,404,35"/>
+<area shape="rect" id="node5" href="$classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f" title="BaseObject::addField" alt="" coords="232,59,379,88"/>
+<area shape="rect" id="node13" href="$classBaseObject.html#a20762c627b963b8904dfe0a69d56686f" title="BaseObject::isContainField" alt="" coords="215,112,396,141"/>
+<area shape="rect" id="node15" href="$classBaseObject.html#af1077693f2d092b86fe35437d00ebd82" title="BaseObject::isContainDate\lField" alt="" coords="215,215,396,262"/>
+<area shape="rect" id="node17" href="$classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="479,175,652,222"/>
+<area shape="rect" id="node19" href="$classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="485,265,645,311"/>
+<area shape="rect" id="node22" href="$classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="223,335,388,382"/>
+<area shape="rect" id="node7" href="$classMetaSdkParser.html#af44f06b19b2aa35617c065b445bf05e0" title="MetaSdkParser::getApiDomains" alt="" coords="461,5,669,35"/>
+<area shape="rect" id="node9" href="$classMetaSdkParser.html#a2d25a4b1340781353c3db5d753afc1d0" title="获取Request Api类 与getApiResponse不同的是, Requests只是借助level确定langType 而Response直接存储meta数据中的level。" alt="" coords="459,59,672,88"/>
+<area shape="rect" id="node11" href="$classMetaSdkParser.html#a4ee69ddf1725d2fcacc096e1adf24685" title="MetaSdkParser::getApiResponses" alt="" coords="455,112,676,141"/>
+</map>

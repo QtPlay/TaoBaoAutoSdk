@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -67,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -119,21 +120,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classMetaSdkParser.html#a4aeb9228fbcb97bf1a0df408eae43b7c">MetaSdkParser</a>(<a class="code" href="classTypeMapper.html">TypeMapper</a> *typeMapper, <span class="keyword">const</span> QString &amp;metadataXmlPath);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> QList&lt; ApiDomain &gt; <a class="code" href="classMetaSdkParser.html#a5ffa7a936f28b65b3a53cba58a5ba047">getApiDomains</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> QList&lt; ApiRequest &gt; <a class="code" href="classMetaSdkParser.html#a4856857b4784e93bb33a1316569dbbce" title="获取Request Api类 与getApiResponse不同的是">getApiRequests</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> QList&lt; ApiResponse &gt; <a class="code" href="classMetaSdkParser.html#ae920e712ad0f3579e350fb6f4bd7062c">getApiResponses</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">bool</span> readFile(<span class="keyword">const</span> QString &amp;filePath);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classTypeMapper.html">TypeMapper</a> *mapper;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QDomDocument domDocument;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  QDomElement root;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif // METASDKPARSER_H</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">virtual</span> QList&lt; ApiDomain &gt; <a class="code" href="classMetaSdkParser.html#af44f06b19b2aa35617c065b445bf05e0">getApiDomains</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">virtual</span> QList&lt; ApiRequest &gt; <a class="code" href="classMetaSdkParser.html#a2d25a4b1340781353c3db5d753afc1d0" title="获取Request Api类 与getApiResponse不同的是, Requests只是借助level确定langType 而Response直接存储meta数据中的level。">getApiRequests</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> QList&lt; ApiResponse &gt; <a class="code" href="classMetaSdkParser.html#a4ee69ddf1725d2fcacc096e1adf24685">getApiResponses</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classMetaSdkParser.html#a8500137f5fcc23de1b19ea42398fde9e">readFile</a>(<span class="keyword">const</span> QString &amp;filePath);</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classMetaSdkParser.html#aba3c4fc93530f6cfcc3b3395c0ab96b3">   47</a></span>&#160;  <a class="code" href="classTypeMapper.html">TypeMapper</a> *<a class="code" href="classMetaSdkParser.html#aba3c4fc93530f6cfcc3b3395c0ab96b3" title="类型映射器">mapper</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="classMetaSdkParser.html#ae325639537ca9105d2c89c3ac6d62098">   51</a></span>&#160;  QDomDocument <a class="code" href="classMetaSdkParser.html#ae325639537ca9105d2c89c3ac6d62098" title="Qt Dom Xml处理">domDocument</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classMetaSdkParser.html#a9ccf16ca0c8aec954b893b4bc8bbabb3">   52</a></span>&#160;  QDomElement <a class="code" href="classMetaSdkParser.html#a9ccf16ca0c8aec954b893b4bc8bbabb3">root</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // METASDKPARSER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2012 11:03:39 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 6 2013 01:02:27 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,24 +95,22 @@ Inheritance diagram for SdkParser:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSdkParser__inherit__graph.png" border="0" usemap="#SdkParser_inherit__map" alt="Inheritance graph"/></div>
 <map name="SdkParser_inherit__map" id="SdkParser_inherit__map">
-<area shape="rect" id="node3" href="classMetaSdkParser.html" title="metadata.xml的处理类，要求完善的metadata.xml：struct、api、param等节点都为同级兄弟， 只适用于淘宝metadata" alt="" coords="5,174,149,311"/></map>
+<area shape="rect" id="node3" href="classMetaSdkParser.html" title="metadata.xml的处理类，要求完善的metadata.xml：struct、api、param等节点都为同级兄弟， 只适用于淘宝metadata" alt="" coords="5,173,149,363"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for SdkParser:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSdkParser__coll__graph.png" border="0" usemap="#SdkParser_coll__map" alt="Collaboration graph"/></div>
-<map name="SdkParser_coll__map" id="SdkParser_coll__map">
-</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae7ddf6d7523a42405235735a17faf394"><td class="memItemLeft" align="right" valign="top">virtual const QList&lt; <a class="el" href="classApiDomain.html">ApiDomain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSdkParser.html#ae7ddf6d7523a42405235735a17faf394">getApiDomains</a> ()=0</td></tr>
-<tr class="memitem:a936010027c0218416efa9846b72c2e75"><td class="memItemLeft" align="right" valign="top">virtual const QList&lt; <a class="el" href="classApiRequest.html">ApiRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSdkParser.html#a936010027c0218416efa9846b72c2e75">getApiRequests</a> ()=0</td></tr>
-<tr class="memitem:a872a6ba003f299c2bb13369f50ab4e8a"><td class="memItemLeft" align="right" valign="top">virtual const QList&lt; <a class="el" href="classApiResponse.html">ApiResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSdkParser.html#a872a6ba003f299c2bb13369f50ab4e8a">getApiResponses</a> ()=0</td></tr>
+<tr class="memitem:afe549c2cffb644cee85debbc23364b31"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="classApiDomain.html">ApiDomain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSdkParser.html#afe549c2cffb644cee85debbc23364b31">getApiDomains</a> ()=0</td></tr>
+<tr class="memitem:a67cabc51034169e81a9d97d99c8eac7d"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="classApiRequest.html">ApiRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSdkParser.html#a67cabc51034169e81a9d97d99c8eac7d">getApiRequests</a> ()=0</td></tr>
+<tr class="memitem:a4524ffa5afbff94430a10d28f5b5a415"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="classApiResponse.html">ApiResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSdkParser.html#a4524ffa5afbff94430a10d28f5b5a415">getApiResponses</a> ()=0</td></tr>
 </table>
 <h2>Member Function Documentation</h2>
-<a class="anchor" id="ae7ddf6d7523a42405235735a17faf394"></a>
+<a class="anchor" id="afe549c2cffb644cee85debbc23364b31"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -119,7 +118,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const QList&lt;<a class="el" href="classApiDomain.html">ApiDomain</a>&gt; SdkParser::getApiDomains </td>
+          <td class="memname">virtual QList&lt;<a class="el" href="classApiDomain.html">ApiDomain</a>&gt; SdkParser::getApiDomains </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -132,11 +131,20 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classMetaSdkParser.html#a5ffa7a936f28b65b3a53cba58a5ba047">MetaSdkParser</a>.</p>
+<p>Implemented in <a class="el" href="classMetaSdkParser.html#af44f06b19b2aa35617c065b445bf05e0">MetaSdkParser</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSdkParser_afe549c2cffb644cee85debbc23364b31_icgraph.png" border="0" usemap="#classSdkParser_afe549c2cffb644cee85debbc23364b31_icgraph" alt=""/></div>
+<map name="classSdkParser_afe549c2cffb644cee85debbc23364b31_icgraph" id="classSdkParser_afe549c2cffb644cee85debbc23364b31_icgraph">
+<area shape="rect" id="node3" href="classSdkGenerator.html#ab4af141a96284c669ed939dfa7b13d72" title="SdkGenerator::SdkGenerator" alt="" coords="412,5,601,35"/><area shape="rect" id="node5" href="classSdkGenerator.html#af4f9c935b8ff1612775a8050635e0d36" title="SdkGenerator::init" alt="" coords="236,31,361,60"/></map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a936010027c0218416efa9846b72c2e75"></a>
+<a class="anchor" id="a67cabc51034169e81a9d97d99c8eac7d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -144,7 +152,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const QList&lt;<a class="el" href="classApiRequest.html">ApiRequest</a>&gt; SdkParser::getApiRequests </td>
+          <td class="memname">virtual QList&lt;<a class="el" href="classApiRequest.html">ApiRequest</a>&gt; SdkParser::getApiRequests </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -157,11 +165,20 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classMetaSdkParser.html#a4856857b4784e93bb33a1316569dbbce">MetaSdkParser</a>.</p>
+<p>Implemented in <a class="el" href="classMetaSdkParser.html#a2d25a4b1340781353c3db5d753afc1d0">MetaSdkParser</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSdkParser_a67cabc51034169e81a9d97d99c8eac7d_icgraph.png" border="0" usemap="#classSdkParser_a67cabc51034169e81a9d97d99c8eac7d_icgraph" alt=""/></div>
+<map name="classSdkParser_a67cabc51034169e81a9d97d99c8eac7d_icgraph" id="classSdkParser_a67cabc51034169e81a9d97d99c8eac7d_icgraph">
+<area shape="rect" id="node3" href="classSdkGenerator.html#ab4af141a96284c669ed939dfa7b13d72" title="SdkGenerator::SdkGenerator" alt="" coords="415,5,604,35"/><area shape="rect" id="node5" href="classSdkGenerator.html#af4f9c935b8ff1612775a8050635e0d36" title="SdkGenerator::init" alt="" coords="239,31,364,60"/></map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a872a6ba003f299c2bb13369f50ab4e8a"></a>
+<a class="anchor" id="a4524ffa5afbff94430a10d28f5b5a415"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -169,7 +186,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const QList&lt;<a class="el" href="classApiResponse.html">ApiResponse</a>&gt; SdkParser::getApiResponses </td>
+          <td class="memname">virtual QList&lt;<a class="el" href="classApiResponse.html">ApiResponse</a>&gt; SdkParser::getApiResponses </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -182,7 +199,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classMetaSdkParser.html#ae920e712ad0f3579e350fb6f4bd7062c">MetaSdkParser</a>.</p>
+<p>Implemented in <a class="el" href="classMetaSdkParser.html#a4ee69ddf1725d2fcacc096e1adf24685">MetaSdkParser</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSdkParser_a4524ffa5afbff94430a10d28f5b5a415_icgraph.png" border="0" usemap="#classSdkParser_a4524ffa5afbff94430a10d28f5b5a415_icgraph" alt=""/></div>
+<map name="classSdkParser_a4524ffa5afbff94430a10d28f5b5a415_icgraph" id="classSdkParser_a4524ffa5afbff94430a10d28f5b5a415_icgraph">
+<area shape="rect" id="node3" href="classSdkGenerator.html#ab4af141a96284c669ed939dfa7b13d72" title="SdkGenerator::SdkGenerator" alt="" coords="425,5,615,35"/><area shape="rect" id="node5" href="classSdkGenerator.html#af4f9c935b8ff1612775a8050635e0d36" title="SdkGenerator::init" alt="" coords="249,31,375,60"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -192,7 +218,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2012 11:03:40 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 6 2013 01:02:28 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

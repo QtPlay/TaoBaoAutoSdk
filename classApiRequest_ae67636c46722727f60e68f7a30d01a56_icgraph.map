@@ -1,0 +1,4 @@
+<map id="ApiRequest::getRequestClassName" name="ApiRequest::getRequestClassName">
+<area shape="rect" id="node3" href="$classCppQtSdkGenerator.html#a0a007abe7630d6661d2f871f82131877" title="获取API请求文件路径，相对于sourcesDir来说" alt="" coords="289,5,479,51"/>
+<area shape="rect" id="node5" href="$classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="301,74,467,121"/>
+</map>

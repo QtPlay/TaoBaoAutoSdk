@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -67,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,24 +115,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="classStringKit.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classStringKit.html">StringKit</a></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> QString <a class="code" href="classStringKit.html#aa3edf53c0a0542cb6a58157d7ffce362" title="生成JAVA/Qt风格的get/set方法名">getSetMethod</a>(<span class="keyword">const</span> QString &amp;str);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">static</span> QString <a class="code" href="classStringKit.html#aad5c1889468027fbc8f81472ad22ac66" title="生成JAVA/Qt风格的get/set方法名">getSetMethod</a>(<span class="keyword">const</span> QString &amp;str);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> QString <a class="code" href="classStringKit.html#ad518e7171a08994055522fa29c66d996" title="生成首字母大写的字符串">capitalize</a>(<span class="keyword">const</span> QString &amp;str);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> QString <a class="code" href="classStringKit.html#abc6e51c86e7cc4f4e526240dfc79c0f6" title="生成首字母大写的字符串">capitalize</a>(<span class="keyword">const</span> QString &amp;str);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> QString <a class="code" href="classStringKit.html#a70b90be0cd8d2dc9c1dcef477dd546a8" title="将字符串由驼峰转换为下划线形式">toLowerWithUnderscore</a>(<span class="keyword">const</span> QString &amp;str);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> QString <a class="code" href="classStringKit.html#aab379578b65022f976fcf67130ff1b48" title="将字符串由驼峰转换为下划线形式">toLowerWithUnderscore</a>(<span class="keyword">const</span> QString &amp;str);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> QString <a class="code" href="classStringKit.html#a1b746ddc6d6a5237aa2b6231b0872afd" title="将字符串转换为驼峰风格">toCamelCase</a>(<span class="keyword">const</span> QString &amp;str);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">static</span> QString <a class="code" href="classStringKit.html#a01a7131f3c5df9cd79a32fdb3c96fa18" title="将字符串转换为驼峰风格">toCamelCase</a>(<span class="keyword">const</span> QString &amp;str);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> QString <a class="code" href="classStringKit.html#ad5fa2686250c03f71d1cdb1785fe37bc" title="将字符串转化为帕斯卡风格">toPascalCase</a>(<span class="keyword">const</span> QString &amp;str);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">static</span> QString <a class="code" href="classStringKit.html#a43a58099218cd9dd700387619b5c2a83" title="将字符串转化为帕斯卡风格">toPascalCase</a>(<span class="keyword">const</span> QString &amp;str);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> QString <a class="code" href="classStringKit.html#a1e45b7245b6604a8bde1893d1f660cc4" title="过滤不可见字符，不知在Qt中是否需要实现">escapeInvalidXml</a>(<span class="keyword">const</span> QString &amp;str);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">static</span> QString <a class="code" href="classStringKit.html#a46cebabdcb0fde38d9a874e3bf4a06cb" title="过滤不可见字符，不知在Qt中是否需要实现">escapeInvalidXml</a>(<span class="keyword">const</span> QString &amp;str);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // STRINGKIT_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2012 11:03:39 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 6 2013 01:02:27 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -1,3 +1,4 @@
 <map id="MetaSdkParser" name="MetaSdkParser">
 <area shape="rect" id="node2" href="$classSdkParser.html" title="{SdkParser\n||+ getApiDomains()\l+ getApiRequests()\l+ getApiResponses()\l}" alt="" coords="5,5,149,125"/>
+<area shape="rect" id="node4" href="$classTypeMapper.html" title="{TypeMapper\n||+ getDomainLangType()\l+ getRequestLangType()\l+ getResponseLangType()\l}" alt="" coords="173,5,349,125"/>
 </map>

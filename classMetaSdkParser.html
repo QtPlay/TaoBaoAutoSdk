@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,6 +83,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classMetaSdkParser-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MetaSdkParser Class Reference</div>  </div>
@@ -104,16 +107,28 @@ Collaboration diagram for MetaSdkParser:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMetaSdkParser__coll__graph.png" border="0" usemap="#MetaSdkParser_coll__map" alt="Collaboration graph"/></div>
 <map name="MetaSdkParser_coll__map" id="MetaSdkParser_coll__map">
-<area shape="rect" id="node2" href="classSdkParser.html" title="{SdkParser\n||+ getApiDomains()\l+ getApiRequests()\l+ getApiResponses()\l}" alt="" coords="5,5,149,125"/></map>
+<area shape="rect" id="node2" href="classSdkParser.html" title="{SdkParser\n||+ getApiDomains()\l+ getApiRequests()\l+ getApiResponses()\l}" alt="" coords="5,5,149,125"/><area shape="rect" id="node4" href="classTypeMapper.html" title="{TypeMapper\n||+ getDomainLangType()\l+ getRequestLangType()\l+ getResponseLangType()\l}" alt="" coords="173,5,349,125"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4aeb9228fbcb97bf1a0df408eae43b7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#a4aeb9228fbcb97bf1a0df408eae43b7c">MetaSdkParser</a> (<a class="el" href="classTypeMapper.html">TypeMapper</a> *typeMapper, const QString &amp;metadataXmlPath)</td></tr>
-<tr class="memitem:a5ffa7a936f28b65b3a53cba58a5ba047"><td class="memItemLeft" align="right" valign="top">virtual const QList&lt; <a class="el" href="classApiDomain.html">ApiDomain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#a5ffa7a936f28b65b3a53cba58a5ba047">getApiDomains</a> ()</td></tr>
-<tr class="memitem:a4856857b4784e93bb33a1316569dbbce"><td class="memItemLeft" align="right" valign="top">virtual const QList&lt; <a class="el" href="classApiRequest.html">ApiRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#a4856857b4784e93bb33a1316569dbbce">getApiRequests</a> ()</td></tr>
-<tr class="memdesc:a4856857b4784e93bb33a1316569dbbce"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取Request Api类 与getApiResponse不同的是  <a href="#a4856857b4784e93bb33a1316569dbbce"></a><br/></td></tr>
-<tr class="memitem:ae920e712ad0f3579e350fb6f4bd7062c"><td class="memItemLeft" align="right" valign="top">virtual const QList&lt; <a class="el" href="classApiResponse.html">ApiResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#ae920e712ad0f3579e350fb6f4bd7062c">getApiResponses</a> ()</td></tr>
+<tr class="memitem:af44f06b19b2aa35617c065b445bf05e0"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="classApiDomain.html">ApiDomain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#af44f06b19b2aa35617c065b445bf05e0">getApiDomains</a> ()</td></tr>
+<tr class="memitem:a2d25a4b1340781353c3db5d753afc1d0"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="classApiRequest.html">ApiRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#a2d25a4b1340781353c3db5d753afc1d0">getApiRequests</a> ()</td></tr>
+<tr class="memdesc:a2d25a4b1340781353c3db5d753afc1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取Request Api类 与getApiResponse不同的是, Requests只是借助level确定langType 而Response直接存储meta数据中的level。  <a href="#a2d25a4b1340781353c3db5d753afc1d0"></a><br/></td></tr>
+<tr class="memitem:a4ee69ddf1725d2fcacc096e1adf24685"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="classApiResponse.html">ApiResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#a4ee69ddf1725d2fcacc096e1adf24685">getApiResponses</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8500137f5fcc23de1b19ea42398fde9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#a8500137f5fcc23de1b19ea42398fde9e">readFile</a> (const QString &amp;filePath)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aba3c4fc93530f6cfcc3b3395c0ab96b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTypeMapper.html">TypeMapper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#aba3c4fc93530f6cfcc3b3395c0ab96b3">mapper</a></td></tr>
+<tr class="memdesc:aba3c4fc93530f6cfcc3b3395c0ab96b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">类型映射器  <a href="#aba3c4fc93530f6cfcc3b3395c0ab96b3"></a><br/></td></tr>
+<tr class="memitem:ae325639537ca9105d2c89c3ac6d62098"><td class="memItemLeft" align="right" valign="top">QDomDocument&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#ae325639537ca9105d2c89c3ac6d62098">domDocument</a></td></tr>
+<tr class="memdesc:ae325639537ca9105d2c89c3ac6d62098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Qt Dom Xml处理  <a href="#ae325639537ca9105d2c89c3ac6d62098"></a><br/></td></tr>
+<tr class="memitem:a9ccf16ca0c8aec954b893b4bc8bbabb3"><td class="memItemLeft" align="right" valign="top">QDomElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaSdkParser.html#a9ccf16ca0c8aec954b893b4bc8bbabb3">root</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>metadata.xml的处理类，要求完善的metadata.xml：struct、api、param等节点都为同级兄弟， 只适用于淘宝metadata </p>
@@ -142,10 +157,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMetaSdkParser_a4aeb9228fbcb97bf1a0df408eae43b7c_cgraph.png" border="0" usemap="#classMetaSdkParser_a4aeb9228fbcb97bf1a0df408eae43b7c_cgraph" alt=""/></div>
+<map name="classMetaSdkParser_a4aeb9228fbcb97bf1a0df408eae43b7c_cgraph" id="classMetaSdkParser_a4aeb9228fbcb97bf1a0df408eae43b7c_cgraph">
+<area shape="rect" id="node3" href="classMetaSdkParser.html#a8500137f5fcc23de1b19ea42398fde9e" title="MetaSdkParser::readFile" alt="" coords="265,5,431,35"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <h2>Member Function Documentation</h2>
-<a class="anchor" id="a5ffa7a936f28b65b3a53cba58a5ba047"></a>
+<a class="anchor" id="af44f06b19b2aa35617c065b445bf05e0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -153,7 +177,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QList&lt; <a class="el" href="classApiDomain.html">ApiDomain</a> &gt; MetaSdkParser::getApiDomains </td>
+          <td class="memname">QList&lt; <a class="el" href="classApiDomain.html">ApiDomain</a> &gt; MetaSdkParser::getApiDomains </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -166,20 +190,20 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classSdkParser.html#ae7ddf6d7523a42405235735a17faf394">SdkParser</a>.</p>
+<p>Implements <a class="el" href="classSdkParser.html#afe549c2cffb644cee85debbc23364b31">SdkParser</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMetaSdkParser_a5ffa7a936f28b65b3a53cba58a5ba047_cgraph.png" border="0" usemap="#classMetaSdkParser_a5ffa7a936f28b65b3a53cba58a5ba047_cgraph" alt=""/></div>
-<map name="classMetaSdkParser_a5ffa7a936f28b65b3a53cba58a5ba047_cgraph" id="classMetaSdkParser_a5ffa7a936f28b65b3a53cba58a5ba047_cgraph">
-<area shape="rect" id="node3" href="classNameObject.html#a83d2ad2a1657e2e22ccb20ef603818fe" title="NameObject::setName" alt="" coords="299,5,453,35"/><area shape="rect" id="node5" href="classNameObject.html#ad655d07d3fe17b433e929c81be6bdf36" title="NameObject::setDesc" alt="" coords="300,59,452,88"/><area shape="rect" id="node7" href="classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457" title="ApiField::setApiType" alt="" coords="305,112,447,141"/><area shape="rect" id="node9" href="classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c" title="ApiField::setLangType" alt="" coords="300,165,452,195"/><area shape="rect" id="node11" href="classTypeMapper.html#a214ec0fc350b972a3e8ed4368cb3c053" title="TypeMapper::getDomainLangType" alt="" coords="265,219,487,248"/><area shape="rect" id="node13" href="classApiField.html#ade535859f3dca5756145abce5c2f11f8" title="ApiField::setApiLevel" alt="" coords="304,272,448,301"/><area shape="rect" id="node15" href="classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f" title="BaseObject::addField" alt="" coords="303,325,449,355"/><area shape="rect" id="node17" href="classBaseObject.html#aca207fde57b536a1d318462e26402c16" title="BaseObject::getFields" alt="" coords="537,325,687,355"/></map>
+<div class="center"><img src="classMetaSdkParser_af44f06b19b2aa35617c065b445bf05e0_cgraph.png" border="0" usemap="#classMetaSdkParser_af44f06b19b2aa35617c065b445bf05e0_cgraph" alt=""/></div>
+<map name="classMetaSdkParser_af44f06b19b2aa35617c065b445bf05e0_cgraph" id="classMetaSdkParser_af44f06b19b2aa35617c065b445bf05e0_cgraph">
+<area shape="rect" id="node3" href="classNameObject.html#a83d2ad2a1657e2e22ccb20ef603818fe" title="NameObject::setName" alt="" coords="299,5,453,35"/><area shape="rect" id="node5" href="classNameObject.html#ad655d07d3fe17b433e929c81be6bdf36" title="NameObject::setDesc" alt="" coords="300,59,452,88"/><area shape="rect" id="node7" href="classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457" title="ApiField::setApiType" alt="" coords="305,112,447,141"/><area shape="rect" id="node9" href="classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c" title="ApiField::setLangType" alt="" coords="300,165,452,195"/><area shape="rect" id="node11" href="classTypeMapper.html#a6cff3eada80d388f61b80aa17f2b34db" title="TypeMapper::getDomainLangType" alt="" coords="265,219,487,248"/><area shape="rect" id="node13" href="classApiField.html#ade535859f3dca5756145abce5c2f11f8" title="ApiField::setApiLevel" alt="" coords="304,272,448,301"/><area shape="rect" id="node15" href="classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f" title="BaseObject::addField" alt="" coords="303,325,449,355"/><area shape="rect" id="node17" href="classBaseObject.html#a9b10822e40b97a6f2a5e96569eabedf6" title="BaseObject::getFields" alt="" coords="537,325,687,355"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a4856857b4784e93bb33a1316569dbbce"></a>
+<a class="anchor" id="a2d25a4b1340781353c3db5d753afc1d0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -187,7 +211,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QList&lt; <a class="el" href="classApiRequest.html">ApiRequest</a> &gt; MetaSdkParser::getApiRequests </td>
+          <td class="memname">QList&lt; <a class="el" href="classApiRequest.html">ApiRequest</a> &gt; MetaSdkParser::getApiRequests </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -200,24 +224,24 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>获取Request Api类 与getApiResponse不同的是 </p>
-<dl class="section return"><dt>Returns</dt><dd>const QList&lt; ApiDomain &gt; </dd></dl>
+<p>获取Request Api类 与getApiResponse不同的是, Requests只是借助level确定langType 而Response直接存储meta数据中的level。 </p>
+<dl class="section return"><dt>Returns</dt><dd>QList&lt; ApiDomain &gt; </dd></dl>
 <p>level "Basic Array"其实为String类型</p>
 
-<p>Implements <a class="el" href="classSdkParser.html#a936010027c0218416efa9846b72c2e75">SdkParser</a>.</p>
+<p>Implements <a class="el" href="classSdkParser.html#a67cabc51034169e81a9d97d99c8eac7d">SdkParser</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMetaSdkParser_a4856857b4784e93bb33a1316569dbbce_cgraph.png" border="0" usemap="#classMetaSdkParser_a4856857b4784e93bb33a1316569dbbce_cgraph" alt=""/></div>
-<map name="classMetaSdkParser_a4856857b4784e93bb33a1316569dbbce_cgraph" id="classMetaSdkParser_a4856857b4784e93bb33a1316569dbbce_cgraph">
-<area shape="rect" id="node3" href="classNameObject.html#a83d2ad2a1657e2e22ccb20ef603818fe" title="NameObject::setName" alt="" coords="303,5,457,35"/><area shape="rect" id="node5" href="classNameObject.html#ad655d07d3fe17b433e929c81be6bdf36" title="NameObject::setDesc" alt="" coords="304,59,456,88"/><area shape="rect" id="node7" href="classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457" title="ApiField::setApiType" alt="" coords="309,112,451,141"/><area shape="rect" id="node9" href="classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c" title="ApiField::setLangType" alt="" coords="304,165,456,195"/><area shape="rect" id="node11" href="classTypeMapper.html#a36586609bdb276f9b4b63dd60a5eee31" title="TypeMapper::getRequestLangType" alt="" coords="267,219,493,248"/><area shape="rect" id="node13" href="classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f" title="BaseObject::addField" alt="" coords="307,272,453,301"/><area shape="rect" id="node15" href="classBaseObject.html#aca207fde57b536a1d318462e26402c16" title="BaseObject::getFields" alt="" coords="543,272,692,301"/></map>
+<div class="center"><img src="classMetaSdkParser_a2d25a4b1340781353c3db5d753afc1d0_cgraph.png" border="0" usemap="#classMetaSdkParser_a2d25a4b1340781353c3db5d753afc1d0_cgraph" alt=""/></div>
+<map name="classMetaSdkParser_a2d25a4b1340781353c3db5d753afc1d0_cgraph" id="classMetaSdkParser_a2d25a4b1340781353c3db5d753afc1d0_cgraph">
+<area shape="rect" id="node3" href="classNameObject.html#a83d2ad2a1657e2e22ccb20ef603818fe" title="NameObject::setName" alt="" coords="303,5,457,35"/><area shape="rect" id="node5" href="classNameObject.html#ad655d07d3fe17b433e929c81be6bdf36" title="NameObject::setDesc" alt="" coords="304,59,456,88"/><area shape="rect" id="node7" href="classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457" title="ApiField::setApiType" alt="" coords="309,112,451,141"/><area shape="rect" id="node9" href="classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c" title="ApiField::setLangType" alt="" coords="304,165,456,195"/><area shape="rect" id="node11" href="classTypeMapper.html#ac502acfc85b7dde9aa5401ca0fb70158" title="TypeMapper::getRequestLangType" alt="" coords="267,219,493,248"/><area shape="rect" id="node13" href="classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f" title="BaseObject::addField" alt="" coords="307,272,453,301"/><area shape="rect" id="node15" href="classBaseObject.html#a9b10822e40b97a6f2a5e96569eabedf6" title="BaseObject::getFields" alt="" coords="543,272,692,301"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ae920e712ad0f3579e350fb6f4bd7062c"></a>
+<a class="anchor" id="a4ee69ddf1725d2fcacc096e1adf24685"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -225,7 +249,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QList&lt; <a class="el" href="classApiResponse.html">ApiResponse</a> &gt; MetaSdkParser::getApiResponses </td>
+          <td class="memname">QList&lt; <a class="el" href="classApiResponse.html">ApiResponse</a> &gt; MetaSdkParser::getApiResponses </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -238,16 +262,114 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classSdkParser.html#a872a6ba003f299c2bb13369f50ab4e8a">SdkParser</a>.</p>
+<p>Implements <a class="el" href="classSdkParser.html#a4524ffa5afbff94430a10d28f5b5a415">SdkParser</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMetaSdkParser_ae920e712ad0f3579e350fb6f4bd7062c_cgraph.png" border="0" usemap="#classMetaSdkParser_ae920e712ad0f3579e350fb6f4bd7062c_cgraph" alt=""/></div>
-<map name="classMetaSdkParser_ae920e712ad0f3579e350fb6f4bd7062c_cgraph" id="classMetaSdkParser_ae920e712ad0f3579e350fb6f4bd7062c_cgraph">
-<area shape="rect" id="node3" href="classNameObject.html#a83d2ad2a1657e2e22ccb20ef603818fe" title="NameObject::setName" alt="" coords="319,5,473,35"/><area shape="rect" id="node5" href="classNameObject.html#ad655d07d3fe17b433e929c81be6bdf36" title="NameObject::setDesc" alt="" coords="320,59,472,88"/><area shape="rect" id="node7" href="classApiField.html#ade535859f3dca5756145abce5c2f11f8" title="ApiField::setApiLevel" alt="" coords="324,112,468,141"/><area shape="rect" id="node9" href="classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457" title="ApiField::setApiType" alt="" coords="325,165,467,195"/><area shape="rect" id="node11" href="classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c" title="ApiField::setLangType" alt="" coords="320,219,472,248"/><area shape="rect" id="node13" href="classTypeMapper.html#a3d8ba32c32dbc5f7965f925dc74b0b96" title="TypeMapper::getResponseLangType" alt="" coords="279,272,513,301"/><area shape="rect" id="node15" href="classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f" title="BaseObject::addField" alt="" coords="323,325,469,355"/><area shape="rect" id="node17" href="classBaseObject.html#aca207fde57b536a1d318462e26402c16" title="BaseObject::getFields" alt="" coords="564,325,713,355"/></map>
+<div class="center"><img src="classMetaSdkParser_a4ee69ddf1725d2fcacc096e1adf24685_cgraph.png" border="0" usemap="#classMetaSdkParser_a4ee69ddf1725d2fcacc096e1adf24685_cgraph" alt=""/></div>
+<map name="classMetaSdkParser_a4ee69ddf1725d2fcacc096e1adf24685_cgraph" id="classMetaSdkParser_a4ee69ddf1725d2fcacc096e1adf24685_cgraph">
+<area shape="rect" id="node3" href="classNameObject.html#a83d2ad2a1657e2e22ccb20ef603818fe" title="NameObject::setName" alt="" coords="319,5,473,35"/><area shape="rect" id="node5" href="classNameObject.html#ad655d07d3fe17b433e929c81be6bdf36" title="NameObject::setDesc" alt="" coords="320,59,472,88"/><area shape="rect" id="node7" href="classApiField.html#ade535859f3dca5756145abce5c2f11f8" title="ApiField::setApiLevel" alt="" coords="324,112,468,141"/><area shape="rect" id="node9" href="classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457" title="ApiField::setApiType" alt="" coords="325,165,467,195"/><area shape="rect" id="node11" href="classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c" title="ApiField::setLangType" alt="" coords="320,219,472,248"/><area shape="rect" id="node13" href="classTypeMapper.html#a18ed0b648c02b0c0595b8c72880a77c1" title="TypeMapper::getResponseLangType" alt="" coords="279,272,513,301"/><area shape="rect" id="node15" href="classBaseObject.html#ac8b72d71d57fe2dbae7f6a2149f7725f" title="BaseObject::addField" alt="" coords="323,325,469,355"/><area shape="rect" id="node17" href="classBaseObject.html#a9b10822e40b97a6f2a5e96569eabedf6" title="BaseObject::getFields" alt="" coords="564,325,713,355"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8500137f5fcc23de1b19ea42398fde9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MetaSdkParser::readFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMetaSdkParser_a8500137f5fcc23de1b19ea42398fde9e_icgraph.png" border="0" usemap="#classMetaSdkParser_a8500137f5fcc23de1b19ea42398fde9e_icgraph" alt=""/></div>
+<map name="classMetaSdkParser_a8500137f5fcc23de1b19ea42398fde9e_icgraph" id="classMetaSdkParser_a8500137f5fcc23de1b19ea42398fde9e_icgraph">
+<area shape="rect" id="node3" href="classMetaSdkParser.html#a4aeb9228fbcb97bf1a0df408eae43b7c" title="MetaSdkParser::MetaSdkParser" alt="" coords="221,5,432,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2>Member Data Documentation</h2>
+<a class="anchor" id="ae325639537ca9105d2c89c3ac6d62098"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDomDocument MetaSdkParser::domDocument</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Qt Dom Xml处理 </p>
+
+</div>
+</div>
+<a class="anchor" id="aba3c4fc93530f6cfcc3b3395c0ab96b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTypeMapper.html">TypeMapper</a>* MetaSdkParser::mapper</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>类型映射器 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9ccf16ca0c8aec954b893b4bc8bbabb3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDomElement MetaSdkParser::root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -258,7 +380,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2012 11:03:40 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 6 2013 01:02:28 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -1,0 +1,5 @@
+<map id="SdkGenerator::init" name="SdkGenerator::init">
+<area shape="rect" id="node3" href="$classSdkParser.html#afe549c2cffb644cee85debbc23364b31" title="SdkParser::getApiDomains" alt="" coords="189,5,368,35"/>
+<area shape="rect" id="node5" href="$classSdkParser.html#a67cabc51034169e81a9d97d99c8eac7d" title="SdkParser::getApiRequests" alt="" coords="187,59,371,88"/>
+<area shape="rect" id="node7" href="$classSdkParser.html#a4524ffa5afbff94430a10d28f5b5a415" title="SdkParser::getApiResponses" alt="" coords="181,112,376,141"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="CppQtSdkGenerator::getRequestSourceCode" name="CppQtSdkGenerator::getRequestSourceCode">
+<area shape="rect" id="node3" href="$classApiRequest.html#ae67636c46722727f60e68f7a30d01a56" title="获得请求类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="688,67,923,96"/>
+<area shape="rect" id="node9" href="$classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5" title="NameObject::getName" alt="" coords="979,120,1133,150"/>
+<area shape="rect" id="node11" href="$classBaseObject.html#a9b10822e40b97a6f2a5e96569eabedf6" title="BaseObject::getFields" alt="" coords="241,326,391,355"/>
+<area shape="rect" id="node13" href="$classNameObject.html#ae537e2181b4e1a4d02c227f88e64d40e" title="NameObject::getDesc" alt="" coords="240,379,392,408"/>
+<area shape="rect" id="node15" href="$classApiField.html#a249587e71ababd60613d1e67a359e6de" title="ApiField::getLangType" alt="" coords="240,432,392,462"/>
+<area shape="rect" id="node17" href="$classApiField.html#a299dad67060e96288c7f73848cd0c487" title="获得驼峰风格名称" alt="" coords="707,120,904,150"/>
+<area shape="rect" id="node21" href="$classApiField.html#af62681e7453ceeed0cf646b8a0f44d09" title="获得属性的get方法名称" alt="" coords="219,222,413,251"/>
+<area shape="rect" id="node28" href="$classApiField.html#a15ab6f17c1b84bc64a3a80b2f7b42e67" title="获得属性的set方法名称" alt="" coords="220,168,412,198"/>
+<area shape="rect" id="node32" href="$classApiRequest.html#af5f268b28da31aa5d170a3b5dc6df1b8" title="获得响应类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="684,14,927,43"/>
+<area shape="rect" id="node5" href="$classStringKit.html#abc6e51c86e7cc4f4e526240dfc79c0f6" title="生成首字母大写的字符串" alt="" coords="989,14,1123,43"/>
+<area shape="rect" id="node7" href="$classStringKit.html#a01a7131f3c5df9cd79a32fdb3c96fa18" title="将字符串转换为驼峰风格" alt="" coords="976,67,1136,96"/>
+<area shape="rect" id="node23" href="$classApiField.html#a685ff98ab3d96b988224e3ea983f5324" title="ApiField::getMethodName" alt="" coords="461,171,635,200"/>
+<area shape="rect" id="node25" href="$classStringKit.html#aad5c1889468027fbc8f81472ad22ac66" title="生成JAVA/Qt风格的get/set方法名" alt="" coords="725,174,885,203"/>
+</map>

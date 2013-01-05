@@ -1,0 +1,12 @@
+<map id="StringKit::capitalize" name="StringKit::capitalize">
+<area shape="rect" id="node3" href="$classApiDomain.html#a53ce16af6f98eb3510c7f4bfe02bb64a" title="ApiDomain::getClassName" alt="" coords="221,83,403,112"/>
+<area shape="rect" id="node9" href="$classApiRequest.html#ae67636c46722727f60e68f7a30d01a56" title="获得请求类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="195,168,429,197"/>
+<area shape="rect" id="node15" href="$classApiRequest.html#af5f268b28da31aa5d170a3b5dc6df1b8" title="获得响应类的名称，去掉metadata中api名字的前缀&quot;taobao.&quot;" alt="" coords="191,221,433,251"/>
+<area shape="rect" id="node18" href="$classApiResponse.html#a6e1414080de6489d0a342d434878da2f" title="ApiResponse::getClassName" alt="" coords="215,291,409,320"/>
+<area shape="rect" id="node5" href="$classCppQtSdkGenerator.html#ab13477238315c86b515136d4a38ff897" title="获取domain相关的文件路径，相对于sourcesDir来说" alt="" coords="489,5,676,51"/>
+<area shape="rect" id="node7" href="$classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="503,74,663,121"/>
+<area shape="rect" id="node11" href="$classCppQtSdkGenerator.html#a0a007abe7630d6661d2f871f82131877" title="获取API请求文件路径，相对于sourcesDir来说" alt="" coords="488,143,677,190"/>
+<area shape="rect" id="node13" href="$classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="500,213,665,259"/>
+<area shape="rect" id="node20" href="$classCppQtSdkGenerator.html#a804a1f281028f4859b175e6fc39d6e7f" title="生成API响应文件路径，，相对于sourcesDir来说" alt="" coords="483,282,683,329"/>
+<area shape="rect" id="node22" href="$classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="496,351,669,398"/>
+</map>

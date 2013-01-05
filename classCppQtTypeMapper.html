@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,12 +107,12 @@ Collaboration diagram for CppQtTypeMapper:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3b554393f99bb724f8395a1cd3ccb89d"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCppQtTypeMapper.html#a3b554393f99bb724f8395a1cd3ccb89d">getDomainLangType</a> (const QString &amp;apiType) const </td></tr>
-<tr class="memitem:a3677be9bdc260ba3b10ec867f9fed751"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCppQtTypeMapper.html#a3677be9bdc260ba3b10ec867f9fed751">getRequestLangType</a> (const QString &amp;apiType) const </td></tr>
-<tr class="memitem:a4b27480e949d07b3e804aed293f9e48c"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCppQtTypeMapper.html#a4b27480e949d07b3e804aed293f9e48c">getResponseLangType</a> (const QString &amp;apiType) const </td></tr>
+<tr class="memitem:affea9f2d8f7f1348ad14221b229344ed"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCppQtTypeMapper.html#affea9f2d8f7f1348ad14221b229344ed">getDomainLangType</a> (const QString &amp;apiType) const </td></tr>
+<tr class="memitem:a2e0872c76af774acfb414ff1dac46d2c"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCppQtTypeMapper.html#a2e0872c76af774acfb414ff1dac46d2c">getRequestLangType</a> (const QString &amp;apiType) const </td></tr>
+<tr class="memitem:a34d334714ebae2bf631630d6005a11d5"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCppQtTypeMapper.html#a34d334714ebae2bf631630d6005a11d5">getResponseLangType</a> (const QString &amp;apiType) const </td></tr>
 </table>
 <h2>Member Function Documentation</h2>
-<a class="anchor" id="a3b554393f99bb724f8395a1cd3ccb89d"></a>
+<a class="anchor" id="affea9f2d8f7f1348ad14221b229344ed"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -119,7 +120,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString CppQtTypeMapper::getDomainLangType </td>
+          <td class="memname">QString CppQtTypeMapper::getDomainLangType </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>apiType</em></td><td>)</td>
@@ -133,20 +134,20 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classTypeMapper.html#a214ec0fc350b972a3e8ed4368cb3c053">TypeMapper</a>.</p>
+<p>Implements <a class="el" href="classTypeMapper.html#a6cff3eada80d388f61b80aa17f2b34db">TypeMapper</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classCppQtTypeMapper_a3b554393f99bb724f8395a1cd3ccb89d_icgraph.png" border="0" usemap="#classCppQtTypeMapper_a3b554393f99bb724f8395a1cd3ccb89d_icgraph" alt=""/></div>
-<map name="classCppQtTypeMapper_a3b554393f99bb724f8395a1cd3ccb89d_icgraph" id="classCppQtTypeMapper_a3b554393f99bb724f8395a1cd3ccb89d_icgraph">
-<area shape="rect" id="node3" href="classCppQtTypeMapper.html#a3677be9bdc260ba3b10ec867f9fed751" title="CppQtTypeMapper::getRequest\lLangType" alt="" coords="263,5,468,51"/><area shape="rect" id="node5" href="classCppQtTypeMapper.html#a4b27480e949d07b3e804aed293f9e48c" title="CppQtTypeMapper::getResponse\lLangType" alt="" coords="257,74,473,121"/></map>
+<div class="center"><img src="classCppQtTypeMapper_affea9f2d8f7f1348ad14221b229344ed_icgraph.png" border="0" usemap="#classCppQtTypeMapper_affea9f2d8f7f1348ad14221b229344ed_icgraph" alt=""/></div>
+<map name="classCppQtTypeMapper_affea9f2d8f7f1348ad14221b229344ed_icgraph" id="classCppQtTypeMapper_affea9f2d8f7f1348ad14221b229344ed_icgraph">
+<area shape="rect" id="node3" href="classCppQtTypeMapper.html#a2e0872c76af774acfb414ff1dac46d2c" title="CppQtTypeMapper::getRequest\lLangType" alt="" coords="263,5,468,51"/><area shape="rect" id="node5" href="classCppQtTypeMapper.html#a34d334714ebae2bf631630d6005a11d5" title="CppQtTypeMapper::getResponse\lLangType" alt="" coords="257,74,473,121"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a3677be9bdc260ba3b10ec867f9fed751"></a>
+<a class="anchor" id="a2e0872c76af774acfb414ff1dac46d2c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -154,7 +155,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString CppQtTypeMapper::getRequestLangType </td>
+          <td class="memname">QString CppQtTypeMapper::getRequestLangType </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>apiType</em></td><td>)</td>
@@ -168,20 +169,20 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classTypeMapper.html#a36586609bdb276f9b4b63dd60a5eee31">TypeMapper</a>.</p>
+<p>Implements <a class="el" href="classTypeMapper.html#ac502acfc85b7dde9aa5401ca0fb70158">TypeMapper</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classCppQtTypeMapper_a3677be9bdc260ba3b10ec867f9fed751_cgraph.png" border="0" usemap="#classCppQtTypeMapper_a3677be9bdc260ba3b10ec867f9fed751_cgraph" alt=""/></div>
-<map name="classCppQtTypeMapper_a3677be9bdc260ba3b10ec867f9fed751_cgraph" id="classCppQtTypeMapper_a3677be9bdc260ba3b10ec867f9fed751_cgraph">
-<area shape="rect" id="node3" href="classCppQtTypeMapper.html#a3b554393f99bb724f8395a1cd3ccb89d" title="CppQtTypeMapper::getDomain\lLangType" alt="" coords="261,5,464,51"/></map>
+<div class="center"><img src="classCppQtTypeMapper_a2e0872c76af774acfb414ff1dac46d2c_cgraph.png" border="0" usemap="#classCppQtTypeMapper_a2e0872c76af774acfb414ff1dac46d2c_cgraph" alt=""/></div>
+<map name="classCppQtTypeMapper_a2e0872c76af774acfb414ff1dac46d2c_cgraph" id="classCppQtTypeMapper_a2e0872c76af774acfb414ff1dac46d2c_cgraph">
+<area shape="rect" id="node3" href="classCppQtTypeMapper.html#affea9f2d8f7f1348ad14221b229344ed" title="CppQtTypeMapper::getDomain\lLangType" alt="" coords="261,5,464,51"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a4b27480e949d07b3e804aed293f9e48c"></a>
+<a class="anchor" id="a34d334714ebae2bf631630d6005a11d5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -189,7 +190,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString CppQtTypeMapper::getResponseLangType </td>
+          <td class="memname">QString CppQtTypeMapper::getResponseLangType </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>apiType</em></td><td>)</td>
@@ -203,14 +204,14 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classTypeMapper.html#a3d8ba32c32dbc5f7965f925dc74b0b96">TypeMapper</a>.</p>
+<p>Implements <a class="el" href="classTypeMapper.html#a18ed0b648c02b0c0595b8c72880a77c1">TypeMapper</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classCppQtTypeMapper_a4b27480e949d07b3e804aed293f9e48c_cgraph.png" border="0" usemap="#classCppQtTypeMapper_a4b27480e949d07b3e804aed293f9e48c_cgraph" alt=""/></div>
-<map name="classCppQtTypeMapper_a4b27480e949d07b3e804aed293f9e48c_cgraph" id="classCppQtTypeMapper_a4b27480e949d07b3e804aed293f9e48c_cgraph">
-<area shape="rect" id="node3" href="classCppQtTypeMapper.html#a3b554393f99bb724f8395a1cd3ccb89d" title="CppQtTypeMapper::getDomain\lLangType" alt="" coords="272,5,475,51"/></map>
+<div class="center"><img src="classCppQtTypeMapper_a34d334714ebae2bf631630d6005a11d5_cgraph.png" border="0" usemap="#classCppQtTypeMapper_a34d334714ebae2bf631630d6005a11d5_cgraph" alt=""/></div>
+<map name="classCppQtTypeMapper_a34d334714ebae2bf631630d6005a11d5_cgraph" id="classCppQtTypeMapper_a34d334714ebae2bf631630d6005a11d5_cgraph">
+<area shape="rect" id="node3" href="classCppQtTypeMapper.html#affea9f2d8f7f1348ad14221b229344ed" title="CppQtTypeMapper::getDomain\lLangType" alt="" coords="272,5,475,51"/></map>
 </div>
 </p>
 
@@ -223,7 +224,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2012 11:03:40 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 6 2013 01:02:28 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

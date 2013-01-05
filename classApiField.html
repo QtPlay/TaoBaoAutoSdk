@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classApiField-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ApiField Class Reference</div>  </div>
@@ -97,33 +99,33 @@ Inheritance diagram for ApiField:</div>
 <div class="dyncontent">
 <div class="center"><img src="classApiField__inherit__graph.png" border="0" usemap="#ApiField_inherit__map" alt="Inheritance graph"/></div>
 <map name="ApiField_inherit__map" id="ApiField_inherit__map">
-<area shape="rect" id="node2" href="classNameObject.html" title="{NameObject\n||+ getName()\l+ setName()\l+ getDesc()\l+ setDesc()\l+ equals()\l}" alt="" coords="41,5,135,160"/></map>
+<area shape="rect" id="node2" href="classNameObject.html" title="{NameObject\n|&#45; name\l&#45; desc\l|+ getName()\l+ setName()\l+ getDesc()\l+ setDesc()\l+ equals()\l}" alt="" coords="41,6,135,178"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for ApiField:</div>
 <div class="dyncontent">
 <div class="center"><img src="classApiField__coll__graph.png" border="0" usemap="#ApiField_coll__map" alt="Collaboration graph"/></div>
 <map name="ApiField_coll__map" id="ApiField_coll__map">
-<area shape="rect" id="node2" href="classNameObject.html" title="{NameObject\n||+ getName()\l+ setName()\l+ getDesc()\l+ setDesc()\l+ equals()\l}" alt="" coords="41,5,135,160"/></map>
+<area shape="rect" id="node2" href="classNameObject.html" title="{NameObject\n|&#45; name\l&#45; desc\l|+ getName()\l+ setName()\l+ getDesc()\l+ setDesc()\l+ equals()\l}" alt="" coords="41,6,135,178"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a249587e71ababd60613d1e67a359e6de"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a249587e71ababd60613d1e67a359e6de">getLangType</a> () const </td></tr>
-<tr class="memitem:a8e7b1de3505cf8b799e9da1df902c30c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c">setLangType</a> (const QString &amp;langType)</td></tr>
+<tr class="memitem:a8e7b1de3505cf8b799e9da1df902c30c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c">setLangType</a> (const QString &amp;<a class="el" href="classApiField.html#af0e892b54741af698bacb2ece73ab05b">langType</a>)</td></tr>
 <tr class="memitem:afcb58f9fb50e1a5f5d9cb19977a4f93d"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#afcb58f9fb50e1a5f5d9cb19977a4f93d">getApiType</a> () const </td></tr>
-<tr class="memitem:a1eac17093fe9bf3f3e1c6d79d2411457"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457">setApiType</a> (const QString &amp;apiType)</td></tr>
-<tr class="memitem:a99b5e6c3abca71e4525e40cc91571978"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a99b5e6c3abca71e4525e40cc91571978">getApiLevel</a> () const </td></tr>
-<tr class="memitem:ade535859f3dca5756145abce5c2f11f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#ade535859f3dca5756145abce5c2f11f8">setApiLevel</a> (const QString &amp;apiLevel)</td></tr>
-<tr class="memitem:a913191824861c5a6139c54a9b6c3992a"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a913191824861c5a6139c54a9b6c3992a">getCamelCaseName</a> () const </td></tr>
-<tr class="memdesc:a913191824861c5a6139c54a9b6c3992a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得驼峰风格名称  <a href="#a913191824861c5a6139c54a9b6c3992a"></a><br/></td></tr>
-<tr class="memitem:a19b61fa2f966255c60368f1693c74959"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a19b61fa2f966255c60368f1693c74959">getPascalCaseName</a> () const </td></tr>
-<tr class="memdesc:a19b61fa2f966255c60368f1693c74959"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得帕斯卡风格名称  <a href="#a19b61fa2f966255c60368f1693c74959"></a><br/></td></tr>
-<tr class="memitem:ac6adc4e86a1f1e79a10db2f7dd706907"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#ac6adc4e86a1f1e79a10db2f7dd706907">getGetMethodName</a> () const </td></tr>
-<tr class="memdesc:ac6adc4e86a1f1e79a10db2f7dd706907"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得属性的get方法名称  <a href="#ac6adc4e86a1f1e79a10db2f7dd706907"></a><br/></td></tr>
-<tr class="memitem:afb86b0453cc4a9bef17849f28228a361"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#afb86b0453cc4a9bef17849f28228a361">getSetMethodName</a> () const </td></tr>
-<tr class="memdesc:afb86b0453cc4a9bef17849f28228a361"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得属性的set方法名称  <a href="#afb86b0453cc4a9bef17849f28228a361"></a><br/></td></tr>
-<tr class="memitem:a574b9b58102833cfa471c4a008c2ed33"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a574b9b58102833cfa471c4a008c2ed33">getMethodName</a> () const </td></tr>
+<tr class="memitem:a1eac17093fe9bf3f3e1c6d79d2411457"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457">setApiType</a> (const QString &amp;<a class="el" href="classApiField.html#a242695a770c44d88edd2f7d9cc6fb268">apiType</a>)</td></tr>
+<tr class="memitem:a080c3be3e1b0f2909036dbce2242ad39"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a080c3be3e1b0f2909036dbce2242ad39">getApiLevel</a> () const </td></tr>
+<tr class="memitem:ade535859f3dca5756145abce5c2f11f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#ade535859f3dca5756145abce5c2f11f8">setApiLevel</a> (const QString &amp;<a class="el" href="classApiField.html#a3dfbfbd5953eaca1a134e90994968525">apiLevel</a>)</td></tr>
+<tr class="memitem:a299dad67060e96288c7f73848cd0c487"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a299dad67060e96288c7f73848cd0c487">getCamelCaseName</a> () const </td></tr>
+<tr class="memdesc:a299dad67060e96288c7f73848cd0c487"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得驼峰风格名称  <a href="#a299dad67060e96288c7f73848cd0c487"></a><br/></td></tr>
+<tr class="memitem:a4c66576ac30dfc1a9ade23552f86d79b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a4c66576ac30dfc1a9ade23552f86d79b">getPascalCaseName</a> () const </td></tr>
+<tr class="memdesc:a4c66576ac30dfc1a9ade23552f86d79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得帕斯卡风格名称  <a href="#a4c66576ac30dfc1a9ade23552f86d79b"></a><br/></td></tr>
+<tr class="memitem:af62681e7453ceeed0cf646b8a0f44d09"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#af62681e7453ceeed0cf646b8a0f44d09">getGetMethodName</a> () const </td></tr>
+<tr class="memdesc:af62681e7453ceeed0cf646b8a0f44d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得属性的get方法名称  <a href="#af62681e7453ceeed0cf646b8a0f44d09"></a><br/></td></tr>
+<tr class="memitem:a15ab6f17c1b84bc64a3a80b2f7b42e67"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a15ab6f17c1b84bc64a3a80b2f7b42e67">getSetMethodName</a> () const </td></tr>
+<tr class="memdesc:a15ab6f17c1b84bc64a3a80b2f7b42e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得属性的set方法名称  <a href="#a15ab6f17c1b84bc64a3a80b2f7b42e67"></a><br/></td></tr>
+<tr class="memitem:a685ff98ab3d96b988224e3ea983f5324"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a685ff98ab3d96b988224e3ea983f5324">getMethodName</a> () const </td></tr>
 <tr class="memitem:a186b9e5f00b1bb76494de9b62d2eb206"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a186b9e5f00b1bb76494de9b62d2eb206">isListField</a> () const </td></tr>
 <tr class="memdesc:a186b9e5f00b1bb76494de9b62d2eb206"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断属性是否是列表类型  <a href="#a186b9e5f00b1bb76494de9b62d2eb206"></a><br/></td></tr>
 <tr class="memitem:a0d4f558c460f6f796783c2a94ce9b4e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a0d4f558c460f6f796783c2a94ce9b4e2">isObjectField</a> ()</td></tr>
@@ -132,15 +134,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9968c530b20954e07742978825d6abd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取定义类型：属性定义，方法定义，返回值。  <a href="#a9968c530b20954e07742978825d6abd3"></a><br/></td></tr>
 <tr class="inherit_header pub_methods_classNameObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classNameObject')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classNameObject.html">NameObject</a></td></tr>
 <tr class="memitem:a259be49d5813f25f37ce2c82006c3fa5 inherit pub_methods_classNameObject"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5">getName</a> () const </td></tr>
-<tr class="memitem:a83d2ad2a1657e2e22ccb20ef603818fe inherit pub_methods_classNameObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNameObject.html#a83d2ad2a1657e2e22ccb20ef603818fe">setName</a> (const QString &amp;name)</td></tr>
+<tr class="memitem:a83d2ad2a1657e2e22ccb20ef603818fe inherit pub_methods_classNameObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNameObject.html#a83d2ad2a1657e2e22ccb20ef603818fe">setName</a> (const QString &amp;<a class="el" href="classNameObject.html#adc233668a768e964327db78f8036e699">name</a>)</td></tr>
 <tr class="memitem:ae537e2181b4e1a4d02c227f88e64d40e inherit pub_methods_classNameObject"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNameObject.html#ae537e2181b4e1a4d02c227f88e64d40e">getDesc</a> () const </td></tr>
-<tr class="memitem:ad655d07d3fe17b433e929c81be6bdf36 inherit pub_methods_classNameObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNameObject.html#ad655d07d3fe17b433e929c81be6bdf36">setDesc</a> (const QString &amp;desc)</td></tr>
+<tr class="memitem:ad655d07d3fe17b433e929c81be6bdf36 inherit pub_methods_classNameObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNameObject.html#ad655d07d3fe17b433e929c81be6bdf36">setDesc</a> (const QString &amp;<a class="el" href="classNameObject.html#a180a1ee12328fba25fd2b66028cc77b4">desc</a>)</td></tr>
 <tr class="memitem:a8469e6ed7ad553ba8269822332024764 inherit pub_methods_classNameObject"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNameObject.html#a8469e6ed7ad553ba8269822332024764">equals</a> (const <a class="el" href="classNameObject.html">NameObject</a> &amp;obj)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af0e892b54741af698bacb2ece73ab05b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#af0e892b54741af698bacb2ece73ab05b">langType</a></td></tr>
+<tr class="memdesc:af0e892b54741af698bacb2ece73ab05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">特定语言的类型  <a href="#af0e892b54741af698bacb2ece73ab05b"></a><br/></td></tr>
+<tr class="memitem:a242695a770c44d88edd2f7d9cc6fb268"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a242695a770c44d88edd2f7d9cc6fb268">apiType</a></td></tr>
+<tr class="memdesc:a242695a770c44d88edd2f7d9cc6fb268"><td class="mdescLeft">&#160;</td><td class="mdescRight">metadata中固定的语言类型  <a href="#a242695a770c44d88edd2f7d9cc6fb268"></a><br/></td></tr>
+<tr class="memitem:a3dfbfbd5953eaca1a134e90994968525"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApiField.html#a3dfbfbd5953eaca1a134e90994968525">apiLevel</a></td></tr>
+<tr class="memdesc:a3dfbfbd5953eaca1a134e90994968525"><td class="mdescLeft">&#160;</td><td class="mdescRight">metadata属性api level: Basic, Basic Object, Object, Object Array  <a href="#a3dfbfbd5953eaca1a134e90994968525"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Api属性，针对metadata.xml中的prop下字段 </p>
 </div><h2>Member Function Documentation</h2>
-<a class="anchor" id="a99b5e6c3abca71e4525e40cc91571978"></a>
+<a class="anchor" id="a080c3be3e1b0f2909036dbce2242ad39"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -148,7 +159,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString&amp; ApiField::getApiLevel </td>
+          <td class="memname">QString ApiField::getApiLevel </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -189,13 +200,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classApiField_afcb58f9fb50e1a5f5d9cb19977a4f93d_icgraph.png" border="0" usemap="#classApiField_afcb58f9fb50e1a5f5d9cb19977a4f93d_icgraph" alt=""/></div>
 <map name="classApiField_afcb58f9fb50e1a5f5d9cb19977a4f93d_icgraph" id="classApiField_afcb58f9fb50e1a5f5d9cb19977a4f93d_icgraph">
-<area shape="rect" id="node3" href="classApiRequest.html#ab3990199fb7ad6346c494df63c87165f" title="ApiRequest::isUploadRequest" alt="" coords="199,5,396,35"/><area shape="rect" id="node5" href="classBaseObject.html#adf8fd214620f1ce29d9277a1be36e9ac" title="BaseObject::isContainDate\lField" alt="" coords="207,58,388,105"/></map>
+<area shape="rect" id="node3" href="classApiRequest.html#ab3990199fb7ad6346c494df63c87165f" title="ApiRequest::isUploadRequest" alt="" coords="199,5,396,35"/><area shape="rect" id="node5" href="classBaseObject.html#af1077693f2d092b86fe35437d00ebd82" title="BaseObject::isContainDate\lField" alt="" coords="207,58,388,105"/><area shape="rect" id="node7" href="classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="447,23,620,70"/><area shape="rect" id="node9" href="classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="453,93,613,139"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a913191824861c5a6139c54a9b6c3992a"></a>
+<a class="anchor" id="a299dad67060e96288c7f73848cd0c487"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -203,7 +214,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString ApiField::getCamelCaseName </td>
+          <td class="memname">QString ApiField::getCamelCaseName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -222,18 +233,18 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classApiField_a913191824861c5a6139c54a9b6c3992a_cgraph.png" border="0" usemap="#classApiField_a913191824861c5a6139c54a9b6c3992a_cgraph" alt=""/></div>
-<map name="classApiField_a913191824861c5a6139c54a9b6c3992a_cgraph" id="classApiField_a913191824861c5a6139c54a9b6c3992a_cgraph">
-<area shape="rect" id="node3" href="classStringKit.html#a1b746ddc6d6a5237aa2b6231b0872afd" title="将字符串转换为驼峰风格" alt="" coords="253,5,413,35"/><area shape="rect" id="node5" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5" title="NameObject::getName" alt="" coords="256,59,411,88"/></map>
+<div class="center"><img src="classApiField_a299dad67060e96288c7f73848cd0c487_cgraph.png" border="0" usemap="#classApiField_a299dad67060e96288c7f73848cd0c487_cgraph" alt=""/></div>
+<map name="classApiField_a299dad67060e96288c7f73848cd0c487_cgraph" id="classApiField_a299dad67060e96288c7f73848cd0c487_cgraph">
+<area shape="rect" id="node3" href="classStringKit.html#a01a7131f3c5df9cd79a32fdb3c96fa18" title="将字符串转换为驼峰风格" alt="" coords="253,5,413,35"/><area shape="rect" id="node5" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5" title="NameObject::getName" alt="" coords="256,59,411,88"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classApiField_a913191824861c5a6139c54a9b6c3992a_icgraph.png" border="0" usemap="#classApiField_a913191824861c5a6139c54a9b6c3992a_icgraph" alt=""/></div>
-<map name="classApiField_a913191824861c5a6139c54a9b6c3992a_icgraph" id="classApiField_a913191824861c5a6139c54a9b6c3992a_icgraph">
-<area shape="rect" id="node3" href="classApiField.html#a574b9b58102833cfa471c4a008c2ed33" title="ApiField::getMethodName" alt="" coords="253,32,427,61"/><area shape="rect" id="node5" href="classApiField.html#ac6adc4e86a1f1e79a10db2f7dd706907" title="获得属性的get方法名称" alt="" coords="475,5,669,35"/><area shape="rect" id="node7" href="classApiField.html#afb86b0453cc4a9bef17849f28228a361" title="获得属性的set方法名称" alt="" coords="476,59,668,88"/></map>
+<div class="center"><img src="classApiField_a299dad67060e96288c7f73848cd0c487_icgraph.png" border="0" usemap="#classApiField_a299dad67060e96288c7f73848cd0c487_icgraph" alt=""/></div>
+<map name="classApiField_a299dad67060e96288c7f73848cd0c487_icgraph" id="classApiField_a299dad67060e96288c7f73848cd0c487_icgraph">
+<area shape="rect" id="node3" href="classApiField.html#a685ff98ab3d96b988224e3ea983f5324" title="ApiField::getMethodName" alt="" coords="253,83,427,112"/><area shape="rect" id="node7" href="classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="719,5,892,51"/><area shape="rect" id="node9" href="classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="723,74,888,121"/><area shape="rect" id="node11" href="classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="725,143,885,190"/><area shape="rect" id="node5" href="classApiField.html#af62681e7453ceeed0cf646b8a0f44d09" title="获得属性的get方法名称" alt="" coords="475,29,669,59"/><area shape="rect" id="node13" href="classApiField.html#a15ab6f17c1b84bc64a3a80b2f7b42e67" title="获得属性的set方法名称" alt="" coords="476,83,668,112"/></map>
 </div>
 </p>
 
@@ -274,8 +285,8 @@ Here is the caller graph for this function:</div>
 <p>获取定义类型：属性定义，方法定义，返回值。 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">prefix</td><td>列表类型的前缀 </td></tr>
-    <tr><td class="paramname">suffix</td><td>列表类型的后缀 </td></tr>
+    <tr><td class="paramname">prefix</td><td>列表类型的前缀，如"QList &lt;" </td></tr>
+    <tr><td class="paramname">suffix</td><td>列表类型的后缀，如"&gt;" </td></tr>
   </table>
   </dd>
 </dl>
@@ -289,9 +300,18 @@ Here is the call graph for this function:</div>
 </div>
 </p>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classApiField_a9968c530b20954e07742978825d6abd3_icgraph.png" border="0" usemap="#classApiField_a9968c530b20954e07742978825d6abd3_icgraph" alt=""/></div>
+<map name="classApiField_a9968c530b20954e07742978825d6abd3_icgraph" id="classApiField_a9968c530b20954e07742978825d6abd3_icgraph">
+<area shape="rect" id="node3" href="classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="247,5,420,51"/><area shape="rect" id="node5" href="classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="253,74,413,121"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="ac6adc4e86a1f1e79a10db2f7dd706907"></a>
+<a class="anchor" id="af62681e7453ceeed0cf646b8a0f44d09"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -299,7 +319,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString ApiField::getGetMethodName </td>
+          <td class="memname">QString ApiField::getGetMethodName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -318,9 +338,18 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classApiField_ac6adc4e86a1f1e79a10db2f7dd706907_cgraph.png" border="0" usemap="#classApiField_ac6adc4e86a1f1e79a10db2f7dd706907_cgraph" alt=""/></div>
-<map name="classApiField_ac6adc4e86a1f1e79a10db2f7dd706907_cgraph" id="classApiField_ac6adc4e86a1f1e79a10db2f7dd706907_cgraph">
-<area shape="rect" id="node3" href="classApiField.html#a574b9b58102833cfa471c4a008c2ed33" title="ApiField::getMethodName" alt="" coords="248,32,421,61"/><area shape="rect" id="node5" href="classStringKit.html#aa3edf53c0a0542cb6a58157d7ffce362" title="生成JAVA/Qt风格的get/set方法名" alt="" coords="489,5,649,35"/><area shape="rect" id="node7" href="classApiField.html#a913191824861c5a6139c54a9b6c3992a" title="获得驼峰风格名称" alt="" coords="471,59,668,88"/><area shape="rect" id="node9" href="classStringKit.html#a1b746ddc6d6a5237aa2b6231b0872afd" title="将字符串转换为驼峰风格" alt="" coords="717,32,877,61"/><area shape="rect" id="node11" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5" title="NameObject::getName" alt="" coords="720,85,875,115"/></map>
+<div class="center"><img src="classApiField_af62681e7453ceeed0cf646b8a0f44d09_cgraph.png" border="0" usemap="#classApiField_af62681e7453ceeed0cf646b8a0f44d09_cgraph" alt=""/></div>
+<map name="classApiField_af62681e7453ceeed0cf646b8a0f44d09_cgraph" id="classApiField_af62681e7453ceeed0cf646b8a0f44d09_cgraph">
+<area shape="rect" id="node3" href="classApiField.html#a685ff98ab3d96b988224e3ea983f5324" title="ApiField::getMethodName" alt="" coords="248,32,421,61"/><area shape="rect" id="node5" href="classStringKit.html#aad5c1889468027fbc8f81472ad22ac66" title="生成JAVA/Qt风格的get/set方法名" alt="" coords="489,5,649,35"/><area shape="rect" id="node7" href="classApiField.html#a299dad67060e96288c7f73848cd0c487" title="获得驼峰风格名称" alt="" coords="471,59,668,88"/><area shape="rect" id="node9" href="classStringKit.html#a01a7131f3c5df9cd79a32fdb3c96fa18" title="将字符串转换为驼峰风格" alt="" coords="717,32,877,61"/><area shape="rect" id="node11" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5" title="NameObject::getName" alt="" coords="720,85,875,115"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classApiField_af62681e7453ceeed0cf646b8a0f44d09_icgraph.png" border="0" usemap="#classApiField_af62681e7453ceeed0cf646b8a0f44d09_icgraph" alt=""/></div>
+<map name="classApiField_af62681e7453ceeed0cf646b8a0f44d09_icgraph" id="classApiField_af62681e7453ceeed0cf646b8a0f44d09_icgraph">
+<area shape="rect" id="node3" href="classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="249,5,423,51"/><area shape="rect" id="node5" href="classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="253,74,419,121"/><area shape="rect" id="node7" href="classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="256,143,416,190"/></map>
 </div>
 </p>
 
@@ -347,9 +376,18 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classApiField_a249587e71ababd60613d1e67a359e6de_icgraph.png" border="0" usemap="#classApiField_a249587e71ababd60613d1e67a359e6de_icgraph" alt=""/></div>
+<map name="classApiField_a249587e71ababd60613d1e67a359e6de_icgraph" id="classApiField_a249587e71ababd60613d1e67a359e6de_icgraph">
+<area shape="rect" id="node3" href="classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="207,5,380,51"/><area shape="rect" id="node5" href="classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="211,74,376,121"/><area shape="rect" id="node7" href="classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="213,143,373,190"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a574b9b58102833cfa471c4a008c2ed33"></a>
+<a class="anchor" id="a685ff98ab3d96b988224e3ea983f5324"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -357,7 +395,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString ApiField::getMethodName </td>
+          <td class="memname">QString ApiField::getMethodName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -373,24 +411,24 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classApiField_a574b9b58102833cfa471c4a008c2ed33_cgraph.png" border="0" usemap="#classApiField_a574b9b58102833cfa471c4a008c2ed33_cgraph" alt=""/></div>
-<map name="classApiField_a574b9b58102833cfa471c4a008c2ed33_cgraph" id="classApiField_a574b9b58102833cfa471c4a008c2ed33_cgraph">
-<area shape="rect" id="node3" href="classStringKit.html#aa3edf53c0a0542cb6a58157d7ffce362" title="生成JAVA/Qt风格的get/set方法名" alt="" coords="247,5,407,35"/><area shape="rect" id="node5" href="classApiField.html#a913191824861c5a6139c54a9b6c3992a" title="获得驼峰风格名称" alt="" coords="228,59,425,88"/><area shape="rect" id="node7" href="classStringKit.html#a1b746ddc6d6a5237aa2b6231b0872afd" title="将字符串转换为驼峰风格" alt="" coords="475,32,635,61"/><area shape="rect" id="node9" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5" title="NameObject::getName" alt="" coords="477,85,632,115"/></map>
+<div class="center"><img src="classApiField_a685ff98ab3d96b988224e3ea983f5324_cgraph.png" border="0" usemap="#classApiField_a685ff98ab3d96b988224e3ea983f5324_cgraph" alt=""/></div>
+<map name="classApiField_a685ff98ab3d96b988224e3ea983f5324_cgraph" id="classApiField_a685ff98ab3d96b988224e3ea983f5324_cgraph">
+<area shape="rect" id="node3" href="classStringKit.html#aad5c1889468027fbc8f81472ad22ac66" title="生成JAVA/Qt风格的get/set方法名" alt="" coords="247,5,407,35"/><area shape="rect" id="node5" href="classApiField.html#a299dad67060e96288c7f73848cd0c487" title="获得驼峰风格名称" alt="" coords="228,59,425,88"/><area shape="rect" id="node7" href="classStringKit.html#a01a7131f3c5df9cd79a32fdb3c96fa18" title="将字符串转换为驼峰风格" alt="" coords="475,32,635,61"/><area shape="rect" id="node9" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5" title="NameObject::getName" alt="" coords="477,85,632,115"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classApiField_a574b9b58102833cfa471c4a008c2ed33_icgraph.png" border="0" usemap="#classApiField_a574b9b58102833cfa471c4a008c2ed33_icgraph" alt=""/></div>
-<map name="classApiField_a574b9b58102833cfa471c4a008c2ed33_icgraph" id="classApiField_a574b9b58102833cfa471c4a008c2ed33_icgraph">
-<area shape="rect" id="node3" href="classApiField.html#ac6adc4e86a1f1e79a10db2f7dd706907" title="获得属性的get方法名称" alt="" coords="227,5,421,35"/><area shape="rect" id="node5" href="classApiField.html#afb86b0453cc4a9bef17849f28228a361" title="获得属性的set方法名称" alt="" coords="228,59,420,88"/></map>
+<div class="center"><img src="classApiField_a685ff98ab3d96b988224e3ea983f5324_icgraph.png" border="0" usemap="#classApiField_a685ff98ab3d96b988224e3ea983f5324_icgraph" alt=""/></div>
+<map name="classApiField_a685ff98ab3d96b988224e3ea983f5324_icgraph" id="classApiField_a685ff98ab3d96b988224e3ea983f5324_icgraph">
+<area shape="rect" id="node3" href="classApiField.html#af62681e7453ceeed0cf646b8a0f44d09" title="获得属性的get方法名称" alt="" coords="227,56,421,85"/><area shape="rect" id="node11" href="classApiField.html#a15ab6f17c1b84bc64a3a80b2f7b42e67" title="获得属性的set方法名称" alt="" coords="228,109,420,139"/><area shape="rect" id="node5" href="classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="471,5,644,51"/><area shape="rect" id="node7" href="classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="475,74,640,121"/><area shape="rect" id="node9" href="classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="477,143,637,190"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a19b61fa2f966255c60368f1693c74959"></a>
+<a class="anchor" id="a4c66576ac30dfc1a9ade23552f86d79b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -398,7 +436,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString ApiField::getPascalCaseName </td>
+          <td class="memname">QString ApiField::getPascalCaseName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -417,15 +455,15 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classApiField_a19b61fa2f966255c60368f1693c74959_cgraph.png" border="0" usemap="#classApiField_a19b61fa2f966255c60368f1693c74959_cgraph" alt=""/></div>
-<map name="classApiField_a19b61fa2f966255c60368f1693c74959_cgraph" id="classApiField_a19b61fa2f966255c60368f1693c74959_cgraph">
-<area shape="rect" id="node3" href="classStringKit.html#ad5fa2686250c03f71d1cdb1785fe37bc" title="将字符串转化为帕斯卡风格" alt="" coords="256,5,419,35"/><area shape="rect" id="node7" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5" title="NameObject::getName" alt="" coords="260,59,415,88"/><area shape="rect" id="node5" href="classStringKit.html#a1b746ddc6d6a5237aa2b6231b0872afd" title="将字符串转换为驼峰风格" alt="" coords="467,5,627,35"/></map>
+<div class="center"><img src="classApiField_a4c66576ac30dfc1a9ade23552f86d79b_cgraph.png" border="0" usemap="#classApiField_a4c66576ac30dfc1a9ade23552f86d79b_cgraph" alt=""/></div>
+<map name="classApiField_a4c66576ac30dfc1a9ade23552f86d79b_cgraph" id="classApiField_a4c66576ac30dfc1a9ade23552f86d79b_cgraph">
+<area shape="rect" id="node3" href="classStringKit.html#a43a58099218cd9dd700387619b5c2a83" title="将字符串转化为帕斯卡风格" alt="" coords="256,5,419,35"/><area shape="rect" id="node7" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5" title="NameObject::getName" alt="" coords="260,59,415,88"/><area shape="rect" id="node5" href="classStringKit.html#a01a7131f3c5df9cd79a32fdb3c96fa18" title="将字符串转换为驼峰风格" alt="" coords="467,5,627,35"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="afb86b0453cc4a9bef17849f28228a361"></a>
+<a class="anchor" id="a15ab6f17c1b84bc64a3a80b2f7b42e67"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -433,7 +471,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const QString ApiField::getSetMethodName </td>
+          <td class="memname">QString ApiField::getSetMethodName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -452,9 +490,18 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classApiField_afb86b0453cc4a9bef17849f28228a361_cgraph.png" border="0" usemap="#classApiField_afb86b0453cc4a9bef17849f28228a361_cgraph" alt=""/></div>
-<map name="classApiField_afb86b0453cc4a9bef17849f28228a361_cgraph" id="classApiField_afb86b0453cc4a9bef17849f28228a361_cgraph">
-<area shape="rect" id="node3" href="classApiField.html#a574b9b58102833cfa471c4a008c2ed33" title="ApiField::getMethodName" alt="" coords="248,32,421,61"/><area shape="rect" id="node5" href="classStringKit.html#aa3edf53c0a0542cb6a58157d7ffce362" title="生成JAVA/Qt风格的get/set方法名" alt="" coords="489,5,649,35"/><area shape="rect" id="node7" href="classApiField.html#a913191824861c5a6139c54a9b6c3992a" title="获得驼峰风格名称" alt="" coords="471,59,668,88"/><area shape="rect" id="node9" href="classStringKit.html#a1b746ddc6d6a5237aa2b6231b0872afd" title="将字符串转换为驼峰风格" alt="" coords="717,32,877,61"/><area shape="rect" id="node11" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5" title="NameObject::getName" alt="" coords="720,85,875,115"/></map>
+<div class="center"><img src="classApiField_a15ab6f17c1b84bc64a3a80b2f7b42e67_cgraph.png" border="0" usemap="#classApiField_a15ab6f17c1b84bc64a3a80b2f7b42e67_cgraph" alt=""/></div>
+<map name="classApiField_a15ab6f17c1b84bc64a3a80b2f7b42e67_cgraph" id="classApiField_a15ab6f17c1b84bc64a3a80b2f7b42e67_cgraph">
+<area shape="rect" id="node3" href="classApiField.html#a685ff98ab3d96b988224e3ea983f5324" title="ApiField::getMethodName" alt="" coords="248,32,421,61"/><area shape="rect" id="node5" href="classStringKit.html#aad5c1889468027fbc8f81472ad22ac66" title="生成JAVA/Qt风格的get/set方法名" alt="" coords="489,5,649,35"/><area shape="rect" id="node7" href="classApiField.html#a299dad67060e96288c7f73848cd0c487" title="获得驼峰风格名称" alt="" coords="471,59,668,88"/><area shape="rect" id="node9" href="classStringKit.html#a01a7131f3c5df9cd79a32fdb3c96fa18" title="将字符串转换为驼峰风格" alt="" coords="717,32,877,61"/><area shape="rect" id="node11" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5" title="NameObject::getName" alt="" coords="720,85,875,115"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classApiField_a15ab6f17c1b84bc64a3a80b2f7b42e67_icgraph.png" border="0" usemap="#classApiField_a15ab6f17c1b84bc64a3a80b2f7b42e67_icgraph" alt=""/></div>
+<map name="classApiField_a15ab6f17c1b84bc64a3a80b2f7b42e67_icgraph" id="classApiField_a15ab6f17c1b84bc64a3a80b2f7b42e67_icgraph">
+<area shape="rect" id="node3" href="classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="249,5,423,51"/><area shape="rect" id="node5" href="classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="253,74,419,121"/><area shape="rect" id="node7" href="classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="256,143,416,190"/></map>
 </div>
 </p>
 
@@ -488,7 +535,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classApiField_a186b9e5f00b1bb76494de9b62d2eb206_icgraph.png" border="0" usemap="#classApiField_a186b9e5f00b1bb76494de9b62d2eb206_icgraph" alt=""/></div>
 <map name="classApiField_a186b9e5f00b1bb76494de9b62d2eb206_icgraph" id="classApiField_a186b9e5f00b1bb76494de9b62d2eb206_icgraph">
-<area shape="rect" id="node3" href="classApiField.html#a9968c530b20954e07742978825d6abd3" title="获取定义类型：属性定义，方法定义，返回值。" alt="" coords="191,5,380,35"/><area shape="rect" id="node5" href="classBaseObject.html#a8f46b1bd69cd2c4eb42a9e4a756b97a3" title="BaseObject::isContainList\lField" alt="" coords="199,58,372,105"/></map>
+<area shape="rect" id="node3" href="classApiField.html#a9968c530b20954e07742978825d6abd3" title="获取定义类型：属性定义，方法定义，返回值。" alt="" coords="191,75,380,104"/><area shape="rect" id="node7" href="classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="437,74,597,121"/><area shape="rect" id="node9" href="classBaseObject.html#a27bc55d972d8c27c7043f01f88007072" title="BaseObject::isContainList\lField" alt="" coords="199,5,372,51"/><area shape="rect" id="node5" href="classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="431,5,604,51"/></map>
 </div>
 </p>
 
@@ -516,6 +563,15 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>判断属性是否是复杂Object类型 </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classApiField_a0d4f558c460f6f796783c2a94ce9b4e2_icgraph.png" border="0" usemap="#classApiField_a0d4f558c460f6f796783c2a94ce9b4e2_icgraph" alt=""/></div>
+<map name="classApiField_a0d4f558c460f6f796783c2a94ce9b4e2_icgraph" id="classApiField_a0d4f558c460f6f796783c2a94ce9b4e2_icgraph">
+<area shape="rect" id="node3" href="classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="209,5,383,51"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -546,7 +602,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classApiField_ade535859f3dca5756145abce5c2f11f8_icgraph.png" border="0" usemap="#classApiField_ade535859f3dca5756145abce5c2f11f8_icgraph" alt=""/></div>
 <map name="classApiField_ade535859f3dca5756145abce5c2f11f8_icgraph" id="classApiField_ade535859f3dca5756145abce5c2f11f8_icgraph">
-<area shape="rect" id="node3" href="classMetaSdkParser.html#a5ffa7a936f28b65b3a53cba58a5ba047" title="MetaSdkParser::getApiDomains" alt="" coords="208,5,416,35"/><area shape="rect" id="node5" href="classMetaSdkParser.html#ae920e712ad0f3579e350fb6f4bd7062c" title="MetaSdkParser::getApiResponses" alt="" coords="201,59,423,88"/></map>
+<area shape="rect" id="node3" href="classMetaSdkParser.html#af44f06b19b2aa35617c065b445bf05e0" title="MetaSdkParser::getApiDomains" alt="" coords="208,5,416,35"/><area shape="rect" id="node5" href="classMetaSdkParser.html#a4ee69ddf1725d2fcacc096e1adf24685" title="MetaSdkParser::getApiResponses" alt="" coords="201,59,423,88"/></map>
 </div>
 </p>
 
@@ -579,7 +635,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classApiField_a1eac17093fe9bf3f3e1c6d79d2411457_icgraph.png" border="0" usemap="#classApiField_a1eac17093fe9bf3f3e1c6d79d2411457_icgraph" alt=""/></div>
 <map name="classApiField_a1eac17093fe9bf3f3e1c6d79d2411457_icgraph" id="classApiField_a1eac17093fe9bf3f3e1c6d79d2411457_icgraph">
-<area shape="rect" id="node3" href="classMetaSdkParser.html#a5ffa7a936f28b65b3a53cba58a5ba047" title="MetaSdkParser::getApiDomains" alt="" coords="205,5,413,35"/><area shape="rect" id="node5" href="classMetaSdkParser.html#a4856857b4784e93bb33a1316569dbbce" title="获取Request Api类 与getApiResponse不同的是" alt="" coords="203,59,416,88"/><area shape="rect" id="node7" href="classMetaSdkParser.html#ae920e712ad0f3579e350fb6f4bd7062c" title="MetaSdkParser::getApiResponses" alt="" coords="199,112,420,141"/></map>
+<area shape="rect" id="node3" href="classMetaSdkParser.html#af44f06b19b2aa35617c065b445bf05e0" title="MetaSdkParser::getApiDomains" alt="" coords="205,5,413,35"/><area shape="rect" id="node5" href="classMetaSdkParser.html#a2d25a4b1340781353c3db5d753afc1d0" title="获取Request Api类 与getApiResponse不同的是, Requests只是借助level确定langType 而Response直接存储meta数据中的level。" alt="" coords="203,59,416,88"/><area shape="rect" id="node7" href="classMetaSdkParser.html#a4ee69ddf1725d2fcacc096e1adf24685" title="MetaSdkParser::getApiResponses" alt="" coords="199,112,420,141"/></map>
 </div>
 </p>
 
@@ -612,9 +668,76 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classApiField_a8e7b1de3505cf8b799e9da1df902c30c_icgraph.png" border="0" usemap="#classApiField_a8e7b1de3505cf8b799e9da1df902c30c_icgraph" alt=""/></div>
 <map name="classApiField_a8e7b1de3505cf8b799e9da1df902c30c_icgraph" id="classApiField_a8e7b1de3505cf8b799e9da1df902c30c_icgraph">
-<area shape="rect" id="node3" href="classMetaSdkParser.html#a5ffa7a936f28b65b3a53cba58a5ba047" title="MetaSdkParser::getApiDomains" alt="" coords="213,5,421,35"/><area shape="rect" id="node5" href="classMetaSdkParser.html#a4856857b4784e93bb33a1316569dbbce" title="获取Request Api类 与getApiResponse不同的是" alt="" coords="211,59,424,88"/><area shape="rect" id="node7" href="classMetaSdkParser.html#ae920e712ad0f3579e350fb6f4bd7062c" title="MetaSdkParser::getApiResponses" alt="" coords="207,112,428,141"/></map>
+<area shape="rect" id="node3" href="classMetaSdkParser.html#af44f06b19b2aa35617c065b445bf05e0" title="MetaSdkParser::getApiDomains" alt="" coords="213,5,421,35"/><area shape="rect" id="node5" href="classMetaSdkParser.html#a2d25a4b1340781353c3db5d753afc1d0" title="获取Request Api类 与getApiResponse不同的是, Requests只是借助level确定langType 而Response直接存储meta数据中的level。" alt="" coords="211,59,424,88"/><area shape="rect" id="node7" href="classMetaSdkParser.html#a4ee69ddf1725d2fcacc096e1adf24685" title="MetaSdkParser::getApiResponses" alt="" coords="207,112,428,141"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<h2>Member Data Documentation</h2>
+<a class="anchor" id="a3dfbfbd5953eaca1a134e90994968525"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ApiField::apiLevel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metadata属性api level: Basic, Basic Object, Object, Object Array </p>
+
+</div>
+</div>
+<a class="anchor" id="a242695a770c44d88edd2f7d9cc6fb268"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ApiField::apiType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metadata中固定的语言类型 </p>
+
+</div>
+</div>
+<a class="anchor" id="af0e892b54741af698bacb2ece73ab05b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ApiField::langType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>特定语言的类型 </p>
 
 </div>
 </div>
@@ -624,7 +747,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2012 11:03:40 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 6 2013 01:02:27 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

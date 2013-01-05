@@ -1,0 +1,20 @@
+<map id="CppQtSdkGenerator::getDomainSourceCode" name="CppQtSdkGenerator::getDomainSourceCode">
+<area shape="rect" id="node3" href="$classApiDomain.html#a53ce16af6f98eb3510c7f4bfe02bb64a" title="ApiDomain::getClassName" alt="" coords="716,32,897,61"/>
+<area shape="rect" id="node9" href="$classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5" title="NameObject::getName" alt="" coords="957,112,1112,141"/>
+<area shape="rect" id="node11" href="$classBaseObject.html#a9b10822e40b97a6f2a5e96569eabedf6" title="BaseObject::getFields" alt="" coords="497,295,647,324"/>
+<area shape="rect" id="node13" href="$classNameObject.html#ae537e2181b4e1a4d02c227f88e64d40e" title="NameObject::getDesc" alt="" coords="251,412,403,441"/>
+<area shape="rect" id="node15" href="$classApiField.html#a186b9e5f00b1bb76494de9b62d2eb206" title="判断属性是否是列表类型" alt="" coords="504,516,640,545"/>
+<area shape="rect" id="node18" href="$classStringKit.html#aab379578b65022f976fcf67130ff1b48" title="将字符串由驼峰转换为下划线形式" alt="" coords="217,639,436,668"/>
+<area shape="rect" id="node20" href="$classApiField.html#a249587e71ababd60613d1e67a359e6de" title="ApiField::getLangType" alt="" coords="251,692,403,721"/>
+<area shape="rect" id="node22" href="$classApiField.html#a9968c530b20954e07742978825d6abd3" title="获取定义类型：属性定义，方法定义，返回值。" alt="" coords="232,516,421,545"/>
+<area shape="rect" id="node25" href="$classApiField.html#a299dad67060e96288c7f73848cd0c487" title="获得驼峰风格名称" alt="" coords="708,85,905,115"/>
+<area shape="rect" id="node29" href="$classApiField.html#af62681e7453ceeed0cf646b8a0f44d09" title="获得属性的get方法名称" alt="" coords="229,188,424,217"/>
+<area shape="rect" id="node36" href="$classApiField.html#a15ab6f17c1b84bc64a3a80b2f7b42e67" title="获得属性的set方法名称" alt="" coords="231,135,423,164"/>
+<area shape="rect" id="node39" href="$classBaseObject.html#af1077693f2d092b86fe35437d00ebd82" title="BaseObject::isContainDate\lField" alt="" coords="236,342,417,389"/>
+<area shape="rect" id="node44" href="$classBaseObject.html#a27bc55d972d8c27c7043f01f88007072" title="BaseObject::isContainList\lField" alt="" coords="240,569,413,615"/>
+<area shape="rect" id="node5" href="$classStringKit.html#abc6e51c86e7cc4f4e526240dfc79c0f6" title="生成首字母大写的字符串" alt="" coords="968,5,1101,35"/>
+<area shape="rect" id="node7" href="$classStringKit.html#a01a7131f3c5df9cd79a32fdb3c96fa18" title="将字符串转换为驼峰风格" alt="" coords="955,59,1115,88"/>
+<area shape="rect" id="node31" href="$classApiField.html#a685ff98ab3d96b988224e3ea983f5324" title="ApiField::getMethodName" alt="" coords="485,136,659,165"/>
+<area shape="rect" id="node33" href="$classStringKit.html#aad5c1889468027fbc8f81472ad22ac66" title="生成JAVA/Qt风格的get/set方法名" alt="" coords="727,139,887,168"/>
+<area shape="rect" id="node42" href="$classApiField.html#afcb58f9fb50e1a5f5d9cb19977a4f93d" title="ApiField::getApiType" alt="" coords="501,351,643,380"/>
+</map>

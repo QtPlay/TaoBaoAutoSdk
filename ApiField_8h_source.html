@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -67,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,55 +117,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="classApiField.html#a249587e71ababd60613d1e67a359e6de">   33</a></span>&#160;  <span class="keyword">const</span> QString &amp;<a class="code" href="classApiField.html#a249587e71ababd60613d1e67a359e6de">getLangType</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> langType;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classApiField.html#af0e892b54741af698bacb2ece73ab05b" title="特定语言的类型">langType</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c">   37</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c">setLangType</a>(<span class="keyword">const</span> QString &amp;langType) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    this-&gt;langType = langType;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c">   37</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classApiField.html#a8e7b1de3505cf8b799e9da1df902c30c">setLangType</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="classApiField.html#af0e892b54741af698bacb2ece73ab05b" title="特定语言的类型">langType</a>) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    this-&gt;langType = <a class="code" href="classApiField.html#af0e892b54741af698bacb2ece73ab05b" title="特定语言的类型">langType</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classApiField.html#afcb58f9fb50e1a5f5d9cb19977a4f93d">   41</a></span>&#160;  <span class="keyword">const</span> QString &amp;<a class="code" href="classApiField.html#afcb58f9fb50e1a5f5d9cb19977a4f93d">getApiType</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> apiType;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classApiField.html#a242695a770c44d88edd2f7d9cc6fb268" title="metadata中固定的语言类型">apiType</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457">   45</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457">setApiType</a>(<span class="keyword">const</span> QString &amp;apiType) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    this-&gt;apiType = apiType;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457">   45</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classApiField.html#a1eac17093fe9bf3f3e1c6d79d2411457">setApiType</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="classApiField.html#a242695a770c44d88edd2f7d9cc6fb268" title="metadata中固定的语言类型">apiType</a>) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    this-&gt;apiType = <a class="code" href="classApiField.html#a242695a770c44d88edd2f7d9cc6fb268" title="metadata中固定的语言类型">apiType</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classApiField.html#a99b5e6c3abca71e4525e40cc91571978">   49</a></span>&#160;  <span class="keyword">const</span> QString &amp;<a class="code" href="classApiField.html#a99b5e6c3abca71e4525e40cc91571978">getApiLevel</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> apiLevel;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classApiField.html#a080c3be3e1b0f2909036dbce2242ad39">   49</a></span>&#160;  QString <a class="code" href="classApiField.html#a080c3be3e1b0f2909036dbce2242ad39">getApiLevel</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classApiField.html#a3dfbfbd5953eaca1a134e90994968525" title="metadata属性api level: Basic, Basic Object, Object, Object Array">apiLevel</a>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classApiField.html#ade535859f3dca5756145abce5c2f11f8">   53</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classApiField.html#ade535859f3dca5756145abce5c2f11f8">setApiLevel</a>(<span class="keyword">const</span> QString &amp;apiLevel) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    this-&gt;apiLevel = apiLevel;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classApiField.html#ade535859f3dca5756145abce5c2f11f8">   53</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classApiField.html#ade535859f3dca5756145abce5c2f11f8">setApiLevel</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="classApiField.html#a3dfbfbd5953eaca1a134e90994968525" title="metadata属性api level: Basic, Basic Object, Object, Object Array">apiLevel</a>) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    this-&gt;apiLevel = <a class="code" href="classApiField.html#a3dfbfbd5953eaca1a134e90994968525" title="metadata属性api level: Basic, Basic Object, Object, Object Array">apiLevel</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="classApiField.html#a913191824861c5a6139c54a9b6c3992a">   62</a></span>&#160;  <span class="keyword">const</span> QString <a class="code" href="classApiField.html#a913191824861c5a6139c54a9b6c3992a" title="获得驼峰风格名称">getCamelCaseName</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classStringKit.html#a1b746ddc6d6a5237aa2b6231b0872afd" title="将字符串转换为驼峰风格">StringKit::toCamelCase</a>(<a class="code" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5">getName</a>());</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="classApiField.html#a299dad67060e96288c7f73848cd0c487">   62</a></span>&#160;  QString <a class="code" href="classApiField.html#a299dad67060e96288c7f73848cd0c487" title="获得驼峰风格名称">getCamelCaseName</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classStringKit.html#a01a7131f3c5df9cd79a32fdb3c96fa18" title="将字符串转换为驼峰风格">StringKit::toCamelCase</a>(<a class="code" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5">getName</a>());</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classApiField.html#a19b61fa2f966255c60368f1693c74959">   71</a></span>&#160;  <span class="keyword">const</span> QString <a class="code" href="classApiField.html#a19b61fa2f966255c60368f1693c74959" title="获得帕斯卡风格名称">getPascalCaseName</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classStringKit.html#ad5fa2686250c03f71d1cdb1785fe37bc" title="将字符串转化为帕斯卡风格">StringKit::toPascalCase</a>(<a class="code" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5">getName</a>());</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classApiField.html#a4c66576ac30dfc1a9ade23552f86d79b">   71</a></span>&#160;  QString <a class="code" href="classApiField.html#a4c66576ac30dfc1a9ade23552f86d79b" title="获得帕斯卡风格名称">getPascalCaseName</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classStringKit.html#a43a58099218cd9dd700387619b5c2a83" title="将字符串转化为帕斯卡风格">StringKit::toPascalCase</a>(<a class="code" href="classNameObject.html#a259be49d5813f25f37ce2c82006c3fa5">getName</a>());</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="classApiField.html#ac6adc4e86a1f1e79a10db2f7dd706907">   80</a></span>&#160;  <span class="keyword">const</span> QString <a class="code" href="classApiField.html#ac6adc4e86a1f1e79a10db2f7dd706907" title="获得属性的get方法名称">getGetMethodName</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;get&quot;</span> + <a class="code" href="classApiField.html#a574b9b58102833cfa471c4a008c2ed33">getMethodName</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="classApiField.html#af62681e7453ceeed0cf646b8a0f44d09">   80</a></span>&#160;  QString <a class="code" href="classApiField.html#af62681e7453ceeed0cf646b8a0f44d09" title="获得属性的get方法名称">getGetMethodName</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;get&quot;</span> + <a class="code" href="classApiField.html#a685ff98ab3d96b988224e3ea983f5324">getMethodName</a>();</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="classApiField.html#afb86b0453cc4a9bef17849f28228a361">   89</a></span>&#160;  <span class="keyword">const</span> QString <a class="code" href="classApiField.html#afb86b0453cc4a9bef17849f28228a361" title="获得属性的set方法名称">getSetMethodName</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;set&quot;</span> + <a class="code" href="classApiField.html#a574b9b58102833cfa471c4a008c2ed33">getMethodName</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="classApiField.html#a15ab6f17c1b84bc64a3a80b2f7b42e67">   89</a></span>&#160;  QString <a class="code" href="classApiField.html#a15ab6f17c1b84bc64a3a80b2f7b42e67" title="获得属性的set方法名称">getSetMethodName</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;set&quot;</span> + <a class="code" href="classApiField.html#a685ff98ab3d96b988224e3ea983f5324">getMethodName</a>();</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="classApiField.html#a574b9b58102833cfa471c4a008c2ed33">   93</a></span>&#160;  <span class="keyword">const</span> QString <a class="code" href="classApiField.html#a574b9b58102833cfa471c4a008c2ed33">getMethodName</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classStringKit.html#aa3edf53c0a0542cb6a58157d7ffce362" title="生成JAVA/Qt风格的get/set方法名">StringKit::getSetMethod</a>(<a class="code" href="classApiField.html#a913191824861c5a6139c54a9b6c3992a" title="获得驼峰风格名称">getCamelCaseName</a>());</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="classApiField.html#a685ff98ab3d96b988224e3ea983f5324">   93</a></span>&#160;  QString <a class="code" href="classApiField.html#a685ff98ab3d96b988224e3ea983f5324">getMethodName</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classStringKit.html#aad5c1889468027fbc8f81472ad22ac66" title="生成JAVA/Qt风格的get/set方法名">StringKit::getSetMethod</a>(<a class="code" href="classApiField.html#a299dad67060e96288c7f73848cd0c487" title="获得驼峰风格名称">getCamelCaseName</a>());</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="code" href="classApiField.html#a186b9e5f00b1bb76494de9b62d2eb206">   99</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classApiField.html#a186b9e5f00b1bb76494de9b62d2eb206" title="判断属性是否是列表类型">isListField</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="classSdkConstants.html#a1a18fff8f265e28a933dcf44915e3ffd" title="Basic Array其实也是字符串类型">SdkConstants::TYPE_BASIC_ARRAY</a> == apiLevel) ||</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    (<a class="code" href="classSdkConstants.html#a4369da8346679b4f149ddb10c620a77b">SdkConstants::TYPE_OBJECT_ARRAY</a> == apiLevel);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="classSdkConstants.html#a1a18fff8f265e28a933dcf44915e3ffd" title="Basic Array其实也是字符串类型">SdkConstants::TYPE_BASIC_ARRAY</a> == <a class="code" href="classApiField.html#a3dfbfbd5953eaca1a134e90994968525" title="metadata属性api level: Basic, Basic Object, Object, Object Array">apiLevel</a>) ||</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    (<a class="code" href="classSdkConstants.html#a4369da8346679b4f149ddb10c620a77b">SdkConstants::TYPE_OBJECT_ARRAY</a> == <a class="code" href="classApiField.html#a3dfbfbd5953eaca1a134e90994968525" title="metadata属性api level: Basic, Basic Object, Object, Object Array">apiLevel</a>);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
 <div class="line"><a name="l00106"></a><span class="lineno"><a class="code" href="classApiField.html#a0d4f558c460f6f796783c2a94ce9b4e2">  106</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classApiField.html#a0d4f558c460f6f796783c2a94ce9b4e2" title="判断属性是否是复杂Object类型">isObjectField</a>() {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="classSdkConstants.html#a38e0f86bcd484f454620530058b53bc7">SdkConstants::TYPE_OBJECT</a> == apiLevel) ||</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    (<a class="code" href="classSdkConstants.html#a4369da8346679b4f149ddb10c620a77b">SdkConstants::TYPE_OBJECT_ARRAY</a> == apiLevel);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="classSdkConstants.html#a38e0f86bcd484f454620530058b53bc7">SdkConstants::TYPE_OBJECT</a> == <a class="code" href="classApiField.html#a3dfbfbd5953eaca1a134e90994968525" title="metadata属性api level: Basic, Basic Object, Object, Object Array">apiLevel</a>) ||</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    (<a class="code" href="classSdkConstants.html#a4369da8346679b4f149ddb10c620a77b">SdkConstants::TYPE_OBJECT_ARRAY</a> == <a class="code" href="classApiField.html#a3dfbfbd5953eaca1a134e90994968525" title="metadata属性api level: Basic, Basic Object, Object, Object Array">apiLevel</a>);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="code" href="classApiField.html#a9968c530b20954e07742978825d6abd3">  117</a></span>&#160;  QString <a class="code" href="classApiField.html#a9968c530b20954e07742978825d6abd3" title="获取定义类型：属性定义，方法定义，返回值。">getDefineLangType</a>(QString prefix, QString suffix) {</div>
@@ -172,7 +173,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (!prefix.isEmpty() &amp;&amp; <a class="code" href="classApiField.html#a186b9e5f00b1bb76494de9b62d2eb206" title="判断属性是否是列表类型">isListField</a>()) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      str.append(prefix);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    str.append(langType);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    str.append(<a class="code" href="classApiField.html#af0e892b54741af698bacb2ece73ab05b" title="特定语言的类型">langType</a>);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span> (!suffix.isEmpty() &amp;&amp; <a class="code" href="classApiField.html#a186b9e5f00b1bb76494de9b62d2eb206" title="判断属性是否是列表类型">isListField</a>()) {</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      str.append(suffix);</div>
@@ -181,11 +182,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  QString langType;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="code" href="classApiField.html#af0e892b54741af698bacb2ece73ab05b">  134</a></span>&#160;  QString <a class="code" href="classApiField.html#af0e892b54741af698bacb2ece73ab05b" title="特定语言的类型">langType</a>;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  QString apiType;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="code" href="classApiField.html#a242695a770c44d88edd2f7d9cc6fb268">  139</a></span>&#160;  QString <a class="code" href="classApiField.html#a242695a770c44d88edd2f7d9cc6fb268" title="metadata中固定的语言类型">apiType</a>;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  QString apiLevel;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="code" href="classApiField.html#a3dfbfbd5953eaca1a134e90994968525">  144</a></span>&#160;  QString <a class="code" href="classApiField.html#a3dfbfbd5953eaca1a134e90994968525" title="metadata属性api level: Basic, Basic Object, Object, Object Array">apiLevel</a>;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;};</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ApiField_8h.html#aa2d132f5e616b209add9cbad4f9c8812">operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="classApiField.html" title="Api属性，针对metadata.xml中的prop下字段">ApiField</a> &amp;field1, <span class="keyword">const</span> <a class="code" href="classApiField.html" title="Api属性，针对metadata.xml中的prop下字段">ApiField</a> &amp;field2);</div>
@@ -197,7 +198,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 29 2012 11:03:39 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 6 2013 01:02:27 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
