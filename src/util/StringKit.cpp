@@ -75,10 +75,13 @@ QString StringKit::toCamelCase(const QString& str)
   QString tmpStr;
   for (int i = 0; i < str.size(); i++) {
     if (str.at(i) == '.' || str.at(i) == '_') {
-      if (++i < str.size())
+      if (++i < str.size()) {
         tmpStr += str.at(i).toUpper();
+        continue;
     } else
-      tmpStr += str.at(i);
+        break;
+    }
+    tmpStr += str.at(i);
   }
   return tmpStr;
 }

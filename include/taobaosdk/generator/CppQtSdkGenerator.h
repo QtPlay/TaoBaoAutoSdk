@@ -22,6 +22,10 @@
 
 #include <generator/SdkGenerator.h>
 
+/**
+ * @todo getXXXSourceCode函数部份，为通过模板文件转换为实际代码。模板文件写的意义不清，为
+ * 数字代替，使代码较为晦涩难懂。以后如有时间再更正为意义清晰的字符串。
+ **/
 class CppQtSdkGenerator : public SdkGenerator
 {
 public:

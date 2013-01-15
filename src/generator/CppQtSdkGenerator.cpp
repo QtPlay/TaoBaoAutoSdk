@@ -52,28 +52,38 @@ QString CppQtSdkGenerator::getResponseSourceCode(const ApiResponse &response)
 
   QString filePre = response.getClassName().toUpper() + "_H";
 
-  /**
-   * @brief request类中的私有字段的字符串组装
-   *
-   **/
-  QString privateField;
-  QList<ApiField> responseFields  = response.getFields();
-  foreach(field, responseFields) {
-    if (privateField.size() > 0)
-      privateField.append("\n");
-    privateField.append(QString("/**\n"
-              " * @brief %1\n").arg(field.getDesc()));
-    privateField.append(" **/\n");
-
-    privateField.append(QString("  %1 %2;\n").arg(field.getDefineLangType("QList<", ">"))
-                                  .arg(field.getCamelCaseName()));
-  }
+  QStringList includeFiles;
+  if (response.isContainDateField())
+    includeFiles += "#include <QDateTime>\n";
+  if (response.isContainListField())
+    includeFiles += "#include <QList>\n";
 
   /**
    * @brief response类中method的字符串的组装
    **/
   QString publicMethod;
+
+  /**
+   * @brief request类中的私有字段的字符串组装
+   **/
+  QString privateField;
+
+  QString qProperty;
+  QList<ApiField> responseFields  = response.getFields();
   foreach(field, responseFields) {
+    QString includeResponseFile = (QString("#include <TaoApiCpp/domain/%1.h>\n")
+                                   .arg(field.getLangType()));
+    if (field.isObjectField() && !includeFiles.contains(includeResponseFile))
+      includeFiles += includeResponseFile;
+
+    if (privateField.size() > 0)
+      privateField.append("\n");
+    privateField.append(QString("/**\n"
+              " * @brief %1\n").arg(field.getDesc()));
+    privateField.append(" **/\n");
+    privateField.append(QString("  %1 %2;\n").arg(field.getDefineLangType("QList<", ">"))
+                                  .arg(field.getCamelCaseName()));
+
     publicMethod.append(QString(" %1 %2() {\n").arg(field.getDefineLangType("QList<", ">"))
                                     .arg(field.getGetMethodName()));
     publicMethod.append(QString("    return %1;\n").arg(field.getCamelCaseName()));
@@ -84,17 +94,16 @@ QString CppQtSdkGenerator::getResponseSourceCode(const ApiResponse &response)
                                            .arg(field.getCamelCaseName()));
     publicMethod.append(QString("    this->%1 = %1;\n").arg(field.getCamelCaseName()));
     publicMethod.append("  }\n\n");
+
+    qProperty += QString("  Q_PROPERTY(%1 %2 READ %3 WRITE %4)\n")
+        .arg(field.isListField() ? "QList" : field.getLangType())
+        .arg(field.getName())
+        .arg(field.getGetMethodName())
+        .arg(field.getSetMethodName());
   }
 
-  QString includeFiles;
-  if (response.isContainDateField())
-    includeFiles += "#include <QDateTime>\n";
-  if (response.isContainListField())
-    includeFiles += "#include <QList>\n";
-  foreach(field, responseFields) {
-    if (field.isObjectField())
-      includeFiles.append(QString("#include <TaoApiCpp/domain/%1.h>\n").arg(field.getLangType()));
-  }
+
+  QString declareMetaType = QString("Q_DECLARE_METATYPE(%1)\n").arg(response.getClassName());
 
   QFile file("/home/sd44/Response.txt");
   if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
@@ -104,9 +113,10 @@ QString CppQtSdkGenerator::getResponseSourceCode(const ApiResponse &response)
   QTextStream in(&file);
   in.setCodec("UTF-8");
 
-  QString result = in.readAll().arg(filePre).arg(includeFiles).arg(response.getDesc())
+  QString result = in.readAll().arg(filePre).arg(includeFiles.join("")).arg(response.getDesc())
                                .arg(response.getClassName())
-                               .arg(publicMethod).arg(privateField);
+                               .arg(publicMethod).arg(privateField).arg(declareMetaType)
+                               .arg(qProperty);
   return result;
 }
 
@@ -120,6 +130,11 @@ QString CppQtSdkGenerator::getRequestSourceCode(const ApiRequest& request)
   ApiField field;
 
   QString filePre = request.getRequestClassName().toUpper() + "_H";
+
+  /**
+   * @brief request类中method的字符串的组装
+   **/
+  QString publicMethod;
 
   /**
    * @brief request类中的私有字段的字符串组装
@@ -136,23 +151,15 @@ QString CppQtSdkGenerator::getRequestSourceCode(const ApiRequest& request)
 
     privateField.append(QString("  %1 %2;\n").arg(field.getLangType())
                                   .arg(field.getCamelCaseName()));
-  }
 
-  /**
-   * @brief request类中method的字符串的组装
-   **/
-  QString publicMethod;
-  foreach(field, requestFields) {
     publicMethod.append(QString(" %1 %2() {\n").arg(field.getLangType())
                                     .arg(field.getGetMethodName()));
     publicMethod.append(QString("    return %1;\n").arg(field.getCamelCaseName()));
     publicMethod.append("  }\n");
-
     publicMethod.append(QString("  void %1 (%2 %3) {\n").arg(field.getSetMethodName())
                                            .arg(field.getLangType())
                                            .arg(field.getCamelCaseName()));
     publicMethod.append(QString("    this->%1 = %1;\n").arg(field.getCamelCaseName()));
-
     if (field.getLangType() == "QString")
       publicMethod.append(QString("    appParams.insert(\"%1\", %2);\n")
                           .arg(field.getName())
@@ -210,35 +217,44 @@ QString CppQtSdkGenerator::getDomainSourceCode(const ApiDomain& domain)
 
   QString filePre = domain.getClassName().toUpper() + "_H";
 
+  QStringList includeFiles;
+  if (domain.isContainDateField())
+    includeFiles += "#include <QDateTime>\n";
+  if (domain.isContainListField())
+    includeFiles += "#include <QList>\n";
+  includeFiles += "#include <QString>\n";
+
   /**
    * @brief domain的私有字段的字符串组装
    *
    **/
   QString privateField;
+  /**
+   * @brief domain类中method的字符串的组装
+   **/
+  QString publicMethod;
+
+  QString qProperty;
   QList<ApiField> domainFields  = domain.getFields();
   foreach(field, domainFields) {
     if (privateField.size() > 0)
       privateField.append("\n");
     privateField.append(QString("/**\n"
               " * @brief %1\n").arg(field.getDesc()));
-    if (field.isListField()) {
-      privateField.append(QString(" * @ApiListField(\"%1\")\n").arg(field.getName()));
-      privateField.append(QString(" * @ApiField(\"%1\")\n").arg(
-        StringKit::toLowerWithUnderscore(field.getLangType())));
-    } else
-      privateField.append(QString(" * @ApiField(\"%1\")\n").arg(field.getName()));
-
     privateField.append(" **/\n");
 
     privateField.append(QString("  %1 %2;\n").arg(field.getDefineLangType("QList<", ">"))
                                   .arg(field.getCamelCaseName()));
-  }
 
-  /**
-   * @brief domain类中method的字符串的组装
-   **/
-  QString publicMethod;
-  foreach(field, domainFields) {
+    QString otherIncludeFile = field.getLangType();
+    QString includeDomainFile(QString("#include <TaoApiCpp/domain/%1.h>\n").arg(otherIncludeFile));
+    if (!includeFiles.contains(includeDomainFile) && field.isObjectField())
+//        otherIncludeFile != "QString" && otherIncludeFile != "qlonglong" &&
+//        otherIncludeFile != "QDateTime" && otherIncludeFile != "bool"
+//        && otherIncludeFile != "FileItem")
+      includeFiles += includeDomainFile;
+
+
     if (publicMethod.size() > 0)
       publicMethod.append("\n");
     publicMethod.append(QString(" %1 %2() {\n").arg(field.getDefineLangType("QList<", ">"))
@@ -251,14 +267,14 @@ QString CppQtSdkGenerator::getDomainSourceCode(const ApiDomain& domain)
                                            .arg(field.getCamelCaseName()));
     publicMethod.append(QString("    this->%1 = %1;\n").arg(field.getCamelCaseName()));
     publicMethod.append("  }\n\n");
+
+    qProperty += QString("  Q_PROPERTY(%1 %2 READ %3 WRITE %4)\n")
+        .arg(field.isListField() ? "QList" : field.getDefineLangType("QList<", ">"))
+        .arg(field.getName())
+        .arg(field.getGetMethodName())
+        .arg(field.getSetMethodName());
   }
 
-  QString includeFiles;
-  if (domain.isContainDateField())
-    includeFiles += "#include <QDateTime>\n";
-  if (domain.isContainListField())
-    includeFiles += "#include <QList>\n";
-  includeFiles += "#include <QString>\n";
 
   QFile file("/home/sd44/Domain.txt");
   if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
@@ -268,8 +284,10 @@ QString CppQtSdkGenerator::getDomainSourceCode(const ApiDomain& domain)
   QTextStream in(&file);
   in.setCodec("UTF-8");
 
-  QString result = in.readAll().arg(filePre).arg(includeFiles).arg(domain.getDesc())
+  QString declareMetaType = QString("Q_DECLARE_METATYPE(%1)\n").arg(domain.getClassName());
+  QString result = in.readAll().arg(filePre).arg(includeFiles.join("")).arg(domain.getDesc())
                                .arg(domain.getClassName())
-                               .arg(publicMethod).arg(privateField);
+                               .arg(publicMethod).arg(privateField).arg(declareMetaType)
+                               .arg(qProperty);
   return result;
 }
