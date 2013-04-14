@@ -19,15 +19,18 @@
 
 
 #include <generator/SdkGenerator.h>
-#include <QDebug>
-#include <QDate>
+#include <QtCore>
 
 void SdkGenerator::writeFile(const QString &codeStr,const  QString & absoluteFilePath)
 {
   QFile file(absoluteFilePath);
-  if (!file.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Truncate))
+  if (codeStr.isEmpty())
+    return;
+  if (!file.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Truncate)) {
     qDebug() << QString("file: %1, write error.\n%2")
     .arg(absoluteFilePath).arg(file.errorString());
+    exit(1);
+  }
   QTextStream out(&file);
   out.setCodec("UTF-8");
   out << codeStr;
@@ -71,7 +74,11 @@ void SdkGenerator::process()
 void SdkGenerator::generateDomains()
 {
   foreach (ApiDomain domain, domains) {
-    QString sourceCode = getDomainSourceCode(domain);
+    QString headerCode = getDomainHeader(domain);
+    QString domainHeaderFileName = getDomainHeaderFileName(domain);
+    writeFile(headerCode, domainHeaderFileName);
+
+    QString sourceCode = getDomainSource(domain);
     QString domainFileName = getDomainSourceFileName(domain);
     writeFile(sourceCode, domainFileName);
   }
@@ -79,7 +86,11 @@ void SdkGenerator::generateDomains()
 
 void SdkGenerator::generateRequests() {
   foreach (ApiRequest request ,requests) {
-    QString sourceCode = getRequestSourceCode(request);
+    QString headerCode = getRequestHeader(request);
+    QString requestHeaderFileName = getRequestHeaderFileName(request);
+    writeFile(headerCode, requestHeaderFileName);
+
+    QString sourceCode = getRequestSource(request);
     QString requestFileName = getRequestSourceFileName(request);
     writeFile(sourceCode, requestFileName);
   }
@@ -87,7 +98,11 @@ void SdkGenerator::generateRequests() {
 
 void SdkGenerator::generateResponses() {
   foreach (ApiResponse response ,responses) {
-    QString sourceCode = getResponseSourceCode(response);
+    QString headerCode = getResponseHeader(response);
+    QString responseHeaderFileName = getResponseHeaderFileName(response);
+    writeFile(headerCode, responseHeaderFileName);
+
+    QString sourceCode = getResponseSource(response);
     QString responseFileName = getResponseSourceFileName(response);
     writeFile(sourceCode, responseFileName);
   }

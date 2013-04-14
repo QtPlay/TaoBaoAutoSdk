@@ -11,7 +11,6 @@ QString SdkConstants::DATE_FORMAT_SHORT = "yyyyMMdd";
 QString SdkConstants::TYPE_BASIC = "Basic";
 /**
  * @brief Basic Array其实也是字符串类型
- *
  **/
 QString SdkConstants::TYPE_BASIC_ARRAY = "Basic Array";
 QString SdkConstants::TYPE_OBJECT = "Object";

@@ -5,7 +5,9 @@
 int main(void)
 {
   CppQtTypeMapper mapper;
-  MetaSdkParser parser(&mapper, "/home/sd44/Tao.xml");
+  MetaSdkParser parser(&mapper, "/home/sd44/ApiMetadata.xml");
   CppQtSdkGenerator gen(&parser);
   gen.generate();
+
+  return 0;
 }

@@ -1,31 +1,15 @@
-/*
-    <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) 2012  sea <email>
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License along
-    with this program; if not, write to the Free Software Foundation, Inc.,
-    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-*/
-
-
 #include <parser/MetaSdkParser.h>
-#include <QFile>
-#include <QDebug>
+
+#include <QtCore>
 
 MetaSdkParser::MetaSdkParser(TypeMapper* typeMapper, const QString&
 metadataXmlPath)
 {
     readFile(metadataXmlPath);
+    if (mapper == NULL) {
+      qDebug() << "mapper cannot be NULL";
+      exit(1);
+    }
     mapper = typeMapper;
 }
 
@@ -44,16 +28,17 @@ file%1:\n%2.\n App will exit").arg(filePath).arg(file.errorString());
 
   if(!domDocument.setContent(&file,false,&errorStr, &errorLine, &errorColumn)) {
     qDebug() << QString("parser xmlFile error at line %1, column\
-%2:\n%d").arg(errorLine).arg(errorColumn).arg(errorStr);
+%2:\n%3").arg(errorLine).arg(errorColumn).arg(errorStr);
   exit(1);
   }
 
   root = domDocument.documentElement();
   if (root.tagName() != "metadata") {
-    qDebug() << "The file is not an taobao metadata file.";
+    qDebug() << "The taobao metadata file is InValid.";
     exit(1);
   }
   if (root.hasAttribute("versionNo")) {
+    // TODO: set the TaoBao ApiVersion
     ;
   }
   return true;
@@ -78,8 +63,7 @@ QList< ApiDomain > MetaSdkParser::getApiDomains()
       field.setDesc(propNode.firstChildElement("desc").text());
       QString typeStr = propNode.firstChildElement("type").text();
       field.setApiType(typeStr);
-      if (mapper != NULL)
-        field.setLangType(mapper->getDomainLangType(typeStr));
+      field.setLangType(mapper->getDomainLangType(typeStr));
       field.setApiLevel(propNode.firstChildElement("level").text());
       tmp.addField(field);
     }
@@ -90,10 +74,8 @@ QList< ApiDomain > MetaSdkParser::getApiDomains()
 
 /**
  * @brief 获取Request Api类
- * 与getApiResponse不同的是, Requests只是借助level确定langType
- * 而Response直接存储meta数据中的level。
  *
- * @return QList< ApiDomain >
+ * @return QList< ApiRequest >
  **/
 QList< ApiRequest > MetaSdkParser::getApiRequests()
 {
@@ -122,8 +104,7 @@ QList< ApiRequest > MetaSdkParser::getApiRequests()
       else
         field.setApiType(type);
 
-      if (mapper != NULL)
-        field.setLangType(mapper->getRequestLangType(type));
+      field.setLangType(mapper->getRequestLangType(type));
       tmp.addField(field);
     }
     apiRequests.append(tmp);
@@ -131,6 +112,11 @@ QList< ApiRequest > MetaSdkParser::getApiRequests()
   return apiRequests;
 }
 
+/**
+ * @brief 获取Response Api类
+ *
+ * @return QList< ApiResponse >
+ **/
 QList< ApiResponse > MetaSdkParser::getApiResponses()
 {
   QList<ApiResponse> apiResponses;
@@ -151,8 +137,7 @@ QList< ApiResponse > MetaSdkParser::getApiResponses()
       field.setApiLevel(paramNode.firstChildElement("level").text());
       QString type = paramNode.firstChildElement("type").text();
       field.setApiType(type);
-      if (mapper != NULL)
-        field.setLangType(mapper->getResponseLangType(type));
+      field.setLangType(mapper->getResponseLangType(type));
       tmp.addField(field);
     }
     apiResponses.append(tmp);

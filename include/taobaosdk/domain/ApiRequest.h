@@ -47,6 +47,7 @@ public:
 "Response";
   }
 
+// TODO: used in post method, post is not full support now.
   bool isUploadRequest() {
     foreach(ApiField field, getFields()) {
       if (field.getApiType() == "byte[]")
@@ -54,7 +55,6 @@ public:
     }
     return false;
   }
-
 };
 
 #endif // APIREQUEST_H

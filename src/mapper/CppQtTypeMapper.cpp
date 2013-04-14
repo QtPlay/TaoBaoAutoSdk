@@ -4,21 +4,21 @@ QString CppQtTypeMapper::getDomainLangType(const QString &apiType) const
 {
   //WARNNING: 是否还需要其他类型？
   QString langType = apiType;
-  if (langType == "String")
+  if (apiType == "String")
     langType = "QString";
-  else if (langType == "Number")
+  else if (apiType == "Number")
     langType = "qlonglong";
-  else if (langType == "Date")
+  else if (apiType == "Date")
     langType = "QDateTime";
-  else if (langType == "Boolean")
+  else if (apiType == "Boolean")
     langType = "bool";
-  else if (langType == "byte[]")
+  else if (apiType == "byte[]")
     langType = "FileItem";
-  else if (langType == "Price")
+  else if (apiType == "Price")
     langType = "QString";
-  else if (langType == "Field List")
+  else if (apiType == "Field List")
     langType = "QString";
-  else if (langType.isEmpty())
+  else if (apiType.isEmpty())
     langType = "QString";
 
   return langType;

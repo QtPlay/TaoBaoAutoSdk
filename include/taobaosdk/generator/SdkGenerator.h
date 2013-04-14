@@ -32,9 +32,6 @@ class SdkGenerator
 public:
   SdkGenerator(SdkParser *parser) {
     this->parser = parser;
-    domains = parser->getApiDomains();
-    requests = parser->getApiRequests();
-    responses = parser->getApiResponses();
     init();
   }
 
@@ -47,9 +44,22 @@ public:
 protected:
   QString sourcesDir;
   /**
-  * @brief 生成数据结构源码。
+  * @brief 生成数据结构header。
   */
-  virtual QString getDomainSourceCode(const ApiDomain &domain) = 0;
+  virtual QString getDomainHeader(const ApiDomain &domain) = 0;
+
+  /**
+  * @brief 生成数据结构source。
+  */
+  virtual QString getDomainSource(const ApiDomain &domain) = 0;
+
+  /**
+  * @brief 获取domain相关的文件路径，相对于sourcesDir来说
+  *
+  * @param domain ...
+  * @return QString domain Header文件名
+  **/
+  virtual QString getDomainHeaderFileName(const ApiDomain &domain) = 0;
 
   /**
   * @brief 获取domain相关的文件路径，相对于sourcesDir来说
@@ -60,23 +70,45 @@ protected:
   virtual QString getDomainSourceFileName(const ApiDomain &domain) = 0;
 
   /**
-  * @brief 生成API请求源码。
+  * @brief 生成API请求header。
   */
-  virtual QString getRequestSourceCode(const ApiRequest &request) = 0;
+  virtual QString getRequestHeader(const ApiRequest &request) = 0;
 
   /**
-  * @brief 获取API请求文件路径，相对于sourcesDir来说
+  * @brief 生成API请求source。
+  */
+  virtual QString getRequestSource(const ApiRequest &request) = 0;
+
+  /**
+  * @brief 获取API请求header文件路径，相对于sourcesDir来说
+  **/
+  virtual QString getRequestHeaderFileName(const ApiRequest &request) = 0;
+
+  /**
+  * @brief 获取API请求source文件路径，相对于sourcesDir来说
   **/
   virtual QString getRequestSourceFileName(const ApiRequest &request) = 0;
 
   /**
-  * @brief 生成API响应源码。
+  * @brief 生成API响应header。
   */
-  virtual QString getResponseSourceCode(const ApiResponse &response) = 0;
+  virtual QString getResponseHeader(const ApiResponse &response) = 0;
+
   /**
-  * @brief 生成API响应文件路径，，相对于sourcesDir来说
+  * @brief 生成API响应source。
+  */
+  virtual QString getResponseSource(const ApiResponse &response) = 0;
+
+  /**
+  * @brief 生成API响应header文件路径，，相对于sourcesDir来说
+  */
+  virtual QString getResponseHeaderFileName(const ApiResponse &response) = 0;
+
+  /**
+  * @brief 生成API响应source文件路径，，相对于sourcesDir来说
   */
   virtual QString getResponseSourceFileName(const ApiResponse &response) = 0;
+
   /**
    * @brief 获取SDK版本文件路径，用于替换版本号。版本文件中版本号用dynamicVersionNo表示。用户的继承类必须实现此函数
    */

@@ -103,27 +103,23 @@ public:
   /**
    * @brief 判断属性是否是复杂Object类型
    */
-  bool isObjectField() {
+  bool isObjectField() const {
     return (SdkConstants::TYPE_OBJECT == apiLevel) ||
     (SdkConstants::TYPE_OBJECT_ARRAY == apiLevel);
   }
 
   /**
    * @brief 获取定义类型：属性定义，方法定义，返回值。
-   *
-   * @param prefix 列表类型的前缀，如"QList <"
-   * @param suffix 列表类型的后缀，如">"
    */
-  QString getDefineLangType(QString prefix, QString suffix) {
+  QString getDefineLangType() {
     QString str;
-    if (!prefix.isEmpty() && isListField()) {
-      str.append(prefix);
+    if (isListField()) {
+      str.append("QList<");
     }
     str.append(langType);
 
-    if (!suffix.isEmpty() && isListField()) {
-      str.append(suffix);
-    }
+    if (isListField())
+      str.append(">");
     return str;
   }
 
