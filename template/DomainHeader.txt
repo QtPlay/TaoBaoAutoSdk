@@ -1,0 +1,26 @@
+#ifndef %1
+#define %1
+
+#include <TaoApiCpp/TaoDomain.h>
+%2
+
+/**
+ * @brief %3
+ * 
+ * @author sd44 <sd44sdd44@yeah.net>
+ */
+class %4 : public TaoDomain
+{
+
+public:
+ virtual ~%4() { }
+
+%5
+  
+  virtual void parseResponse();
+
+private:
+%6
+};
+
+#endif  /* %1 */

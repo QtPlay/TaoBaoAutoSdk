@@ -1,0 +1,17 @@
+#include <TaoApiCpp/request/%1.h>
+
+QString %1::getApiMethodName() const {
+  return "%2";
+}
+
+%3
+
+%4 *%1::getResponseClass(const QString &session,
+                               const QString &accessToken)
+{
+  %4 *tmpResponse = new %4;
+  QString result = getWebReply(session, accessToken);
+  tmpResponse->setParser(TaoParser(result, taoApiInfo->format));
+  tmpResponse->parseResponse();
+  return tmpResponse;
+}

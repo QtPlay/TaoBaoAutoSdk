@@ -1,0 +1,26 @@
+#ifndef %1
+#define %1
+
+#include <TaoApiCpp/TaoRequest.h>
+#include <TaoApiCpp/TaoParser.h>
+#include <TaoApiCpp/response/%5.h>
+
+/**
+ * TOP API: %2
+ * 
+ * @author sd44 <sd44sdd44@yeah.net>
+ */
+class %3 : public TaoRequest
+{
+ public:
+  virtual QString getApiMethodName() const;
+
+%4
+  virtual %5 *getResponseClass(const QString &session = "",
+                               const QString &accessToken = ""); 
+
+ private:
+%6
+};
+
+#endif  /* %1 */

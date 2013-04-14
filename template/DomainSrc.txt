@@ -1,0 +1,7 @@
+#include <TaoApiCpp/domain/%1.h>
+%2
+
+void %1::parseResponse() {
+%3
+}
+

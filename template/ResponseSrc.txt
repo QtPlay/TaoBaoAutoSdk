@@ -1,0 +1,7 @@
+#include <TaoApiCpp/response/%1.h>
+
+%2
+void %1::parseNormalResponse() {
+%7
+}
+

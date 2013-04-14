@@ -1,0 +1,24 @@
+#ifndef %1
+#define %1
+
+#include <TaoApiCpp/TaoResponse.h>
+%2
+
+/**
+ * @brief TOP RESPONSE API: %3
+ * 
+ * @author sd44 <sd44sdd44@yeah.net>
+ */
+class %4 : public TaoResponse
+{
+public:
+ virtual ~%4() { }
+
+%5
+  virtual void parseNormalResponse();
+
+ private:
+%6
+};
+
+#endif
