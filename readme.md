@@ -20,7 +20,9 @@ http://sd44.github.com/TaoBaoAutoSdk
 C++/Qt SDK所需文件
 ----------
 见template目录，存有ApiMetadata.xml，相应模板txt文件，以及C++/Qt的基础文件。
+
 需要修改本项目中CppQtSdkGenerator.cpp中相应的路径。
+
 成品代码见 https://github.com/sd44/TaobaoCppQtSDK
 
 淘宝OpenApi说明：
@@ -41,7 +43,9 @@ http://api.taobao.com/myresources/standardSdk.htm
 
 TODO列表：
 ----------
-1，没有解析metadata Request请求参数中的Required检测以及上限/下限的检测。如果想加入的话大概半小时就能完成。因意义不大，本软件估计也没几个人用(汗。。)，所以暂时不做。
+没有解析metadata Request请求参数中的Required检测以及上限/下限的检测。
+
+如果想加入的话大概半小时就能完成。因意义不大，本软件估计也没几个人用(汗。。)，所以暂时不做。
 
 
 联系我：
