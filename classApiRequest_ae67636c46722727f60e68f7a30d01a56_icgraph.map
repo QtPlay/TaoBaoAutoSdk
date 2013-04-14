@@ -1,4 +1,6 @@
 <map id="ApiRequest::getRequestClassName" name="ApiRequest::getRequestClassName">
-<area shape="rect" id="node3" href="$classCppQtSdkGenerator.html#a0a007abe7630d6661d2f871f82131877" title="获取API请求文件路径，相对于sourcesDir来说" alt="" coords="289,5,479,51"/>
-<area shape="rect" id="node5" href="$classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="301,74,467,121"/>
+<area shape="rect" id="node3" href="$classCppQtSdkGenerator.html#a9a4a9689fa5b60406289757b181cea5a" title="获取API请求header文件路径，相对于sourcesDir来说" alt="" coords="288,5,475,51"/>
+<area shape="rect" id="node5" href="$classCppQtSdkGenerator.html#a0a007abe7630d6661d2f871f82131877" title="获取API请求source文件路径，相对于sourcesDir来说" alt="" coords="288,74,475,121"/>
+<area shape="rect" id="node7" href="$classCppQtSdkGenerator.html#a937538de852d997051905ffc96baf6ed" title="生成API请求header。" alt="" coords="308,143,455,190"/>
+<area shape="rect" id="node9" href="$classCppQtSdkGenerator.html#a6779e7b2d030f15a4e0f702c49608426" title="生成API请求source。" alt="" coords="308,213,455,259"/>
 </map>

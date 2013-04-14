@@ -1,8 +1,12 @@
 <map id="ApiField::getCamelCaseName" name="ApiField::getCamelCaseName">
-<area shape="rect" id="node3" href="$classApiField.html#a685ff98ab3d96b988224e3ea983f5324" title="ApiField::getMethodName" alt="" coords="253,83,427,112"/>
-<area shape="rect" id="node7" href="$classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="719,5,892,51"/>
-<area shape="rect" id="node9" href="$classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="723,74,888,121"/>
-<area shape="rect" id="node11" href="$classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="725,143,885,190"/>
-<area shape="rect" id="node5" href="$classApiField.html#af62681e7453ceeed0cf646b8a0f44d09" title="获得属性的get方法名称" alt="" coords="475,29,669,59"/>
-<area shape="rect" id="node13" href="$classApiField.html#a15ab6f17c1b84bc64a3a80b2f7b42e67" title="获得属性的set方法名称" alt="" coords="476,83,668,112"/>
+<area shape="rect" id="node3" href="$classApiField.html#a685ff98ab3d96b988224e3ea983f5324" title="ApiField::getMethodName" alt="" coords="253,209,427,239"/>
+<area shape="rect" id="node7" href="$classCppQtSdkGenerator.html#aaefdd0d3406cb374fb17c938affb2035" title="生成数据结构header。" alt="" coords="719,183,865,230"/>
+<area shape="rect" id="node9" href="$classCppQtSdkGenerator.html#aa306b0fa305345f4e37b44b01db2b7cc" title="生成数据结构source。" alt="" coords="719,39,865,86"/>
+<area shape="rect" id="node11" href="$classCppQtSdkGenerator.html#a937538de852d997051905ffc96baf6ed" title="生成API请求header。" alt="" coords="719,253,865,299"/>
+<area shape="rect" id="node13" href="$classCppQtSdkGenerator.html#a6779e7b2d030f15a4e0f702c49608426" title="生成API请求source。" alt="" coords="719,322,865,369"/>
+<area shape="rect" id="node15" href="$classCppQtSdkGenerator.html#ab669a1ae0af7f1e9fc316630bcd47cba" title="生成API响应header。" alt="" coords="719,391,865,438"/>
+<area shape="rect" id="node17" href="$classCppQtSdkGenerator.html#a3ce6e14d4442c29f8648ed09be026148" title="生成API响应source。" alt="" coords="719,110,865,157"/>
+<area shape="rect" id="node33" href="$classCppQtSdkGenerator.html#a5a15b46b34c371ef21eee09c70df628b" title="CppQtSdkGenerator::\lgenerateParseResponse" alt="" coords="489,38,655,85"/>
+<area shape="rect" id="node5" href="$classApiField.html#af62681e7453ceeed0cf646b8a0f44d09" title="获得属性的get方法名称" alt="" coords="475,209,669,239"/>
+<area shape="rect" id="node19" href="$classApiField.html#a15ab6f17c1b84bc64a3a80b2f7b42e67" title="获得属性的set方法名称" alt="" coords="476,263,668,292"/>
 </map>

@@ -1,4 +1,4 @@
-<map id="include/taobaosdk/parser/SdkParser.h" name="include/taobaosdk/parser/SdkParser.h">
+<map id="AutoSdkGenerator/include/taobaosdk/parser/SdkParser.h" name="AutoSdkGenerator/include/taobaosdk/parser/SdkParser.h">
 <area shape="rect" id="node3" href="$ApiDomain_8h.html" title="domain/ApiDomain.h" alt="" coords="5,101,147,131"/>
 <area shape="rect" id="node22" href="$ApiRequest_8h.html" title="domain/ApiRequest.h" alt="" coords="171,101,317,131"/>
 <area shape="rect" id="node25" href="$ApiResponse_8h.html" title="domain/ApiResponse.h" alt="" coords="341,101,499,131"/>

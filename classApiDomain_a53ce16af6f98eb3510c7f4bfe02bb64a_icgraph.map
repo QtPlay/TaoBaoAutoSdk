@@ -1,4 +1,6 @@
 <map id="ApiDomain::getClassName" name="ApiDomain::getClassName">
-<area shape="rect" id="node3" href="$classCppQtSdkGenerator.html#ab13477238315c86b515136d4a38ff897" title="获取domain相关的文件路径，相对于sourcesDir来说" alt="" coords="235,5,421,51"/>
-<area shape="rect" id="node5" href="$classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="248,74,408,121"/>
+<area shape="rect" id="node3" href="$classCppQtSdkGenerator.html#a726f916f5d8d0c31ab2c4d3e42f610ee" title="获取domain相关的文件路径，相对于sourcesDir来说" alt="" coords="236,5,417,51"/>
+<area shape="rect" id="node5" href="$classCppQtSdkGenerator.html#ab13477238315c86b515136d4a38ff897" title="获取domain相关的文件路径，相对于sourcesDir来说" alt="" coords="236,74,417,121"/>
+<area shape="rect" id="node7" href="$classCppQtSdkGenerator.html#aaefdd0d3406cb374fb17c938affb2035" title="生成数据结构header。" alt="" coords="253,143,400,190"/>
+<area shape="rect" id="node9" href="$classCppQtSdkGenerator.html#aa306b0fa305345f4e37b44b01db2b7cc" title="生成数据结构source。" alt="" coords="253,213,400,259"/>
 </map>

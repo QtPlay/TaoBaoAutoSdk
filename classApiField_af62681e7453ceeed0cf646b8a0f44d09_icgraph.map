@@ -1,5 +1,8 @@
 <map id="ApiField::getGetMethodName" name="ApiField::getGetMethodName">
-<area shape="rect" id="node3" href="$classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="249,5,423,51"/>
-<area shape="rect" id="node5" href="$classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="253,74,419,121"/>
-<area shape="rect" id="node7" href="$classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="256,143,416,190"/>
+<area shape="rect" id="node3" href="$classCppQtSdkGenerator.html#aaefdd0d3406cb374fb17c938affb2035" title="生成数据结构header。" alt="" coords="249,5,396,51"/>
+<area shape="rect" id="node5" href="$classCppQtSdkGenerator.html#aa306b0fa305345f4e37b44b01db2b7cc" title="生成数据结构source。" alt="" coords="249,74,396,121"/>
+<area shape="rect" id="node7" href="$classCppQtSdkGenerator.html#a937538de852d997051905ffc96baf6ed" title="生成API请求header。" alt="" coords="249,143,396,190"/>
+<area shape="rect" id="node9" href="$classCppQtSdkGenerator.html#a6779e7b2d030f15a4e0f702c49608426" title="生成API请求source。" alt="" coords="249,213,396,259"/>
+<area shape="rect" id="node11" href="$classCppQtSdkGenerator.html#ab669a1ae0af7f1e9fc316630bcd47cba" title="生成API响应header。" alt="" coords="249,282,396,329"/>
+<area shape="rect" id="node13" href="$classCppQtSdkGenerator.html#a3ce6e14d4442c29f8648ed09be026148" title="生成API响应source。" alt="" coords="249,351,396,398"/>
 </map>

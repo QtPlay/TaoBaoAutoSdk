@@ -1,3 +1,4 @@
 <map id="ApiRequest::getResponseClassName" name="ApiRequest::getResponseClassName">
-<area shape="rect" id="node3" href="$classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="299,5,464,51"/>
+<area shape="rect" id="node3" href="$classCppQtSdkGenerator.html#a937538de852d997051905ffc96baf6ed" title="生成API请求header。" alt="" coords="300,5,447,51"/>
+<area shape="rect" id="node5" href="$classCppQtSdkGenerator.html#a6779e7b2d030f15a4e0f702c49608426" title="生成API请求source。" alt="" coords="300,74,447,121"/>
 </map>

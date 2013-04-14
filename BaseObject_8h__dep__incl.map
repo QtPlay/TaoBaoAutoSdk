@@ -1,14 +1,13 @@
-<map id="include/taobaosdk/domain/BaseObject.h" name="include/taobaosdk/domain/BaseObject.h">
-<area shape="rect" id="node3" href="$ApiDomain_8h.html" title="include/taobaosdk/domain\l/ApiDomain.h" alt="" coords="366,102,539,149"/>
-<area shape="rect" id="node23" href="$ApiRequest_8h.html" title="include/taobaosdk/domain\l/ApiRequest.h" alt="" coords="563,102,737,149"/>
-<area shape="rect" id="node27" href="$ApiResponse_8h.html" title="include/taobaosdk/domain\l/ApiResponse.h" alt="" coords="761,102,934,149"/>
-<area shape="rect" id="node31" href="$BaseObject_8cpp.html" title="src/domain/BaseObject.cpp" alt="" coords="958,111,1139,140"/>
-<area shape="rect" id="node5" href="$SdkParser_8h.html" title="include/taobaosdk/parser\l/SdkParser.h" alt="" coords="521,198,686,245"/>
-<area shape="rect" id="node11" href="$CppQtSdkGenerator_8cpp.html" title="src/generator/CppQtSdkGenerator.cpp" alt="" coords="450,485,695,515"/>
-<area shape="rect" id="node7" href="$SdkGenerator_8h.html" title="include/taobaosdk/generator\l/SdkGenerator.h" alt="" coords="511,294,695,341"/>
-<area shape="rect" id="node17" href="$MetaSdkParser_8h.html" title="include/taobaosdk/parser\l/MetaSdkParser.h" alt="" coords="42,294,207,341"/>
-<area shape="rect" id="node9" href="$CppQtSdkGenerator_8h.html" title="include/taobaosdk/generator\l/CppQtSdkGenerator.h" alt="" coords="247,390,431,437"/>
-<area shape="rect" id="node15" href="$SdkGenerator_8cpp.html" title="src/generator/SdkGenerator.cpp" alt="" coords="506,399,711,428"/>
-<area shape="rect" id="node13" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="187,485,283,515"/>
-<area shape="rect" id="node20" href="$MetaSdkParser_8cpp.html" title="src/parser/MetaSdkParser.cpp" alt="" coords="26,399,223,428"/>
+<map id="AutoSdkGenerator/include/taobaosdk/domain/BaseObject.h" name="AutoSdkGenerator/include/taobaosdk/domain/BaseObject.h">
+<area shape="rect" id="node3" href="$ApiDomain_8h.html" title="AutoSdkGenerator/include\l/taobaosdk/domain/ApiDomain.h" alt="" coords="403,102,613,149"/>
+<area shape="rect" id="node23" href="$ApiRequest_8h.html" title="AutoSdkGenerator/include\l/taobaosdk/domain/ApiRequest.h" alt="" coords="637,102,851,149"/>
+<area shape="rect" id="node27" href="$ApiResponse_8h.html" title="AutoSdkGenerator/include\l/taobaosdk/domain/ApiResponse.h" alt="" coords="875,102,1099,149"/>
+<area shape="rect" id="node5" href="$SdkParser_8h.html" title="AutoSdkGenerator/include\l/taobaosdk/parser/SdkParser.h" alt="" coords="592,198,795,245"/>
+<area shape="rect" id="node11" href="$CppQtSdkGenerator_8cpp.html" title="AutoSdkGenerator/src\l/generator/CppQtSdkGenerator.cpp" alt="" coords="540,486,767,533"/>
+<area shape="rect" id="node7" href="$SdkGenerator_8h.html" title="AutoSdkGenerator/include\l/taobaosdk/generator/SdkGenerator.h" alt="" coords="575,294,812,341"/>
+<area shape="rect" id="node17" href="$MetaSdkParser_8h.html" title="AutoSdkGenerator/include\l/taobaosdk/parser/MetaSdkParser.h" alt="" coords="5,294,235,341"/>
+<area shape="rect" id="node9" href="$CppQtSdkGenerator_8h.html" title="AutoSdkGenerator/include\l/taobaosdk/generator/CppQtSdkGenerator.h" alt="" coords="235,390,512,437"/>
+<area shape="rect" id="node15" href="$SdkGenerator_8cpp.html" title="AutoSdkGenerator/src\l/generator/SdkGenerator.cpp" alt="" coords="599,390,788,437"/>
+<area shape="rect" id="node13" href="$main_8cpp.html" title="AutoSdkGenerator/src\l/main.cpp" alt="" coords="195,486,344,533"/>
+<area shape="rect" id="node20" href="$MetaSdkParser_8cpp.html" title="AutoSdkGenerator/src\l/parser/MetaSdkParser.cpp" alt="" coords="29,390,211,437"/>
 </map>

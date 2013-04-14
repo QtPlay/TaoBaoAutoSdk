@@ -1,6 +1,6 @@
-<map id="include/taobaosdk/generator/SdkGenerator.h" name="include/taobaosdk/generator/SdkGenerator.h">
-<area shape="rect" id="node3" href="$CppQtSdkGenerator_8h.html" title="include/taobaosdk/generator\l/CppQtSdkGenerator.h" alt="" coords="133,102,317,149"/>
-<area shape="rect" id="node9" href="$SdkGenerator_8cpp.html" title="src/generator/SdkGenerator.cpp" alt="" coords="341,111,547,140"/>
-<area shape="rect" id="node5" href="$CppQtSdkGenerator_8cpp.html" title="src/generator/CppQtSdkGenerator.cpp" alt="" coords="5,197,251,227"/>
-<area shape="rect" id="node7" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="275,197,371,227"/>
+<map id="AutoSdkGenerator/include/taobaosdk/generator/SdkGenerator.h" name="AutoSdkGenerator/include/taobaosdk/generator/SdkGenerator.h">
+<area shape="rect" id="node3" href="$CppQtSdkGenerator_8h.html" title="AutoSdkGenerator/include\l/taobaosdk/generator/CppQtSdkGenerator.h" alt="" coords="85,102,363,149"/>
+<area shape="rect" id="node9" href="$SdkGenerator_8cpp.html" title="AutoSdkGenerator/src\l/generator/SdkGenerator.cpp" alt="" coords="387,102,576,149"/>
+<area shape="rect" id="node5" href="$CppQtSdkGenerator_8cpp.html" title="AutoSdkGenerator/src\l/generator/CppQtSdkGenerator.cpp" alt="" coords="5,198,232,245"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="AutoSdkGenerator/src\l/main.cpp" alt="" coords="256,198,405,245"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="NameObject::getDesc" name="NameObject::getDesc">
-<area shape="rect" id="node3" href="$classCppQtSdkGenerator.html#a593a9e30710d7fdea19da44ca98e737c" title="生成API响应源码。" alt="" coords="207,5,380,51"/>
-<area shape="rect" id="node5" href="$classCppQtSdkGenerator.html#a3808e12423f683169ee1013d7da613b1" title="生成API请求源码。" alt="" coords="211,74,376,121"/>
-<area shape="rect" id="node7" href="$classCppQtSdkGenerator.html#a926937e690228efff49dcdded22ff0fc" title="..." alt="" coords="213,143,373,190"/>
+<area shape="rect" id="node3" href="$classCppQtSdkGenerator.html#aaefdd0d3406cb374fb17c938affb2035" title="生成数据结构header。" alt="" coords="207,5,353,51"/>
+<area shape="rect" id="node5" href="$classCppQtSdkGenerator.html#a937538de852d997051905ffc96baf6ed" title="生成API请求header。" alt="" coords="207,74,353,121"/>
+<area shape="rect" id="node7" href="$classCppQtSdkGenerator.html#ab669a1ae0af7f1e9fc316630bcd47cba" title="生成API响应header。" alt="" coords="207,143,353,190"/>
 </map>

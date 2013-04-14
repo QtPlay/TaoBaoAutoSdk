@@ -1,5 +1,0 @@
-<map id="SdkGenerator::generateRequests" name="SdkGenerator::generateRequests">
-<area shape="rect" id="node3" href="$classSdkGenerator.html#a53d5d4f6589e5d34e85fc52ab550bd2c" title="生成API请求源码。" alt="" coords="271,5,447,51"/>
-<area shape="rect" id="node5" href="$classSdkGenerator.html#a4391c905ce7e9d43248a4493a4f7a582" title="获取API请求文件路径，相对于sourcesDir来说" alt="" coords="271,74,447,121"/>
-<area shape="rect" id="node7" href="$classSdkGenerator.html#a819b49c758675176cc6018008834cdf4" title="SdkGenerator::writeFile" alt="" coords="280,144,437,173"/>
-</map>

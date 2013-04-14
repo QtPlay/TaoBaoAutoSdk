@@ -1,5 +1,5 @@
 <map id="ApiField::setLangType" name="ApiField::setLangType">
 <area shape="rect" id="node3" href="$classMetaSdkParser.html#af44f06b19b2aa35617c065b445bf05e0" title="MetaSdkParser::getApiDomains" alt="" coords="213,5,421,35"/>
-<area shape="rect" id="node5" href="$classMetaSdkParser.html#a2d25a4b1340781353c3db5d753afc1d0" title="获取Request Api类 与getApiResponse不同的是, Requests只是借助level确定langType 而Response直接存储meta数据中的level。" alt="" coords="211,59,424,88"/>
-<area shape="rect" id="node7" href="$classMetaSdkParser.html#a4ee69ddf1725d2fcacc096e1adf24685" title="MetaSdkParser::getApiResponses" alt="" coords="207,112,428,141"/>
+<area shape="rect" id="node5" href="$classMetaSdkParser.html#a2d25a4b1340781353c3db5d753afc1d0" title="获取Request Api类" alt="" coords="211,59,424,88"/>
+<area shape="rect" id="node7" href="$classMetaSdkParser.html#a4ee69ddf1725d2fcacc096e1adf24685" title="获取Response Api类" alt="" coords="207,112,428,141"/>
 </map>
